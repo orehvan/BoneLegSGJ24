@@ -1,0 +1,4902 @@
+{
+	"textures": [
+		{
+			"image": "physics_pack-0.png",
+			"size": {
+				"w": 2048,
+				"h": 2048
+			},
+			"sprites": [
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive019",
+					"region": {
+						"x": 3,
+						"y": 3,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive024",
+					"region": {
+						"x": 227,
+						"y": 3,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive035",
+					"region": {
+						"x": 451,
+						"y": 3,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive040",
+					"region": {
+						"x": 675,
+						"y": 3,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive054",
+					"region": {
+						"x": 899,
+						"y": 3,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass020",
+					"region": {
+						"x": 1123,
+						"y": 3,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass025",
+					"region": {
+						"x": 1347,
+						"y": 3,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass036",
+					"region": {
+						"x": 1571,
+						"y": 3,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass041",
+					"region": {
+						"x": 1795,
+						"y": 3,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive021",
+					"region": {
+						"x": 3,
+						"y": 147,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive026",
+					"region": {
+						"x": 3,
+						"y": 371,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive037",
+					"region": {
+						"x": 3,
+						"y": 595,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive042",
+					"region": {
+						"x": 3,
+						"y": 819,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive056",
+					"region": {
+						"x": 3,
+						"y": 1043,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass022",
+					"region": {
+						"x": 3,
+						"y": 1267,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass027",
+					"region": {
+						"x": 3,
+						"y": 1491,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass038",
+					"region": {
+						"x": 3,
+						"y": 1715,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive013",
+					"region": {
+						"x": 3,
+						"y": 1939,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass043",
+					"region": {
+						"x": 147,
+						"y": 147,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass054",
+					"region": {
+						"x": 147,
+						"y": 371,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal021",
+					"region": {
+						"x": 147,
+						"y": 595,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal026",
+					"region": {
+						"x": 147,
+						"y": 819,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal037",
+					"region": {
+						"x": 147,
+						"y": 1043,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal042",
+					"region": {
+						"x": 147,
+						"y": 1267,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal056",
+					"region": {
+						"x": 147,
+						"y": 1491,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone021",
+					"region": {
+						"x": 147,
+						"y": 1715,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive016",
+					"region": {
+						"x": 227,
+						"y": 1939,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass052",
+					"region": {
+						"x": 451,
+						"y": 147,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone026",
+					"region": {
+						"x": 291,
+						"y": 147,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal019",
+					"region": {
+						"x": 675,
+						"y": 147,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal024",
+					"region": {
+						"x": 899,
+						"y": 147,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal035",
+					"region": {
+						"x": 1123,
+						"y": 147,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal040",
+					"region": {
+						"x": 1347,
+						"y": 147,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal054",
+					"region": {
+						"x": 1571,
+						"y": 147,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone019",
+					"region": {
+						"x": 1795,
+						"y": 147,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone037",
+					"region": {
+						"x": 291,
+						"y": 371,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone042",
+					"region": {
+						"x": 291,
+						"y": 595,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone053",
+					"region": {
+						"x": 291,
+						"y": 819,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood020",
+					"region": {
+						"x": 291,
+						"y": 1043,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood025",
+					"region": {
+						"x": 291,
+						"y": 1267,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood036",
+					"region": {
+						"x": 291,
+						"y": 1491,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood041",
+					"region": {
+						"x": 291,
+						"y": 1715,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone024",
+					"region": {
+						"x": 451,
+						"y": 291,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone035",
+					"region": {
+						"x": 675,
+						"y": 291,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone040",
+					"region": {
+						"x": 899,
+						"y": 291,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone051",
+					"region": {
+						"x": 1123,
+						"y": 291,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood018",
+					"region": {
+						"x": 1347,
+						"y": 291,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood023",
+					"region": {
+						"x": 1571,
+						"y": 291,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood034",
+					"region": {
+						"x": 1795,
+						"y": 291,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood052",
+					"region": {
+						"x": 435,
+						"y": 435,
+						"w": 140,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive020",
+					"region": {
+						"x": 435,
+						"y": 659,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive025",
+					"region": {
+						"x": 435,
+						"y": 883,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive036",
+					"region": {
+						"x": 435,
+						"y": 1107,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive041",
+					"region": {
+						"x": 435,
+						"y": 1331,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive055",
+					"region": {
+						"x": 435,
+						"y": 1555,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood039",
+					"region": {
+						"x": 435,
+						"y": 1779,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive029",
+					"region": {
+						"x": 451,
+						"y": 1923,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Other/coinBronze",
+					"region": {
+						"x": 451,
+						"y": 1997,
+						"w": 42,
+						"h": 42
+					},
+					"margin": {
+						"x": 14,
+						"y": 17,
+						"w": 28,
+						"h": 28
+					}
+				},
+				{
+					"filename": "physics_assets/Other/coinDiamond",
+					"region": {
+						"x": 497,
+						"y": 1997,
+						"w": 42,
+						"h": 42
+					},
+					"margin": {
+						"x": 14,
+						"y": 17,
+						"w": 28,
+						"h": 28
+					}
+				},
+				{
+					"filename": "physics_assets/Other/coinGold",
+					"region": {
+						"x": 543,
+						"y": 1997,
+						"w": 42,
+						"h": 42
+					},
+					"margin": {
+						"x": 14,
+						"y": 17,
+						"w": 28,
+						"h": 28
+					}
+				},
+				{
+					"filename": "physics_assets/Other/coinSilver",
+					"region": {
+						"x": 589,
+						"y": 1997,
+						"w": 42,
+						"h": 42
+					},
+					"margin": {
+						"x": 14,
+						"y": 17,
+						"w": 28,
+						"h": 28
+					}
+				},
+				{
+					"filename": "physics_assets/Other/bush",
+					"region": {
+						"x": 635,
+						"y": 1997,
+						"w": 38,
+						"h": 40
+					},
+					"margin": {
+						"x": 16,
+						"y": 30,
+						"w": 32,
+						"h": 30
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass021",
+					"region": {
+						"x": 509,
+						"y": 659,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass026",
+					"region": {
+						"x": 579,
+						"y": 435,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass037",
+					"region": {
+						"x": 509,
+						"y": 883,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass042",
+					"region": {
+						"x": 509,
+						"y": 1107,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass053",
+					"region": {
+						"x": 509,
+						"y": 1331,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal020",
+					"region": {
+						"x": 509,
+						"y": 1555,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal025",
+					"region": {
+						"x": 583,
+						"y": 659,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal036",
+					"region": {
+						"x": 653,
+						"y": 435,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal041",
+					"region": {
+						"x": 583,
+						"y": 883,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal055",
+					"region": {
+						"x": 583,
+						"y": 1107,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone020",
+					"region": {
+						"x": 583,
+						"y": 1331,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone025",
+					"region": {
+						"x": 583,
+						"y": 1555,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone036",
+					"region": {
+						"x": 657,
+						"y": 659,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone041",
+					"region": {
+						"x": 727,
+						"y": 435,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone052",
+					"region": {
+						"x": 657,
+						"y": 883,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood019",
+					"region": {
+						"x": 657,
+						"y": 1107,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood024",
+					"region": {
+						"x": 657,
+						"y": 1331,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood035",
+					"region": {
+						"x": 657,
+						"y": 1555,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood050",
+					"region": {
+						"x": 659,
+						"y": 1779,
+						"w": 220,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive032",
+					"region": {
+						"x": 675,
+						"y": 1923,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Other/frozenBush",
+					"region": {
+						"x": 677,
+						"y": 1997,
+						"w": 38,
+						"h": 40
+					},
+					"margin": {
+						"x": 16,
+						"y": 30,
+						"w": 32,
+						"h": 30
+					}
+				},
+				{
+					"filename": "physics_assets/Other/starBronze",
+					"region": {
+						"x": 719,
+						"y": 1997,
+						"w": 40,
+						"h": 39
+					},
+					"margin": {
+						"x": 15,
+						"y": 18,
+						"w": 30,
+						"h": 31
+					}
+				},
+				{
+					"filename": "physics_assets/Other/starDiamond",
+					"region": {
+						"x": 763,
+						"y": 1997,
+						"w": 40,
+						"h": 39
+					},
+					"margin": {
+						"x": 15,
+						"y": 18,
+						"w": 30,
+						"h": 31
+					}
+				},
+				{
+					"filename": "physics_assets/Other/starGold",
+					"region": {
+						"x": 807,
+						"y": 1997,
+						"w": 40,
+						"h": 39
+					},
+					"margin": {
+						"x": 15,
+						"y": 18,
+						"w": 30,
+						"h": 31
+					}
+				},
+				{
+					"filename": "physics_assets/Other/starSilver",
+					"region": {
+						"x": 851,
+						"y": 1997,
+						"w": 40,
+						"h": 39
+					},
+					"margin": {
+						"x": 15,
+						"y": 18,
+						"w": 30,
+						"h": 31
+					}
+				},
+				{
+					"filename": "physics_assets/Other/rock",
+					"region": {
+						"x": 895,
+						"y": 1997,
+						"w": 63,
+						"h": 36
+					},
+					"margin": {
+						"x": 4,
+						"y": 34,
+						"w": 7,
+						"h": 34
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive051",
+					"region": {
+						"x": 962,
+						"y": 435,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Debris/debrisGlass_3",
+					"region": {
+						"x": 899,
+						"y": 435,
+						"w": 59,
+						"h": 52
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Debris/debrisStone_3",
+					"region": {
+						"x": 899,
+						"y": 491,
+						"w": 59,
+						"h": 52
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood040",
+					"region": {
+						"x": 801,
+						"y": 435,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass014",
+					"region": {
+						"x": 1186,
+						"y": 435,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass017",
+					"region": {
+						"x": 1410,
+						"y": 435,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass030",
+					"region": {
+						"x": 1634,
+						"y": 435,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive018",
+					"region": {
+						"x": 1858,
+						"y": 435,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass033",
+					"region": {
+						"x": 962,
+						"y": 509,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Debris/debrisWood_3",
+					"region": {
+						"x": 899,
+						"y": 547,
+						"w": 59,
+						"h": 52
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass049",
+					"region": {
+						"x": 1186,
+						"y": 509,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal013",
+					"region": {
+						"x": 1410,
+						"y": 509,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal016",
+					"region": {
+						"x": 1634,
+						"y": 509,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive023",
+					"region": {
+						"x": 1858,
+						"y": 579,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal029",
+					"region": {
+						"x": 962,
+						"y": 583,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive048",
+					"region": {
+						"x": 899,
+						"y": 603,
+						"w": 58,
+						"h": 53
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive034",
+					"region": {
+						"x": 731,
+						"y": 659,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal032",
+					"region": {
+						"x": 1186,
+						"y": 583,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal051",
+					"region": {
+						"x": 1410,
+						"y": 583,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone013",
+					"region": {
+						"x": 1634,
+						"y": 583,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone016",
+					"region": {
+						"x": 962,
+						"y": 657,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal048",
+					"region": {
+						"x": 899,
+						"y": 660,
+						"w": 58,
+						"h": 53
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive046",
+					"region": {
+						"x": 899,
+						"y": 717,
+						"w": 56,
+						"h": 61
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone029",
+					"region": {
+						"x": 1186,
+						"y": 657,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone032",
+					"region": {
+						"x": 1410,
+						"y": 657,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone048",
+					"region": {
+						"x": 1634,
+						"y": 657,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive039",
+					"region": {
+						"x": 1858,
+						"y": 723,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood012",
+					"region": {
+						"x": 962,
+						"y": 731,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal046",
+					"region": {
+						"x": 899,
+						"y": 782,
+						"w": 56,
+						"h": 61
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive053",
+					"region": {
+						"x": 731,
+						"y": 803,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood015",
+					"region": {
+						"x": 1186,
+						"y": 731,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood028",
+					"region": {
+						"x": 1410,
+						"y": 731,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood031",
+					"region": {
+						"x": 1634,
+						"y": 731,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood051",
+					"region": {
+						"x": 731,
+						"y": 947,
+						"w": 70,
+						"h": 220
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass019",
+					"region": {
+						"x": 731,
+						"y": 1171,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass024",
+					"region": {
+						"x": 805,
+						"y": 947,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood047",
+					"region": {
+						"x": 875,
+						"y": 867,
+						"w": 220,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Debris/debrisGlass_1",
+					"region": {
+						"x": 959,
+						"y": 805,
+						"w": 64,
+						"h": 56
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Debris/debrisStone_1",
+					"region": {
+						"x": 1027,
+						"y": 805,
+						"w": 64,
+						"h": 56
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Debris/debrisWood_1",
+					"region": {
+						"x": 1095,
+						"y": 805,
+						"w": 64,
+						"h": 56
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive000",
+					"region": {
+						"x": 805,
+						"y": 1091,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass035",
+					"region": {
+						"x": 731,
+						"y": 1315,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass040",
+					"region": {
+						"x": 731,
+						"y": 1459,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass051",
+					"region": {
+						"x": 731,
+						"y": 1603,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal018",
+					"region": {
+						"x": 875,
+						"y": 1165,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal023",
+					"region": {
+						"x": 949,
+						"y": 941,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive003",
+					"region": {
+						"x": 949,
+						"y": 1085,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone003",
+					"region": {
+						"x": 949,
+						"y": 1085,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal034",
+					"region": {
+						"x": 875,
+						"y": 1309,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal039",
+					"region": {
+						"x": 875,
+						"y": 1453,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal053",
+					"region": {
+						"x": 875,
+						"y": 1597,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone018",
+					"region": {
+						"x": 883,
+						"y": 1741,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone023",
+					"region": {
+						"x": 962,
+						"y": 1885,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Debris/debrisGlass_2",
+					"region": {
+						"x": 899,
+						"y": 1885,
+						"w": 55,
+						"h": 61
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone034",
+					"region": {
+						"x": 1019,
+						"y": 1159,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone039",
+					"region": {
+						"x": 1093,
+						"y": 941,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive006",
+					"region": {
+						"x": 1099,
+						"y": 867,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive009",
+					"region": {
+						"x": 1093,
+						"y": 1085,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone009",
+					"region": {
+						"x": 1093,
+						"y": 1085,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive047",
+					"region": {
+						"x": 1163,
+						"y": 805,
+						"w": 64,
+						"h": 56
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal047",
+					"region": {
+						"x": 1231,
+						"y": 805,
+						"w": 64,
+						"h": 56
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone050",
+					"region": {
+						"x": 1019,
+						"y": 1303,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood017",
+					"region": {
+						"x": 1019,
+						"y": 1447,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood022",
+					"region": {
+						"x": 1019,
+						"y": 1591,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood033",
+					"region": {
+						"x": 1027,
+						"y": 1735,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood038",
+					"region": {
+						"x": 1106,
+						"y": 1879,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood049",
+					"region": {
+						"x": 1299,
+						"y": 805,
+						"w": 140,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Debris/debrisStone_2",
+					"region": {
+						"x": 1237,
+						"y": 941,
+						"w": 55,
+						"h": 61
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Other/cactus",
+					"region": {
+						"x": 1243,
+						"y": 865,
+						"w": 47,
+						"h": 60
+					},
+					"margin": {
+						"x": 12,
+						"y": 10,
+						"w": 23,
+						"h": 10
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive012",
+					"region": {
+						"x": 1443,
+						"y": 805,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive015",
+					"region": {
+						"x": 1587,
+						"y": 805,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive017",
+					"region": {
+						"x": 1731,
+						"y": 805,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive028",
+					"region": {
+						"x": 1805,
+						"y": 867,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive022",
+					"region": {
+						"x": 1949,
+						"y": 867,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive031",
+					"region": {
+						"x": 1805,
+						"y": 941,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive033",
+					"region": {
+						"x": 1949,
+						"y": 1011,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive044",
+					"region": {
+						"x": 1443,
+						"y": 879,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive050",
+					"region": {
+						"x": 1587,
+						"y": 879,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive038",
+					"region": {
+						"x": 1731,
+						"y": 949,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass001",
+					"region": {
+						"x": 1805,
+						"y": 1015,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass004",
+					"region": {
+						"x": 1805,
+						"y": 1089,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass007",
+					"region": {
+						"x": 1296,
+						"y": 949,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Debris/debrisWood_2",
+					"region": {
+						"x": 1237,
+						"y": 1006,
+						"w": 55,
+						"h": 61
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive052",
+					"region": {
+						"x": 1949,
+						"y": 1155,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass010",
+					"region": {
+						"x": 1440,
+						"y": 953,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass013",
+					"region": {
+						"x": 1296,
+						"y": 1023,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass016",
+					"region": {
+						"x": 1584,
+						"y": 953,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass029",
+					"region": {
+						"x": 1440,
+						"y": 1027,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass032",
+					"region": {
+						"x": 1584,
+						"y": 1027,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass018",
+					"region": {
+						"x": 1728,
+						"y": 1093,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass045",
+					"region": {
+						"x": 1802,
+						"y": 1163,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass048",
+					"region": {
+						"x": 1250,
+						"y": 1097,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass023",
+					"region": {
+						"x": 1171,
+						"y": 1159,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal000",
+					"region": {
+						"x": 1394,
+						"y": 1101,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal003",
+					"region": {
+						"x": 1250,
+						"y": 1171,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal006",
+					"region": {
+						"x": 1538,
+						"y": 1101,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal009",
+					"region": {
+						"x": 1394,
+						"y": 1175,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal012",
+					"region": {
+						"x": 1250,
+						"y": 1245,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass034",
+					"region": {
+						"x": 1171,
+						"y": 1303,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal015",
+					"region": {
+						"x": 1538,
+						"y": 1175,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal028",
+					"region": {
+						"x": 1682,
+						"y": 1237,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass039",
+					"region": {
+						"x": 1826,
+						"y": 1237,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal031",
+					"region": {
+						"x": 1900,
+						"y": 1299,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal044",
+					"region": {
+						"x": 1900,
+						"y": 1373,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal050",
+					"region": {
+						"x": 1394,
+						"y": 1249,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone000",
+					"region": {
+						"x": 1250,
+						"y": 1319,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone006",
+					"region": {
+						"x": 1538,
+						"y": 1249,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone012",
+					"region": {
+						"x": 1682,
+						"y": 1311,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass050",
+					"region": {
+						"x": 1826,
+						"y": 1381,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone015",
+					"region": {
+						"x": 1900,
+						"y": 1447,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone028",
+					"region": {
+						"x": 1900,
+						"y": 1521,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal017",
+					"region": {
+						"x": 1163,
+						"y": 1525,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone031",
+					"region": {
+						"x": 1163,
+						"y": 1447,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal022",
+					"region": {
+						"x": 1171,
+						"y": 1669,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal033",
+					"region": {
+						"x": 1237,
+						"y": 1525,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone044",
+					"region": {
+						"x": 1307,
+						"y": 1393,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal038",
+					"region": {
+						"x": 1245,
+						"y": 1669,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal052",
+					"region": {
+						"x": 1311,
+						"y": 1525,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone047",
+					"region": {
+						"x": 1451,
+						"y": 1323,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone017",
+					"region": {
+						"x": 1595,
+						"y": 1323,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood002",
+					"region": {
+						"x": 1451,
+						"y": 1397,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood005",
+					"region": {
+						"x": 1669,
+						"y": 1385,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood008",
+					"region": {
+						"x": 1669,
+						"y": 1459,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone022",
+					"region": {
+						"x": 1595,
+						"y": 1467,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone033",
+					"region": {
+						"x": 1813,
+						"y": 1525,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood011",
+					"region": {
+						"x": 1669,
+						"y": 1533,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood014",
+					"region": {
+						"x": 1669,
+						"y": 1607,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood027",
+					"region": {
+						"x": 1887,
+						"y": 1595,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood030",
+					"region": {
+						"x": 1385,
+						"y": 1471,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood043",
+					"region": {
+						"x": 1385,
+						"y": 1545,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone038",
+					"region": {
+						"x": 1529,
+						"y": 1611,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood046",
+					"region": {
+						"x": 1385,
+						"y": 1619,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood054",
+					"region": {
+						"x": 1319,
+						"y": 1693,
+						"w": 140,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone049",
+					"region": {
+						"x": 1250,
+						"y": 1813,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Aliens/alienBeige_round",
+					"region": {
+						"x": 1250,
+						"y": 1957,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood016",
+					"region": {
+						"x": 1324,
+						"y": 1767,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Aliens/alienBeige_square",
+					"region": {
+						"x": 1324,
+						"y": 1911,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood021",
+					"region": {
+						"x": 1398,
+						"y": 1767,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Aliens/alienBeige_suit",
+					"region": {
+						"x": 1398,
+						"y": 1911,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood032",
+					"region": {
+						"x": 1472,
+						"y": 1755,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood037",
+					"region": {
+						"x": 1472,
+						"y": 1899,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood048",
+					"region": {
+						"x": 1546,
+						"y": 1755,
+						"w": 70,
+						"h": 140
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Aliens/alienBlue_round",
+					"region": {
+						"x": 1603,
+						"y": 1681,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Aliens/alienBlue_square",
+					"region": {
+						"x": 1546,
+						"y": 1899,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Aliens/alienBlue_suit",
+					"region": {
+						"x": 1546,
+						"y": 1973,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Aliens/alienGreen_round",
+					"region": {
+						"x": 1813,
+						"y": 1669,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Aliens/alienGreen_square",
+					"region": {
+						"x": 1677,
+						"y": 1681,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Aliens/alienGreen_suit",
+					"region": {
+						"x": 1887,
+						"y": 1669,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Aliens/alienPink_round",
+					"region": {
+						"x": 1961,
+						"y": 1669,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Aliens/alienPink_square",
+					"region": {
+						"x": 1620,
+						"y": 1755,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Aliens/alienPink_suit",
+					"region": {
+						"x": 1620,
+						"y": 1829,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Aliens/alienYellow_round",
+					"region": {
+						"x": 1620,
+						"y": 1903,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Aliens/alienYellow_square",
+					"region": {
+						"x": 1694,
+						"y": 1755,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Aliens/alienYellow_suit",
+					"region": {
+						"x": 1694,
+						"y": 1829,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive001",
+					"region": {
+						"x": 1694,
+						"y": 1903,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive002",
+					"region": {
+						"x": 1768,
+						"y": 1743,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone002",
+					"region": {
+						"x": 1768,
+						"y": 1743,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive004",
+					"region": {
+						"x": 1842,
+						"y": 1743,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone004",
+					"region": {
+						"x": 1842,
+						"y": 1743,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive005",
+					"region": {
+						"x": 1916,
+						"y": 1743,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive007",
+					"region": {
+						"x": 1768,
+						"y": 1817,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive008",
+					"region": {
+						"x": 1768,
+						"y": 1891,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone008",
+					"region": {
+						"x": 1768,
+						"y": 1891,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive010",
+					"region": {
+						"x": 1768,
+						"y": 1965,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone010",
+					"region": {
+						"x": 1768,
+						"y": 1965,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive011",
+					"region": {
+						"x": 1842,
+						"y": 1817,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive014",
+					"region": {
+						"x": 1916,
+						"y": 1817,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive027",
+					"region": {
+						"x": 1842,
+						"y": 1891,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone027",
+					"region": {
+						"x": 1842,
+						"y": 1891,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive030",
+					"region": {
+						"x": 1842,
+						"y": 1965,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone030",
+					"region": {
+						"x": 1842,
+						"y": 1965,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive043",
+					"region": {
+						"x": 1916,
+						"y": 1891,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive045",
+					"region": {
+						"x": 1916,
+						"y": 1965,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "physics_pack-1.png",
+			"size": {
+				"w": 1024,
+				"h": 1024
+			},
+			"sprites": [
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive049",
+					"region": {
+						"x": 3,
+						"y": 3,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Explosive elements/elementExplosive057",
+					"region": {
+						"x": 3,
+						"y": 77,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass000",
+					"region": {
+						"x": 3,
+						"y": 151,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass002",
+					"region": {
+						"x": 3,
+						"y": 225,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass003",
+					"region": {
+						"x": 3,
+						"y": 299,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass005",
+					"region": {
+						"x": 3,
+						"y": 373,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass006",
+					"region": {
+						"x": 3,
+						"y": 447,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass008",
+					"region": {
+						"x": 3,
+						"y": 521,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass009",
+					"region": {
+						"x": 3,
+						"y": 595,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass011",
+					"region": {
+						"x": 3,
+						"y": 669,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass012",
+					"region": {
+						"x": 3,
+						"y": 743,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass015",
+					"region": {
+						"x": 3,
+						"y": 817,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass028",
+					"region": {
+						"x": 3,
+						"y": 891,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass031",
+					"region": {
+						"x": 77,
+						"y": 3,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass044",
+					"region": {
+						"x": 151,
+						"y": 3,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass046",
+					"region": {
+						"x": 225,
+						"y": 3,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Glass elements/elementGlass047",
+					"region": {
+						"x": 299,
+						"y": 3,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal001",
+					"region": {
+						"x": 373,
+						"y": 3,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal002",
+					"region": {
+						"x": 447,
+						"y": 3,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal004",
+					"region": {
+						"x": 521,
+						"y": 3,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal005",
+					"region": {
+						"x": 595,
+						"y": 3,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal007",
+					"region": {
+						"x": 669,
+						"y": 3,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal008",
+					"region": {
+						"x": 743,
+						"y": 3,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal010",
+					"region": {
+						"x": 817,
+						"y": 3,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal011",
+					"region": {
+						"x": 891,
+						"y": 3,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal014",
+					"region": {
+						"x": 77,
+						"y": 77,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal027",
+					"region": {
+						"x": 77,
+						"y": 151,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal030",
+					"region": {
+						"x": 77,
+						"y": 225,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal043",
+					"region": {
+						"x": 77,
+						"y": 299,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal045",
+					"region": {
+						"x": 77,
+						"y": 373,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal049",
+					"region": {
+						"x": 77,
+						"y": 447,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Metal elements/elementMetal057",
+					"region": {
+						"x": 77,
+						"y": 521,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Other/dirt",
+					"region": {
+						"x": 77,
+						"y": 595,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Other/flagBlue",
+					"region": {
+						"x": 77,
+						"y": 669,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Other/flagGreen",
+					"region": {
+						"x": 77,
+						"y": 743,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Other/flagRed",
+					"region": {
+						"x": 77,
+						"y": 817,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Other/flagYellow",
+					"region": {
+						"x": 77,
+						"y": 891,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Other/grass",
+					"region": {
+						"x": 151,
+						"y": 77,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Other/sand",
+					"region": {
+						"x": 225,
+						"y": 77,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Other/snow",
+					"region": {
+						"x": 299,
+						"y": 77,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone001",
+					"region": {
+						"x": 373,
+						"y": 77,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone005",
+					"region": {
+						"x": 447,
+						"y": 77,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone007",
+					"region": {
+						"x": 521,
+						"y": 77,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone011",
+					"region": {
+						"x": 595,
+						"y": 77,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone014",
+					"region": {
+						"x": 669,
+						"y": 77,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone043",
+					"region": {
+						"x": 743,
+						"y": 77,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone045",
+					"region": {
+						"x": 817,
+						"y": 77,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone046",
+					"region": {
+						"x": 891,
+						"y": 77,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Stone elements/elementStone054",
+					"region": {
+						"x": 151,
+						"y": 151,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood000",
+					"region": {
+						"x": 151,
+						"y": 225,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood001",
+					"region": {
+						"x": 151,
+						"y": 299,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood003",
+					"region": {
+						"x": 151,
+						"y": 373,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood004",
+					"region": {
+						"x": 151,
+						"y": 447,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood006",
+					"region": {
+						"x": 151,
+						"y": 521,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood007",
+					"region": {
+						"x": 151,
+						"y": 595,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood009",
+					"region": {
+						"x": 151,
+						"y": 669,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood010",
+					"region": {
+						"x": 151,
+						"y": 743,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood013",
+					"region": {
+						"x": 151,
+						"y": 817,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood026",
+					"region": {
+						"x": 151,
+						"y": 891,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood029",
+					"region": {
+						"x": 225,
+						"y": 151,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood042",
+					"region": {
+						"x": 299,
+						"y": 151,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood044",
+					"region": {
+						"x": 373,
+						"y": 151,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood045",
+					"region": {
+						"x": 447,
+						"y": 151,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "physics_assets/Wood elements/elementWood053",
+					"region": {
+						"x": 521,
+						"y": 151,
+						"w": 70,
+						"h": 70
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:6d73cee484b1710ec4255e8d4f228408:0e0de7b03a1de4662fb4dda470afde1c:f7e1728f6db9d3262b5991e9e4acce4f$"
+	}
+}

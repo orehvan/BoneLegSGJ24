@@ -1,0 +1,71 @@
+[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://ilhf3re0vhue"]
+
+[ext_resource type="Texture2D" uid="uid://br0s7nd55hrby" path="res://kenney_assets/physics_pack/physics_pack.sprites/physics_assets/Other/snow.tres" id="1_o7ilw"]
+[ext_resource type="Texture2D" uid="uid://dl3njkh61c76h" path="res://kenney_assets/physics_pack/physics_pack.sprites/physics_assets/Other/sand.tres" id="2_vjei1"]
+[ext_resource type="Texture2D" uid="uid://1ouyj2amn56m" path="res://kenney_assets/physics_pack/physics_pack.sprites/physics_assets/Other/grass.tres" id="3_v7k5y"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_71vix"]
+texture = ExtResource("1_o7ilw")
+texture_region_size = Vector2i(70, 70)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cfpvi"]
+texture = ExtResource("2_vjei1")
+texture_region_size = Vector2i(70, 70)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hr1h8"]
+texture = ExtResource("3_v7k5y")
+texture_region_size = Vector2i(70, 70)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[resource]
+tile_size = Vector2i(70, 70)
+sources/2 = SubResource("TileSetAtlasSource_71vix")
+sources/3 = SubResource("TileSetAtlasSource_cfpvi")
+sources/4 = SubResource("TileSetAtlasSource_hr1h8")

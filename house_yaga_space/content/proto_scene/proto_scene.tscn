@@ -1,0 +1,170 @@
+[gd_scene load_steps=9 format=3 uid="uid://ph38f6ww2cti"]
+
+[ext_resource type="Script" path="res://house_yaga_space/content/proto_scene/proto_scene.gd" id="1_5x5oq"]
+[ext_resource type="Texture2D" uid="uid://c1enefgue6pgo" path="res://kenney_assets/space_shooter/space_shooter.sprites/space_shooter/Meteors/spaceMeteors_003.tres" id="1_f18vl"]
+[ext_resource type="PackedScene" uid="uid://bjrgx2h2ny5ar" path="res://house_yaga_space/content/start_island/stat_island.tscn" id="1_txtrm"]
+[ext_resource type="PackedScene" uid="uid://c5uuxy5ktjfvy" path="res://house_yaga_space/content/rocket_house/rocket_house.tscn" id="2_17sup"]
+[ext_resource type="Texture2D" uid="uid://biumedc8lckyd" path="res://kenney_assets/space_shooter/space_shooter.sprites/space_shooter/Meteors/spaceMeteors_004.tres" id="2_q5727"]
+[ext_resource type="PackedScene" uid="uid://gtse5rs7uyup" path="res://house_yaga_space/content/rocket_engine/rocket_engine_1.tscn" id="3_lecw4"]
+[ext_resource type="Texture2D" uid="uid://pe13ssp5go1" path="res://kenney_assets/space_shooter/space_shooter.sprites/space_shooter/Meteors/spaceMeteors_002.tres" id="3_v6bj2"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_wmqfx"]
+
+[node name="ProtoScene" type="Node2D"]
+script = ExtResource("1_5x5oq")
+metadata/_edit_vertical_guides_ = [568.0]
+
+[node name="BG" type="CanvasLayer" parent="."]
+layer = -128
+
+[node name="ColorRect" type="ColorRect" parent="BG"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.0106883, 0.0294646, 0.121702, 1)
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+modulate = Color(1, 1, 1, 0.313726)
+motion_mirroring = Vector2(2048, 2048)
+
+[node name="SpaceMeteors002" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(123, 105)
+scale = Vector2(0.50464, 0.450237)
+texture = ExtResource("3_v6bj2")
+
+[node name="SpaceMeteors007" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(939, 1049)
+scale = Vector2(0.50464, 0.450237)
+texture = ExtResource("3_v6bj2")
+
+[node name="SpaceMeteors003" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(764, 192)
+rotation = -0.523599
+scale = Vector2(0.704545, 0.671946)
+texture = ExtResource("1_f18vl")
+
+[node name="SpaceMeteors009" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1019, 337)
+scale = Vector2(0.50464, 0.450237)
+texture = ExtResource("3_v6bj2")
+
+[node name="SpaceMeteors010" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1835, 1281)
+scale = Vector2(0.50464, 0.450237)
+texture = ExtResource("3_v6bj2")
+
+[node name="SpaceMeteors011" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1660, 424)
+rotation = -0.523599
+scale = Vector2(0.704545, 0.671946)
+texture = ExtResource("1_f18vl")
+
+[node name="SpaceMeteors008" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(604, 928)
+rotation = -0.523599
+scale = Vector2(0.704545, 0.671946)
+texture = ExtResource("1_f18vl")
+
+[node name="SpaceMeteors004" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(169.25, 838.498)
+scale = Vector2(0.708038, 0.708038)
+texture = ExtResource("2_q5727")
+
+[node name="SpaceMeteors005" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1157.5, 560.5)
+scale = Vector2(0.434091, 0.432127)
+texture = ExtResource("1_f18vl")
+
+[node name="SpaceMeteors006" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(293.5, 448.5)
+scale = Vector2(0.434091, 0.432127)
+texture = ExtResource("1_f18vl")
+
+[node name="SpaceMeteors012" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(489.25, 1750.5)
+scale = Vector2(0.708038, 0.708038)
+texture = ExtResource("2_q5727")
+
+[node name="SpaceMeteors013" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(1477.5, 1472.5)
+scale = Vector2(0.434091, 0.432127)
+texture = ExtResource("1_f18vl")
+
+[node name="SpaceMeteors014" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(613.5, 1360.5)
+scale = Vector2(0.434091, 0.432127)
+texture = ExtResource("1_f18vl")
+
+[node name="StatIsland" parent="." instance=ExtResource("1_txtrm")]
+
+[node name="RocketHouse" parent="." instance=ExtResource("2_17sup")]
+unique_name_in_owner = true
+position = Vector2(568, 464)
+linear_damp = 0.5
+rotation_force = 200.0
+distance_rot = 300.0
+
+[node name="Camera2D" type="Camera2D" parent="RocketHouse"]
+unique_name_in_owner = true
+process_callback = 0
+limit_bottom = 650
+limit_smoothed = true
+position_smoothing_enabled = true
+
+[node name="DeadZone" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 0
+collision_mask = 2
+input_pickable = false
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeadZone"]
+position = Vector2(568, 688)
+shape = SubResource("WorldBoundaryShape2D_wmqfx")
+
+[node name="RocketSpawn" type="Node2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(56, 488)
+
+[node name="Rocket_1" parent="RocketSpawn" instance=ExtResource("3_lecw4")]
+force = 800.0
+
+[node name="Rocket_2" parent="RocketSpawn" instance=ExtResource("3_lecw4")]
+position = Vector2(48, 0)
+force = 800.0
+
+[node name="Rocket_3" parent="RocketSpawn" instance=ExtResource("3_lecw4")]
+position = Vector2(98, 2)
+force = 800.0
+
+[node name="Rocket_4" parent="RocketSpawn" instance=ExtResource("3_lecw4")]
+position = Vector2(144, 0)
+force = 800.0
+
+[node name="Rocket_5" parent="RocketSpawn" instance=ExtResource("3_lecw4")]
+position = Vector2(192, 0)
+force = 800.0
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="UI"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -120.0
+offset_top = -47.0
+offset_right = -16.0
+offset_bottom = -16.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "START"
+
+[connection signal="body_entered" from="DeadZone" to="." method="_on_dead_zone_body_entered"]
+[connection signal="pressed" from="UI/Button" to="." method="_on_button_pressed"]

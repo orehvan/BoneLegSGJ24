@@ -1,0 +1,115 @@
+[gd_scene load_steps=8 format=3 uid="uid://dohsm2tkfhj3m"]
+
+[ext_resource type="Texture2D" uid="uid://bid8e11xats2g" path="res://kenney_assets/space_shooter/space_shooter.sprites/space_shooter/Effects/spaceEffects_018.tres" id="1_1vhhk"]
+[ext_resource type="Script" path="res://house_yaga_space/content/rocket_engine/trust_rocket.gd" id="1_fmfj8"]
+[ext_resource type="Texture2D" uid="uid://4nqdsyoq2eoe" path="res://kenney_assets/space_shooter/space_shooter.sprites/space_shooter/Parts/spaceParts_072.tres" id="2_qn2u0"]
+
+[sub_resource type="Animation" id="Animation_ncm5d"]
+resource_name = "run"
+length = 0.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpaceEffects018:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 0), Vector2(1, 2), Vector2(1, 2)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SpaceEffects018:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_kjdjs"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpaceEffects018:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SpaceEffects018:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_vh0n2"]
+resource_name = "stop"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpaceEffects018:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_n2suf"]
+_data = {
+"RESET": SubResource("Animation_kjdjs"),
+"run": SubResource("Animation_ncm5d"),
+"stop": SubResource("Animation_vh0n2")
+}
+
+[node name="TrustRocket" type="Node2D"]
+script = ExtResource("1_fmfj8")
+
+[node name="Renderer" type="Node2D" parent="."]
+
+[node name="Effects" type="Node2D" parent="Renderer"]
+
+[node name="SpaceEffects018" type="Sprite2D" parent="Renderer/Effects"]
+position = Vector2(0, 32)
+texture = ExtResource("1_1vhhk")
+offset = Vector2(0, 24)
+
+[node name="AnimationPlayerEffects" type="AnimationPlayer" parent="Renderer/Effects"]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_n2suf")
+}
+autoplay = "stop"
+
+[node name="SpaceParts072" type="Sprite2D" parent="Renderer"]
+position = Vector2(0, 8)
+texture = ExtResource("2_qn2u0")
+
+[node name="Marker2DBeginPoint" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -24)
+
+[node name="Marker2DEndPoint" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, 40)
