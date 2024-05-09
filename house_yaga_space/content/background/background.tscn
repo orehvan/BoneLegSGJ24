@@ -1,0 +1,104 @@
+[gd_scene load_steps=8 format=3 uid="uid://cmt6omwmjwndu"]
+
+[ext_resource type="Texture2D" uid="uid://b4mmelc2tb87i" path="res://kenney_assets/physics_pack/backgrounds/colored_land.png" id="1_48tpa"]
+[ext_resource type="Script" path="res://house_yaga_space/content/background/background.gd" id="1_ugxoo"]
+[ext_resource type="Texture2D" uid="uid://r26vvfjmqure" path="res://house_yaga_space/resource/background/ComsocREDO.png" id="3_4irhd"]
+[ext_resource type="Texture2D" uid="uid://ctfuf0gwp0qfm" path="res://house_yaga_space/resource/background/Planet_0.png" id="3_hlm5o"]
+[ext_resource type="Texture2D" uid="uid://bdsisjjsgwmns" path="res://house_yaga_space/resource/background/Planet_2.png" id="4_d41ns"]
+[ext_resource type="Texture2D" uid="uid://bsxdaowfhoep3" path="res://house_yaga_space/resource/background/Planet_3.png" id="5_aiow0"]
+[ext_resource type="Texture2D" uid="uid://d01f8b43jt5pf" path="res://house_yaga_space/resource/background/Planet_1.png" id="6_y8kja"]
+
+[node name="Background" type="ParallaxBackground"]
+scroll_ignore_camera_zoom = true
+script = ExtResource("1_ugxoo")
+min_distance = 500.0
+distance_hide = 500.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(2048, 2048)
+offset_right = 2048.0
+offset_bottom = 2048.0
+mouse_filter = 2
+color = Color(0.0163837, 0.0135011, 0.186889, 1)
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.05, 0.05)
+motion_mirroring = Vector2(2048, 2048)
+
+[node name="ComsocRedo" type="Sprite2D" parent="ParallaxLayer2"]
+modulate = Color(0.521141, 0.521141, 0.521141, 1)
+scale = Vector2(8, 8)
+texture = ExtResource("3_4irhd")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.15, 0.15)
+motion_mirroring = Vector2(2048, 2048)
+
+[node name="Planet0" type="Sprite2D" parent="ParallaxLayer3"]
+modulate = Color(0.244776, 0.244776, 0.244776, 1)
+position = Vector2(408, 344)
+scale = Vector2(4, 4)
+texture = ExtResource("3_hlm5o")
+
+[node name="Planet4" type="Sprite2D" parent="ParallaxLayer3"]
+modulate = Color(0.244776, 0.244776, 0.244776, 1)
+position = Vector2(1768, 960)
+scale = Vector2(4, 4)
+texture = ExtResource("3_hlm5o")
+
+[node name="Planet2" type="Sprite2D" parent="ParallaxLayer3"]
+modulate = Color(0.244776, 0.244776, 0.244776, 1)
+position = Vector2(1160, 976)
+scale = Vector2(4, 4)
+texture = ExtResource("4_d41ns")
+
+[node name="Planet3" type="Sprite2D" parent="ParallaxLayer3"]
+modulate = Color(0.244776, 0.244776, 0.244776, 1)
+position = Vector2(360, 1368)
+scale = Vector2(4, 4)
+texture = ExtResource("5_aiow0")
+
+[node name="Planet7" type="Sprite2D" parent="ParallaxLayer3"]
+modulate = Color(0.244776, 0.244776, 0.244776, 1)
+position = Vector2(1536, 408)
+scale = Vector2(4, 4)
+texture = ExtResource("5_aiow0")
+
+[node name="Planet1" type="Sprite2D" parent="ParallaxLayer3"]
+modulate = Color(0.244776, 0.244776, 0.244776, 1)
+position = Vector2(1856, 1704)
+scale = Vector2(4, 4)
+texture = ExtResource("6_y8kja")
+
+[node name="Planet5" type="Sprite2D" parent="ParallaxLayer3"]
+modulate = Color(0.244776, 0.244776, 0.244776, 1)
+position = Vector2(184, 832)
+scale = Vector2(4, 4)
+texture = ExtResource("6_y8kja")
+
+[node name="Planet6" type="Sprite2D" parent="ParallaxLayer3"]
+modulate = Color(0.244776, 0.244776, 0.244776, 1)
+position = Vector2(184, 1792)
+scale = Vector2(4, 4)
+texture = ExtResource("6_y8kja")
+
+[node name="ParallaxLayerEarth" type="ParallaxLayer" parent="."]
+unique_name_in_owner = true
+visible = false
+motion_mirroring = Vector2(2048, 0)
+
+[node name="ColoredLand" type="Sprite2D" parent="ParallaxLayerEarth"]
+position = Vector2(520, 512)
+texture = ExtResource("1_48tpa")
+
+[node name="ColoredLand2" type="Sprite2D" parent="ParallaxLayerEarth"]
+position = Vector2(1544, 512)
+texture = ExtResource("1_48tpa")
+
+[node name="ColorRect" type="ColorRect" parent="ParallaxLayerEarth"]
+offset_left = 8.0
+offset_top = -1656.0
+offset_right = 2056.0
+mouse_filter = 2
+color = Color(0.815686, 0.956863, 0.968627, 1)

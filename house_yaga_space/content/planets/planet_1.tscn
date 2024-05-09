@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://dqfkdeyl67s58"]
+
+[ext_resource type="Texture2D" uid="uid://bsxdaowfhoep3" path="res://house_yaga_space/resource/background/Planet_3.png" id="1_hxdvu"]
+[ext_resource type="PhysicsMaterial" uid="uid://do1xv88681n5c" path="res://house_yaga_space/content/physics_material/world_env.tres" id="2_l7aed"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r0212"]
+radius = 200.003
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gnoik"]
+size = Vector2(23, 23)
+
+[node name="Planet1" type="Area2D"]
+collision_layer = 128
+collision_mask = 2
+gravity_space_override = 1
+gravity_point = true
+gravity_point_unit_distance = 200.0
+gravity_point_center = Vector2(0, 0)
+gravity_direction = Vector2(0, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_r0212")
+
+[node name="Planet3" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("1_hxdvu")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+scale = Vector2(4, 4)
+physics_material_override = ExtResource("2_l7aed")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_gnoik")

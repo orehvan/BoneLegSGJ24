@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://bfbcg2upm4bwm"]
+
+[ext_resource type="Script" path="res://house_yaga_space/content/music_manager/music_manager.gd" id="1_k01xl"]
+[ext_resource type="AudioStream" uid="uid://n61j04x3f8e7" path="res://house_yaga_space/resource/musics/Outro.wav" id="1_k8nth"]
+[ext_resource type="AudioStream" uid="uid://baq6bwwurlltr" path="res://house_yaga_space/resource/musics/Game_1.wav" id="2_4s4k6"]
+[ext_resource type="AudioStream" uid="uid://cchrp4cbb3fhx" path="res://house_yaga_space/resource/musics/Game_2.wav" id="3_q632f"]
+[ext_resource type="AudioStream" uid="uid://cr84230pbe62y" path="res://house_yaga_space/resource/musics/Game_3.wav" id="4_3cvjy"]
+
+[node name="MusicManager" type="Node"]
+script = ExtResource("1_k01xl")
+
+[node name="AudioStreamPlayerOur" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_k8nth")
+bus = &"Music"
+
+[node name="AudioStreamPlayerMusic1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_4s4k6")
+bus = &"Music"
+
+[node name="AudioStreamPlayerMusic2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_q632f")
+bus = &"Music"
+
+[node name="AudioStreamPlayerMusicBattle" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_3cvjy")
+bus = &"Music"
+
+[connection signal="finished" from="AudioStreamPlayerMusic1" to="." method="_on_audio_stream_player_music_1_finished"]
+[connection signal="finished" from="AudioStreamPlayerMusic2" to="." method="_on_audio_stream_player_music_2_finished"]

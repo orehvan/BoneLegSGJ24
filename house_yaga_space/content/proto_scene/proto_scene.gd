@@ -5,6 +5,9 @@ extends Node2D
 
 var _is_start := false
 
+func _ready() -> void:
+	MusicManager.play_our_game()
+
 func _on_button_pressed() -> void:
 	if _is_start :
 		return
@@ -27,6 +30,8 @@ func _on_button_pressed() -> void:
 	var camera := get_viewport().get_camera_2d()
 	var tween := get_tree().create_tween()
 	tween.tween_property(camera, "zoom", Vector2.ONE * 0.5, 3.0)
+	
+	MusicManager.play_game()
 
 
 func _on_dead_zone_body_entered(body: Node2D) -> void:
