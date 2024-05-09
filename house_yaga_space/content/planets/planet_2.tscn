@@ -4,7 +4,7 @@
 [ext_resource type="PhysicsMaterial" uid="uid://do1xv88681n5c" path="res://house_yaga_space/content/physics_material/world_env.tres" id="2_x1k6o"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_421g6"]
-radius = 150.0
+radius = 131.034
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c60xt"]
 size = Vector2(10, 10)
@@ -17,6 +17,7 @@ gravity_point = true
 gravity_point_unit_distance = 150.0
 gravity_point_center = Vector2(0, 0)
 gravity_direction = Vector2(0, 0)
+gravity = 420.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_421g6")

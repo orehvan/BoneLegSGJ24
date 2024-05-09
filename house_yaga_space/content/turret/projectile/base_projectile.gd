@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var speed := 100.0
-
+@export var damage := 10.0
 
 func _physics_process(delta: float) -> void:
 	var direction := Vector2.RIGHT.rotated(rotation).normalized()
@@ -9,6 +9,8 @@ func _physics_process(delta: float) -> void:
 	var collision := move_and_collide(motion)
 	if collision :
 		var object := collision.get_collider()
+		if object is EnemyBase :
+			object.apply_damage(damage)
 		queue_free()
 
 

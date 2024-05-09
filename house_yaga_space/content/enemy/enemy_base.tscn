@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://dg2dlbad7cfum"]
+
+[ext_resource type="Script" path="res://house_yaga_space/content/enemy/enemy_base.gd" id="1_a5d8m"]
+[ext_resource type="Texture2D" uid="uid://ctfpw1wrhsc18" path="res://house_yaga_space/resource/assets_red/84812dd1ce43340a.png" id="2_qroim"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nsx4i"]
+radius = 85.2115
+
+[node name="EnemyBase" type="CharacterBody2D"]
+collision_layer = 4
+motion_mode = 1
+platform_on_leave = 2
+script = ExtResource("1_a5d8m")
+speed = 5000.0
+random_speed = 2000.0
+teleport_distance_limit = 6000.0
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(-5, 13)
+scale = Vector2(4, 4)
+texture = ExtResource("2_qroim")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8, -24)
+shape = SubResource("CircleShape2D_nsx4i")

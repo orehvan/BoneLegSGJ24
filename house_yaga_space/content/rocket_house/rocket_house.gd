@@ -1,3 +1,4 @@
+class_name RocketHouse
 extends RigidBody2D
 
 const INPUT_ENGINE_ACTIVE := "engine_active"
@@ -16,7 +17,7 @@ var _line_drawing: Array = []
 @export var max_linear := 800.0
 
 func _ready() -> void:
-	pass
+	Global.player = self 
 
 func _attach_rocket_engine(rocket_engine: RocketPartEngine) -> void :
 	if rocket_engine :
@@ -89,10 +90,10 @@ func _physics_process(_delta: float) -> void:
 	
 	var truster_active := []
 	var truster_disable := []
-	if x_offset_mouse > 0.0 :
+	if x_offset_mouse < 0.0 :
 		truster_active = _left_trusters.get_children()
 		truster_disable = _right_truster.get_children()
-	elif x_offset_mouse < 0.0 :
+	elif x_offset_mouse > 0.0 :
 		truster_active = _right_truster.get_children()
 		truster_disable = _left_trusters.get_children()
 	

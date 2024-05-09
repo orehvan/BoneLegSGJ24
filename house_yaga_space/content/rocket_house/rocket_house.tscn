@@ -1,19 +1,16 @@
-[gd_scene load_steps=13 format=3 uid="uid://c5uuxy5ktjfvy"]
+[gd_scene load_steps=8 format=3 uid="uid://c5uuxy5ktjfvy"]
 
 [ext_resource type="PhysicsMaterial" uid="uid://b47bqk7afek53" path="res://house_yaga_space/content/physics_material/physics_material_rocket.tres" id="1_pdj0q"]
 [ext_resource type="Script" path="res://house_yaga_space/content/rocket_house/rocket_house.gd" id="2_nbev0"]
-[ext_resource type="Texture2D" uid="uid://d4l2lhenb5hnk" path="res://kenney_assets/physics_pack/physics_pack.sprites/physics_assets/Wood elements/elementWood014.tres" id="2_nuwto"]
 [ext_resource type="PackedScene" uid="uid://dohsm2tkfhj3m" path="res://house_yaga_space/content/rocket_engine/trust_rocket.tscn" id="3_fcf42"]
-[ext_resource type="Texture2D" uid="uid://pqjk62n7ghpx" path="res://kenney_assets/physics_pack/physics_pack.sprites/physics_assets/Wood elements/elementWood004.tres" id="3_lifmn"]
-[ext_resource type="Texture2D" uid="uid://dbci2it105hlh" path="res://kenney_assets/physics_pack/physics_pack.sprites/physics_assets/Wood elements/elementWood008.tres" id="4_wj08p"]
-[ext_resource type="Texture2D" uid="uid://dcpwo1p6pmp0x" path="res://kenney_assets/physics_pack/physics_pack.sprites/physics_assets/Wood elements/elementWood007.tres" id="5_5mldf"]
-[ext_resource type="Texture2D" uid="uid://d20xtljn1gqeq" path="res://kenney_assets/physics_pack/physics_pack.sprites/physics_assets/Stone elements/elementStone016.tres" id="6_mhll5"]
-[ext_resource type="Texture2D" uid="uid://bar1h1wn3x5v1" path="res://kenney_assets/physics_pack/physics_pack.sprites/physics_assets/Wood elements/elementWood019.tres" id="7_f8geu"]
-[ext_resource type="Texture2D" uid="uid://7303e3wixi0s" path="res://kenney_assets/physics_pack/physics_pack.sprites/physics_assets/Glass elements/elementGlass013.tres" id="8_vcsmh"]
+[ext_resource type="Texture2D" uid="uid://lbquuo7qxg6l" path="res://house_yaga_space/resource/assets_red/9845e36e6bd61d3c.png" id="4_n2v73"]
 [ext_resource type="PackedScene" uid="uid://bjap7qq5o5np" path="res://house_yaga_space/content/turret/turret.tscn" id="11_w5s0h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rnwjx"]
-size = Vector2(272, 208)
+size = Vector2(384, 240)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_066gm"]
+size = Vector2(80, 72)
 
 [node name="RocketHouse" type="RigidBody2D"]
 position = Vector2(568, 504)
@@ -28,12 +25,12 @@ script = ExtResource("2_nbev0")
 unique_name_in_owner = true
 
 [node name="TrustRocket" parent="Trusters/LeftTruster" instance=ExtResource("3_fcf42")]
-position = Vector2(-128, 96)
+position = Vector2(-184, 152)
 rotation = 1.5708
 scale = Vector2(0.5, 0.5)
 
 [node name="TrustRocket2" parent="Trusters/LeftTruster" instance=ExtResource("3_fcf42")]
-position = Vector2(128, -96)
+position = Vector2(120, -208)
 rotation = 4.71239
 scale = Vector2(0.5, 0.5)
 
@@ -41,59 +38,32 @@ scale = Vector2(0.5, 0.5)
 unique_name_in_owner = true
 
 [node name="TrustRocket3" parent="Trusters/RightTruster" instance=ExtResource("3_fcf42")]
-position = Vector2(-128, -96)
+position = Vector2(-120, -208)
 rotation = 1.5708
 scale = Vector2(0.5, 0.5)
 
 [node name="TrustRocket4" parent="Trusters/RightTruster" instance=ExtResource("3_fcf42")]
-position = Vector2(128, 96)
+position = Vector2(184, 152)
 rotation = 4.71239
 scale = Vector2(0.5, 0.5)
 
 [node name="HouseVisual" type="Node2D" parent="."]
 
-[node name="ElementWood014" type="Sprite2D" parent="HouseVisual"]
-position = Vector2(0, -128)
-texture = ExtResource("2_nuwto")
+[node name="Sprite" type="Sprite2D" parent="HouseVisual"]
+scale = Vector2(8, 8)
+texture = ExtResource("4_n2v73")
 
-[node name="ElementWood004" type="Sprite2D" parent="HouseVisual"]
-position = Vector2(104, -128)
-texture = ExtResource("3_lifmn")
-
-[node name="ElementWood008" type="Sprite2D" parent="HouseVisual"]
-position = Vector2(0, -192)
-texture = ExtResource("4_wj08p")
-
-[node name="ElementWood007" type="Sprite2D" parent="HouseVisual"]
-position = Vector2(-104, -128)
-texture = ExtResource("5_5mldf")
-flip_h = true
-
-[node name="ElementStone016" type="Sprite2D" parent="HouseVisual"]
-position = Vector2(0, -64)
-texture = ExtResource("6_mhll5")
-
-[node name="ElementStone017" type="Sprite2D" parent="HouseVisual"]
-position = Vector2(0, 64)
-texture = ExtResource("6_mhll5")
-
-[node name="ElementWood019" type="Sprite2D" parent="HouseVisual"]
-position = Vector2(-104, 5)
-scale = Vector2(1, 0.9)
-texture = ExtResource("7_f8geu")
-
-[node name="ElementWood020" type="Sprite2D" parent="HouseVisual"]
-position = Vector2(104, 5)
-scale = Vector2(1, 0.9)
-texture = ExtResource("7_f8geu")
-
-[node name="ElementGlass013" type="Sprite2D" parent="HouseVisual"]
-position = Vector2(0, 12)
-scale = Vector2(1.02857, 1.25714)
-texture = ExtResource("8_vcsmh")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(0, -96)
+polygon = PackedVector2Array(0, -96, -192, 24, 192, 24)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 48)
 shape = SubResource("RectangleShape2D_rnwjx")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, 204)
+shape = SubResource("RectangleShape2D_066gm")
 
 [node name="Rockets" type="Node2D" parent="."]
 unique_name_in_owner = true
@@ -105,12 +75,12 @@ collision_mask = 0
 monitoring = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2DHitBox"]
-polygon = PackedVector2Array(0, -224, -136, -96, -136, 104, 136, 104, 136, -104)
+polygon = PackedVector2Array(0, -192, -192, -72, -192, 168, -40, 168, -40, 240, 40, 240, 40, 168, 192, 168, 192, -72)
 
 [node name="Turrets" type="Node2D" parent="."]
 
-[node name="Turret" parent="." instance=ExtResource("11_w5s0h")]
-position = Vector2(80, -88)
+[node name="Turret" parent="Turrets" instance=ExtResource("11_w5s0h")]
+position = Vector2(-168, -64)
 
-[node name="Turret2" parent="." instance=ExtResource("11_w5s0h")]
-position = Vector2(-88, -88)
+[node name="Turret2" parent="Turrets" instance=ExtResource("11_w5s0h")]
+position = Vector2(160, -64)

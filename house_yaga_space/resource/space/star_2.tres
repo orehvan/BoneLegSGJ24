@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://3lv14vmc7mwf"]
+
+[ext_resource type="Texture2D" uid="uid://cr8vldsaqjwri" path="res://house_yaga_space/resource/space/StarAtlas.png" id="1_rfhi0"]
+
+[resource]
+atlas = ExtResource("1_rfhi0")
+region = Rect2(2, 2, 3, 3)

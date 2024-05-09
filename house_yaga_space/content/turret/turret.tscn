@@ -12,6 +12,7 @@ script = ExtResource("1_gm6tt")
 starting_turret = ExtResource("2_br1q4")
 
 [node name="SpaceBuilding018" type="Sprite2D" parent="."]
+scale = Vector2(0.611111, 0.611111)
 texture = ExtResource("1_ijuo1")
 
 [node name="Area2D" type="Area2D" parent="."]

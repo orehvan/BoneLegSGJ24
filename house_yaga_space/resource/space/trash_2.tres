@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://67t1a3v0wyjl"]
+
+[ext_resource type="Texture2D" uid="uid://denu2rpee7oxi" path="res://house_yaga_space/resource/space/TrashAtlas.png" id="1_sc3mj"]
+
+[resource]
+atlas = ExtResource("1_sc3mj")
+region = Rect2(3, 3, 5, 5)

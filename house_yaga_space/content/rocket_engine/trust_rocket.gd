@@ -26,4 +26,4 @@ func get_point_force_global() -> Vector2 :
 	return _marker_end.global_position
 
 func get_force_vector_direction_global() -> Vector2 :
-	return _marker_end.global_position.direction_to(_marker_begin.global_position)
+	return _marker_begin.global_position.direction_to(_marker_end.global_position)
