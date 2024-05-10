@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://cvcv7ranw7c81"
+path="res://.godot/imported/pixel_explotion.tpsheet-2dbadbac41662a6a78b90de843c9a594.res"
+
+[deps]
+
+files=["res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion02.tres", "res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion03.tres", "res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion04.tres", "res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion05.tres", "res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion06.tres", "res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion07.tres", "res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion08.tres", "res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion01.tres", "res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion00.tres"]
+
+source_file="res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.tpsheet"
+dest_files=["res://.godot/imported/pixel_explotion.tpsheet-2dbadbac41662a6a78b90de843c9a594.res", "res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion02.tres", "res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion03.tres", "res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion04.tres", "res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion05.tres", "res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion06.tres", "res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion07.tres", "res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion08.tres", "res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion01.tres", "res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.sprites/pixelExplosion00.tres"]
+
+[params]
+

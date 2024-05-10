@@ -1,0 +1,333 @@
+{
+	"textures": [
+		{
+			"image": "space.png",
+			"size": {
+				"w": 128,
+				"h": 128
+			},
+			"sprites": [
+				{
+					"filename": "space/Planets/apple_planet",
+					"region": {
+						"x": 2,
+						"y": 2,
+						"w": 42,
+						"h": 44
+					},
+					"margin": {
+						"x": 11,
+						"y": 5,
+						"w": 22,
+						"h": 20
+					}
+				},
+				{
+					"filename": "space/Planets/minecraft_planet",
+					"region": {
+						"x": 2,
+						"y": 49,
+						"w": 25,
+						"h": 31
+					},
+					"margin": {
+						"x": 3,
+						"y": 1,
+						"w": 7,
+						"h": 1
+					}
+				},
+				{
+					"filename": "space/Planets/TV_PLANET_ANIM/tv_planet_0",
+					"region": {
+						"x": 2,
+						"y": 83,
+						"w": 29,
+						"h": 29
+					},
+					"margin": {
+						"x": 2,
+						"y": 3,
+						"w": 3,
+						"h": 3
+					}
+				},
+				{
+					"filename": "space/CosmoTrashs/boot",
+					"region": {
+						"x": 2,
+						"y": 115,
+						"w": 9,
+						"h": 11
+					},
+					"margin": {
+						"x": 4,
+						"y": 2,
+						"w": 7,
+						"h": 5
+					}
+				},
+				{
+					"filename": "space/CosmoTrashs/pirojok",
+					"region": {
+						"x": 14,
+						"y": 115,
+						"w": 11,
+						"h": 10
+					},
+					"margin": {
+						"x": 3,
+						"y": 3,
+						"w": 5,
+						"h": 6
+					}
+				},
+				{
+					"filename": "space/Planets/TV_PLANET_ANIM/tv_planet_1",
+					"region": {
+						"x": 30,
+						"y": 49,
+						"w": 29,
+						"h": 29
+					},
+					"margin": {
+						"x": 2,
+						"y": 3,
+						"w": 3,
+						"h": 3
+					}
+				},
+				{
+					"filename": "space/CosmoTrashs/amogus_2",
+					"region": {
+						"x": 28,
+						"y": 115,
+						"w": 23,
+						"h": 9
+					},
+					"margin": {
+						"x": 3,
+						"y": 12,
+						"w": 9,
+						"h": 23
+					}
+				},
+				{
+					"filename": "space/Planets/TV_PLANET_ANIM/tv_planet_2",
+					"region": {
+						"x": 34,
+						"y": 81,
+						"w": 29,
+						"h": 29
+					},
+					"margin": {
+						"x": 2,
+						"y": 3,
+						"w": 3,
+						"h": 3
+					}
+				},
+				{
+					"filename": "space/CosmoTrashs/beer",
+					"region": {
+						"x": 54,
+						"y": 113,
+						"w": 8,
+						"h": 8
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "space/CosmoTrashs/game_boy",
+					"region": {
+						"x": 65,
+						"y": 113,
+						"w": 8,
+						"h": 8
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "space/Planets/TV_PLANET_ANIM/tv_planet_3",
+					"region": {
+						"x": 47,
+						"y": 2,
+						"w": 29,
+						"h": 29
+					},
+					"margin": {
+						"x": 2,
+						"y": 3,
+						"w": 3,
+						"h": 3
+					}
+				},
+				{
+					"filename": "space/CosmoTrashs/pickaxe",
+					"region": {
+						"x": 47,
+						"y": 34,
+						"w": 8,
+						"h": 8
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "space/CosmoTrashs/amogus",
+					"region": {
+						"x": 58,
+						"y": 34,
+						"w": 8,
+						"h": 7
+					},
+					"margin": {
+						"x": 0,
+						"y": 1,
+						"w": 0,
+						"h": 1
+					}
+				},
+				{
+					"filename": "space/Planets/lymbda_planet",
+					"region": {
+						"x": 62,
+						"y": 44,
+						"w": 29,
+						"h": 28
+					},
+					"margin": {
+						"x": 2,
+						"y": 2,
+						"w": 3,
+						"h": 4
+					}
+				},
+				{
+					"filename": "space/CosmoTrashs/banka",
+					"region": {
+						"x": 69,
+						"y": 34,
+						"w": 7,
+						"h": 7
+					},
+					"margin": {
+						"x": 1,
+						"y": 0,
+						"w": 1,
+						"h": 1
+					}
+				},
+				{
+					"filename": "space/Planets/assasins_planet",
+					"region": {
+						"x": 94,
+						"y": 2,
+						"w": 25,
+						"h": 25
+					},
+					"margin": {
+						"x": 4,
+						"y": 4,
+						"w": 7,
+						"h": 7
+					}
+				},
+				{
+					"filename": "space/Planets/cheese_planet",
+					"region": {
+						"x": 94,
+						"y": 30,
+						"w": 25,
+						"h": 25
+					},
+					"margin": {
+						"x": 4,
+						"y": 4,
+						"w": 7,
+						"h": 7
+					}
+				},
+				{
+					"filename": "space/Planets/death_star_planet",
+					"region": {
+						"x": 94,
+						"y": 58,
+						"w": 25,
+						"h": 25
+					},
+					"margin": {
+						"x": 4,
+						"y": 4,
+						"w": 7,
+						"h": 7
+					}
+				},
+				{
+					"filename": "space/CosmoTrashs/carpet",
+					"region": {
+						"x": 66,
+						"y": 75,
+						"w": 24,
+						"h": 22
+					},
+					"margin": {
+						"x": 3,
+						"y": 6,
+						"w": 8,
+						"h": 10
+					}
+				},
+				{
+					"filename": "space/CosmoTrashs/metla",
+					"region": {
+						"x": 76,
+						"y": 100,
+						"w": 16,
+						"h": 16
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "space/CosmoTrashs/burgir",
+					"region": {
+						"x": 95,
+						"y": 86,
+						"w": 16,
+						"h": 14
+					},
+					"margin": {
+						"x": 0,
+						"y": 1,
+						"w": 0,
+						"h": 2
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:b90e947f09b070df163d44656623ef46:e6175bb32f707b30c73c0ed88ad5e677:e82f8fb51adc052097bb3f600f60345b$"
+	}
+}

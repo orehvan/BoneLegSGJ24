@@ -1,0 +1,153 @@
+{
+	"textures": [
+		{
+			"image": "pixel_explotion.png",
+			"size": {
+				"w": 256,
+				"h": 256
+			},
+			"sprites": [
+				{
+					"filename": "pixelExplosion02.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 44,
+						"h": 48
+					},
+					"margin": {
+						"x": 26,
+						"y": 22,
+						"w": 52,
+						"h": 43
+					}
+				},
+				{
+					"filename": "pixelExplosion03.png",
+					"region": {
+						"x": 46,
+						"y": 1,
+						"w": 48,
+						"h": 52
+					},
+					"margin": {
+						"x": 24,
+						"y": 20,
+						"w": 48,
+						"h": 39
+					}
+				},
+				{
+					"filename": "pixelExplosion04.png",
+					"region": {
+						"x": 95,
+						"y": 1,
+						"w": 62,
+						"h": 62
+					},
+					"margin": {
+						"x": 17,
+						"y": 15,
+						"w": 34,
+						"h": 29
+					}
+				},
+				{
+					"filename": "pixelExplosion05.png",
+					"region": {
+						"x": 158,
+						"y": 1,
+						"w": 68,
+						"h": 68
+					},
+					"margin": {
+						"x": 14,
+						"y": 12,
+						"w": 28,
+						"h": 23
+					}
+				},
+				{
+					"filename": "pixelExplosion06.png",
+					"region": {
+						"x": 1,
+						"y": 70,
+						"w": 72,
+						"h": 70
+					},
+					"margin": {
+						"x": 12,
+						"y": 11,
+						"w": 24,
+						"h": 21
+					}
+				},
+				{
+					"filename": "pixelExplosion07.png",
+					"region": {
+						"x": 74,
+						"y": 70,
+						"w": 74,
+						"h": 74
+					},
+					"margin": {
+						"x": 11,
+						"y": 9,
+						"w": 22,
+						"h": 17
+					}
+				},
+				{
+					"filename": "pixelExplosion08.png",
+					"region": {
+						"x": 149,
+						"y": 70,
+						"w": 76,
+						"h": 76
+					},
+					"margin": {
+						"x": 10,
+						"y": 8,
+						"w": 20,
+						"h": 15
+					}
+				},
+				{
+					"filename": "pixelExplosion01.png",
+					"region": {
+						"x": 1,
+						"y": 147,
+						"w": 78,
+						"h": 76
+					},
+					"margin": {
+						"x": 9,
+						"y": 8,
+						"w": 18,
+						"h": 15
+					}
+				},
+				{
+					"filename": "pixelExplosion00.png",
+					"region": {
+						"x": 80,
+						"y": 147,
+						"w": 96,
+						"h": 91
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:f5919b5866323f68872d1df4e63e8f2f:c8d0af1d70287428c4b21f2c0265eb48:66c75e9a2d3746478e7e6757d6850fb4$"
+	}
+}

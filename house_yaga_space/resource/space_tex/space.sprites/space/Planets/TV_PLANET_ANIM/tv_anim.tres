@@ -1,0 +1,17 @@
+[gd_resource type="AnimatedTexture" load_steps=5 format=3 uid="uid://bn1i8pjcu500k"]
+
+[ext_resource type="Texture2D" uid="uid://kb62v4ox4i8m" path="res://house_yaga_space/resource/space_tex/space.sprites/space/Planets/TV_PLANET_ANIM/tv_planet_0.tres" id="1_yois8"]
+[ext_resource type="Texture2D" uid="uid://d2fovkl2ay808" path="res://house_yaga_space/resource/space_tex/space.sprites/space/Planets/TV_PLANET_ANIM/tv_planet_1.tres" id="2_fvcey"]
+[ext_resource type="Texture2D" uid="uid://mv8aq1p6cs55" path="res://house_yaga_space/resource/space_tex/space.sprites/space/Planets/TV_PLANET_ANIM/tv_planet_2.tres" id="3_xo1ej"]
+[ext_resource type="Texture2D" uid="uid://c372843f8gnvj" path="res://house_yaga_space/resource/space_tex/space.sprites/space/Planets/TV_PLANET_ANIM/tv_planet_3.tres" id="4_e2fjc"]
+
+[resource]
+frames = 4
+frame_0/texture = ExtResource("1_yois8")
+frame_0/duration = 0.1
+frame_1/texture = ExtResource("2_fvcey")
+frame_1/duration = 0.1
+frame_2/texture = ExtResource("3_xo1ej")
+frame_2/duration = 0.1
+frame_3/texture = ExtResource("4_e2fjc")
+frame_3/duration = 0.1

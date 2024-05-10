@@ -1,0 +1,138 @@
+{
+	"textures": [
+		{
+			"image": "ui.png",
+			"size": {
+				"w": 512,
+				"h": 512
+			},
+			"sprites": [
+				{
+					"filename": "ui/buble_2",
+					"region": {
+						"x": 3,
+						"y": 3,
+						"w": 251,
+						"h": 99
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ui/group_2",
+					"region": {
+						"x": 258,
+						"y": 3,
+						"w": 234,
+						"h": 95
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ui/rect_2",
+					"region": {
+						"x": 258,
+						"y": 102,
+						"w": 234,
+						"h": 89
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ui/rect_1",
+					"region": {
+						"x": 3,
+						"y": 106,
+						"w": 234,
+						"h": 81
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ui/frame_2",
+					"region": {
+						"x": 3,
+						"y": 191,
+						"w": 100,
+						"h": 100
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ui/buble",
+					"region": {
+						"x": 107,
+						"y": 191,
+						"w": 97,
+						"h": 97
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ui/group_1",
+					"region": {
+						"x": 208,
+						"y": 191,
+						"w": 45,
+						"h": 31
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "ui/frame_1",
+					"region": {
+						"x": 3,
+						"y": 295,
+						"w": 19,
+						"h": 19
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:342bfc37d8448649a06d27a486971049:70398a5cd47e80f56816de0002b912e5:0468195115ed5bbbcf55e2ca0092fcfa$"
+	}
+}

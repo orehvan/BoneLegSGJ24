@@ -1,0 +1,46 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://qe2wkjg65iy6"]
+
+[ext_resource type="Texture2D" uid="uid://ccfuxihqehoog" path="res://house_yaga_space/resource/ui/ui.sprites/ui/buble.tres" id="1_abekh"]
+[ext_resource type="Texture2D" uid="uid://cgnu0k47ijqqg" path="res://house_yaga_space/resource/ui/ui.sprites/ui/buble_2.tres" id="2_jhhm4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jgeu4"]
+texture = ExtResource("1_abekh")
+texture_margin_left = 17.0
+texture_margin_top = 17.0
+texture_margin_right = 17.0
+texture_margin_bottom = 17.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7yj41"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l5o5n"]
+texture = ExtResource("1_abekh")
+texture_margin_left = 17.0
+texture_margin_top = 17.0
+texture_margin_right = 17.0
+texture_margin_bottom = 17.0
+modulate_color = Color(0.555577, 0.682419, 0.606683, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h7tq3"]
+texture = ExtResource("1_abekh")
+texture_margin_left = 17.0
+texture_margin_top = 17.0
+texture_margin_right = 17.0
+texture_margin_bottom = 17.0
+modulate_color = Color(0.725252, 0.647242, 0.0927317, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ire1d"]
+texture = ExtResource("2_jhhm4")
+texture_margin_left = 30.0
+texture_margin_top = 45.0
+texture_margin_right = 50.0
+texture_margin_bottom = 50.0
+
+[resource]
+Button/styles/disabled = SubResource("StyleBoxTexture_jgeu4")
+Button/styles/focus = SubResource("StyleBoxEmpty_7yj41")
+Button/styles/hover = SubResource("StyleBoxTexture_l5o5n")
+Button/styles/normal = SubResource("StyleBoxTexture_jgeu4")
+Button/styles/pressed = SubResource("StyleBoxTexture_h7tq3")
+Label/colors/font_outline_color = Color(0.430222, 0.35166, 0.258829, 1)
+Label/constants/outline_size = 10
+Panel/styles/panel = SubResource("StyleBoxTexture_ire1d")

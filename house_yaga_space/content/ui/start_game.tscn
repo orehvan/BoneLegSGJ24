@@ -1,0 +1,82 @@
+[gd_scene load_steps=7 format=3 uid="uid://bmsp7wsp8cyq2"]
+
+[ext_resource type="Theme" uid="uid://gccahlc8qv5r" path="res://house_yaga_space/resource/ui/theme_game.tres" id="1_1lrm6"]
+[ext_resource type="Texture2D" uid="uid://r77ugev5tea0" path="res://kenney_assets/icons/icons.sprites/icons/tile_0085.tres" id="1_em1cm"]
+[ext_resource type="Texture2D" uid="uid://1iamti4qjdc2" path="res://kenney_assets/icons/icons.sprites/icons/tile_0017.tres" id="2_ub30u"]
+[ext_resource type="Script" path="res://house_yaga_space/content/ui/start_game.gd" id="2_y1ff7"]
+[ext_resource type="Texture2D" uid="uid://b4pyh8rykv212" path="res://kenney_assets/icons/icons.sprites/icons/tile_0111.tres" id="3_b0mr0"]
+[ext_resource type="Texture2D" uid="uid://d0u8g1al76bwa" path="res://kenney_assets/icons/icons.sprites/icons/tile_0082.tres" id="4_e002g"]
+
+[node name="StartGame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("1_1lrm6")
+script = ExtResource("2_y1ff7")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -222.0
+offset_top = 16.0
+offset_right = -24.0
+offset_bottom = 56.0
+grow_horizontal = 0
+columns = 2
+
+[node name="Label2" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "Выйти:"
+horizontal_alignment = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GridContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="TextureRect2" type="TextureRect" parent="GridContainer/HBoxContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = ExtResource("1_em1cm")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TextureRect3" type="TextureRect" parent="GridContainer/HBoxContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = ExtResource("2_ub30u")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "Выбрать/Поставить:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 0
+texture = ExtResource("3_b0mr0")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Label3" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "Вращать:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="TextureRect2" type="TextureRect" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+size_flags_horizontal = 0
+texture = ExtResource("4_e002g")
+expand_mode = 3
+stretch_mode = 5

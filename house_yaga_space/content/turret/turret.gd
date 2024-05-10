@@ -35,20 +35,20 @@ func _check_active() -> void :
 		
 		_header_helper.look_at(_header_helper.global_position + Vector2.UP * 100.0)
 
-func _on_area_2d_body_entered(body: Node2D) -> void:
+func _on_area_2d_body_entered(_body: Node2D) -> void:
 	_count_enemy_detected += 1
 	_check_active()
 
 
-func _on_area_2d_body_exited(body: Node2D) -> void:
+func _on_area_2d_body_exited(_body: Node2D) -> void:
 	_count_enemy_detected -= 1
 	_check_active()
 
-func _physics_process(delta: float) -> void:
+func _physics_process(_delta: float) -> void:
 	if _count_enemy_detected > 0 and _current_turret :
 		var enemyes_list := _area_2d.get_overlapping_bodies()
 		var short_enemy: Node2D = null
-		var last_distance := 100000000
+		var last_distance := 100000000.0
 		for enemy in enemyes_list :
 			if enemy is Node2D :
 				var dist := global_position.distance_to(enemy.global_position)

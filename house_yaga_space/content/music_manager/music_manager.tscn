@@ -7,6 +7,7 @@
 [ext_resource type="AudioStream" uid="uid://cr84230pbe62y" path="res://house_yaga_space/resource/musics/Game_3.wav" id="4_3cvjy"]
 
 [node name="MusicManager" type="Node"]
+process_mode = 3
 script = ExtResource("1_k01xl")
 
 [node name="AudioStreamPlayerOur" type="AudioStreamPlayer" parent="."]
@@ -27,3 +28,4 @@ bus = &"Music"
 
 [connection signal="finished" from="AudioStreamPlayerMusic1" to="." method="_on_audio_stream_player_music_1_finished"]
 [connection signal="finished" from="AudioStreamPlayerMusic2" to="." method="_on_audio_stream_player_music_2_finished"]
+[connection signal="finished" from="AudioStreamPlayerMusicBattle" to="." method="_on_audio_stream_player_music_battle_finished"]

@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://kqqyj7bt6ts"]
+
+[ext_resource type="Texture2D" uid="uid://chw325y62j20r" path="res://house_yaga_space/resource/vfx/pixel_explotion/pixel_explotion.png" id="1_wpoer"]
+
+[resource]
+atlas = ExtResource("1_wpoer")
+region = Rect2(80, 147, 96, 91)

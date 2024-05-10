@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://y1ekx0nxry1l"]
+
+[ext_resource type="PackedScene" uid="uid://dg2dlbad7cfum" path="res://house_yaga_space/content/enemy/enemy_base.tscn" id="1_enwfh"]
+[ext_resource type="Texture2D" uid="uid://yif2kfj2mupa" path="res://house_yaga_space/resource/assets_red/cat_medus/pink.png" id="2_3ma3g"]
+
+[node name="EnemyBase" instance=ExtResource("1_enwfh")]
+damage = 1.0
+
+[node name="Sprite" parent="Renderer" index="0"]
+texture = ExtResource("2_3ma3g")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(-6, -25)
+
+[node name="AudioDead" parent="." index="3"]
+position = Vector2(-1, 0)

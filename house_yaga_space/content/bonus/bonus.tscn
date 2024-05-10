@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://bxnv7mssk1nts"]
+
+[ext_resource type="Script" path="res://house_yaga_space/content/bonus/bonus.gd" id="1_l3ujs"]
+[ext_resource type="PackedScene" uid="uid://brxwbdhyu5bu4" path="res://house_yaga_space/content/effects/ultimate.tscn" id="2_cx3e4"]
+[ext_resource type="Texture2D" uid="uid://nmi2j73dsufb" path="res://house_yaga_space/resource/space_tex/space.sprites/space/CosmoTrashs/pirojok.tres" id="2_ok7r1"]
+[ext_resource type="Shader" path="res://house_yaga_space/shaders/shader_outline.gdshader" id="2_voyf5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5pi6j"]
+shader = ExtResource("2_voyf5")
+shader_parameter/rainbow = true
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/line_scale = 1.2
+shader_parameter/frequency = 0.5
+shader_parameter/light_offset = 0.5
+shader_parameter/alpha = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gl0a4"]
+radius = 53.4603
+
+[node name="Bonus" type="Area2D"]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+script = ExtResource("1_l3ujs")
+packed_bonus = ExtResource("2_cx3e4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_5pi6j")
+scale = Vector2(8, 8)
+texture = ExtResource("2_ok7r1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_gl0a4")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

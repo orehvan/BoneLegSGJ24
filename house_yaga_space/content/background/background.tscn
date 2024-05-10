@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://cmt6omwmjwndu"]
+[gd_scene load_steps=47 format=3 uid="uid://cmt6omwmjwndu"]
 
 [ext_resource type="Texture2D" uid="uid://b4mmelc2tb87i" path="res://kenney_assets/physics_pack/backgrounds/colored_land.png" id="1_48tpa"]
 [ext_resource type="Script" path="res://house_yaga_space/content/background/background.gd" id="1_ugxoo"]
@@ -27,6 +27,22 @@
 [ext_resource type="Texture2D" uid="uid://cjy2u8yvsangd" path="res://house_yaga_space/resource/space/star_16.tres" id="12_3ejc0"]
 [ext_resource type="Texture2D" uid="uid://4ow3m7467uiw" path="res://house_yaga_space/resource/space/star_17.tres" id="13_7wqu0"]
 [ext_resource type="Texture2D" uid="uid://bvt1b126bf68o" path="res://house_yaga_space/resource/space/star_18.tres" id="14_rirhp"]
+[ext_resource type="Texture2D" uid="uid://baf66m7bce38l" path="res://house_yaga_space/resource/space_tex/space.sprites/space/CosmoTrashs/game_boy.tres" id="15_sh6km"]
+[ext_resource type="Texture2D" uid="uid://dl80am15g6i12" path="res://house_yaga_space/resource/space_tex/space.sprites/space/CosmoTrashs/carpet.tres" id="16_2lhfy"]
+[ext_resource type="Texture2D" uid="uid://c478dqnglfskg" path="res://house_yaga_space/resource/space_tex/space.sprites/space/CosmoTrashs/burgir.tres" id="17_o4318"]
+[ext_resource type="Texture2D" uid="uid://b34wwxyrlhg8k" path="res://house_yaga_space/resource/space_tex/space.sprites/space/CosmoTrashs/beer.tres" id="18_aq2sc"]
+[ext_resource type="Texture2D" uid="uid://bg08y367nsrq3" path="res://house_yaga_space/resource/space_tex/space.sprites/space/CosmoTrashs/banka.tres" id="19_r3y2i"]
+[ext_resource type="Texture2D" uid="uid://b11kle0kig65y" path="res://house_yaga_space/resource/space_tex/space.sprites/space/CosmoTrashs/amogus_2.tres" id="20_hg3di"]
+[ext_resource type="Texture2D" uid="uid://bjnfxp5ngh6fj" path="res://house_yaga_space/resource/space_tex/space.sprites/space/CosmoTrashs/amogus.tres" id="21_m3n01"]
+[ext_resource type="Texture2D" uid="uid://clh3j61uejcor" path="res://house_yaga_space/resource/space_tex/space.sprites/space/CosmoTrashs/metla.tres" id="30_jfb2e"]
+[ext_resource type="Texture2D" uid="uid://chvssvk6hhwcm" path="res://house_yaga_space/resource/space_tex/space.sprites/space/Planets/apple_planet.tres" id="31_0ae61"]
+[ext_resource type="Texture2D" uid="uid://bm13luoc0x4cb" path="res://house_yaga_space/resource/space_tex/space.sprites/space/Planets/lymbda_planet.tres" id="32_a23yn"]
+[ext_resource type="Texture2D" uid="uid://bj5tolj2e13np" path="res://house_yaga_space/resource/space_tex/space.sprites/space/Planets/assasins_planet.tres" id="37_gsnbn"]
+[ext_resource type="Texture2D" uid="uid://bdkyu47lgk4uc" path="res://house_yaga_space/resource/space_tex/space.sprites/space/Planets/death_star_planet.tres" id="38_7vbgf"]
+[ext_resource type="Texture2D" uid="uid://kb62v4ox4i8m" path="res://house_yaga_space/resource/space_tex/space.sprites/space/Planets/TV_PLANET_ANIM/tv_planet_0.tres" id="39_o6lrk"]
+[ext_resource type="Texture2D" uid="uid://d2fovkl2ay808" path="res://house_yaga_space/resource/space_tex/space.sprites/space/Planets/TV_PLANET_ANIM/tv_planet_1.tres" id="40_unyms"]
+[ext_resource type="Texture2D" uid="uid://mv8aq1p6cs55" path="res://house_yaga_space/resource/space_tex/space.sprites/space/Planets/TV_PLANET_ANIM/tv_planet_2.tres" id="41_24jxh"]
+[ext_resource type="Texture2D" uid="uid://c372843f8gnvj" path="res://house_yaga_space/resource/space_tex/space.sprites/space/Planets/TV_PLANET_ANIM/tv_planet_3.tres" id="42_3ydl3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vxo3f"]
 animations = [{
@@ -74,6 +90,26 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_4hqxx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_o6lrk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_unyms")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_24jxh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_3ydl3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 24.0
+}]
+
 [node name="Background" type="ParallaxBackground"]
 scroll_ignore_camera_zoom = true
 script = ExtResource("1_ugxoo")
@@ -103,6 +139,34 @@ motion_scale = Vector2(0.1, 0.1)
 motion_mirroring = Vector2(2048, 2048)
 script = ExtResource("3_6y3fw")
 resource = Array[Resource]([ExtResource("3_2ewt3"), ExtResource("5_sdisb"), ExtResource("5_m6tsw"), ExtResource("7_7ngka"), ExtResource("8_b4bqq"), ExtResource("9_whf5g"), ExtResource("10_shrab"), ExtResource("4_dre7e"), ExtResource("12_3ejc0"), ExtResource("13_7wqu0"), ExtResource("14_rirhp"), ExtResource("3_2ewt3"), ExtResource("3_2ewt3")])
+
+[node name="GameBoy" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(680, 376)
+texture = ExtResource("15_sh6km")
+
+[node name="Carpet" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(1240, 136)
+texture = ExtResource("16_2lhfy")
+
+[node name="Burgir" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(208, 736)
+texture = ExtResource("17_o4318")
+
+[node name="Beer" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(128, 424)
+texture = ExtResource("18_aq2sc")
+
+[node name="Banka" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(1024, 1024)
+texture = ExtResource("19_r3y2i")
+
+[node name="Amogus2" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(1320, 704)
+texture = ExtResource("20_hg3di")
+
+[node name="Amogus" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(64, 1032)
+texture = ExtResource("21_m3n01")
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer4"]
 position = Vector2(301.024, 1321.01)
@@ -149,18 +213,14 @@ position = Vector2(623.554, 486.854)
 scale = Vector2(4, 4)
 texture = ExtResource("7_7ngka")
 
-[node name="Star3" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
+[node name="Star3" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
 position = Vector2(354.662, 485.807)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_vxo3f")
-autoplay = "default"
 frame_progress = 0.689764
 
-[node name="Star4" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
+[node name="Star4" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
 position = Vector2(1079.99, 692.194)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_vxo3f")
-autoplay = "default"
 frame_progress = 0.689764
 
 [node name="Sprite2D10" type="Sprite2D" parent="ParallaxLayer4"]
@@ -188,11 +248,9 @@ position = Vector2(377.642, 720.702)
 scale = Vector2(4, 4)
 texture = ExtResource("14_rirhp")
 
-[node name="Star5" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
+[node name="Star5" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
 position = Vector2(3.41225, 1460.06)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_vxo3f")
-autoplay = "default"
 frame_progress = 0.689764
 
 [node name="Sprite2D15" type="Sprite2D" parent="ParallaxLayer4"]
@@ -210,11 +268,9 @@ position = Vector2(1535.52, 579.02)
 scale = Vector2(4, 4)
 texture = ExtResource("14_rirhp")
 
-[node name="Star6" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
+[node name="Star6" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
 position = Vector2(1774.25, 582.112)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_vxo3f")
-autoplay = "default"
 frame_progress = 0.689764
 
 [node name="Sprite2D18" type="Sprite2D" parent="ParallaxLayer4"]
@@ -252,18 +308,14 @@ position = Vector2(488.463, 1289.14)
 scale = Vector2(4, 4)
 texture = ExtResource("12_3ejc0")
 
-[node name="Star7" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
+[node name="Star7" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
 position = Vector2(770.287, 382.264)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_vxo3f")
-autoplay = "default"
 frame_progress = 0.689764
 
-[node name="Star8" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
+[node name="Star8" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
 position = Vector2(1045.29, 1861.35)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_vxo3f")
-autoplay = "default"
 frame_progress = 0.689764
 
 [node name="Sprite2D25" type="Sprite2D" parent="ParallaxLayer4"]
@@ -271,23 +323,19 @@ position = Vector2(794.238, 1698.65)
 scale = Vector2(4, 4)
 texture = ExtResource("12_3ejc0")
 
-[node name="Star9" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("5_sdisb")]
+[node name="Star9" parent="ParallaxLayer4" instance=ExtResource("5_sdisb")]
 position = Vector2(1717.25, 113.735)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_27ewn")
-autoplay = "default"
-frame_progress = 0.770305
+frame_progress = 0.0
 
 [node name="Sprite2D26" type="Sprite2D" parent="ParallaxLayer4"]
 position = Vector2(2032.67, 715.926)
 scale = Vector2(4, 4)
 texture = ExtResource("13_7wqu0")
 
-[node name="Star10" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
+[node name="Star10" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
 position = Vector2(1690.69, 1056.12)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_vxo3f")
-autoplay = "default"
 frame_progress = 0.689764
 
 [node name="Sprite2D27" type="Sprite2D" parent="ParallaxLayer4"]
@@ -345,12 +393,10 @@ position = Vector2(496.779, 1484.02)
 scale = Vector2(4, 4)
 texture = ExtResource("5_m6tsw")
 
-[node name="Star11" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("5_sdisb")]
+[node name="Star11" parent="ParallaxLayer4" instance=ExtResource("5_sdisb")]
 position = Vector2(1690.01, 1109.77)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_27ewn")
-autoplay = "default"
-frame_progress = 0.770305
+frame_progress = 0.0
 
 [node name="Sprite2D38" type="Sprite2D" parent="ParallaxLayer4"]
 position = Vector2(1708.69, 2028.14)
@@ -422,11 +468,9 @@ position = Vector2(1903.59, 1081.32)
 scale = Vector2(4, 4)
 texture = ExtResource("12_3ejc0")
 
-[node name="Star12" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
+[node name="Star12" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
 position = Vector2(1201.56, 1874.64)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_vxo3f")
-autoplay = "default"
 frame_progress = 0.689764
 
 [node name="Sprite2D52" type="Sprite2D" parent="ParallaxLayer4"]
@@ -444,12 +488,10 @@ position = Vector2(1865.34, 70.9385)
 scale = Vector2(4, 4)
 texture = ExtResource("7_7ngka")
 
-[node name="Star13" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("5_sdisb")]
+[node name="Star13" parent="ParallaxLayer4" instance=ExtResource("5_sdisb")]
 position = Vector2(464.386, 161.724)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_27ewn")
-autoplay = "default"
-frame_progress = 0.770305
+frame_progress = 0.0
 
 [node name="Sprite2D55" type="Sprite2D" parent="ParallaxLayer4"]
 position = Vector2(1750.98, 10.0284)
@@ -486,11 +528,9 @@ position = Vector2(506.36, 1384.64)
 scale = Vector2(4, 4)
 texture = ExtResource("10_shrab")
 
-[node name="Star14" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
+[node name="Star14" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
 position = Vector2(76.0002, 201.877)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_vxo3f")
-autoplay = "default"
 frame_progress = 0.689764
 
 [node name="Sprite2D62" type="Sprite2D" parent="ParallaxLayer4"]
@@ -498,11 +538,9 @@ position = Vector2(616.135, 1048.55)
 scale = Vector2(4, 4)
 texture = ExtResource("9_whf5g")
 
-[node name="Star15" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
+[node name="Star15" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
 position = Vector2(800.36, 76.1568)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_vxo3f")
-autoplay = "default"
 frame_progress = 0.689764
 
 [node name="Sprite2D63" type="Sprite2D" parent="ParallaxLayer4"]
@@ -510,11 +548,9 @@ position = Vector2(1523.9, 1562.08)
 scale = Vector2(4, 4)
 texture = ExtResource("12_3ejc0")
 
-[node name="Star16" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
+[node name="Star16" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
 position = Vector2(1182.83, 1911.6)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_vxo3f")
-autoplay = "default"
 frame_progress = 0.689764
 
 [node name="Sprite2D64" type="Sprite2D" parent="ParallaxLayer4"]
@@ -527,12 +563,10 @@ position = Vector2(1029.45, 1289.22)
 scale = Vector2(4, 4)
 texture = ExtResource("10_shrab")
 
-[node name="Star17" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("5_sdisb")]
+[node name="Star17" parent="ParallaxLayer4" instance=ExtResource("5_sdisb")]
 position = Vector2(90.8065, 1479.84)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_27ewn")
-autoplay = "default"
-frame_progress = 0.770305
+frame_progress = 0.0
 
 [node name="Sprite2D66" type="Sprite2D" parent="ParallaxLayer4"]
 position = Vector2(1527.99, 944.017)
@@ -559,18 +593,14 @@ position = Vector2(599.555, 985.36)
 scale = Vector2(4, 4)
 texture = ExtResource("4_dre7e")
 
-[node name="Star18" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
+[node name="Star18" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
 position = Vector2(1123.93, 752.98)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_vxo3f")
-autoplay = "default"
 frame_progress = 0.689764
 
-[node name="Star19" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
+[node name="Star19" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
 position = Vector2(1541.4, 268.447)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_vxo3f")
-autoplay = "default"
 frame_progress = 0.689764
 
 [node name="Sprite2D71" type="Sprite2D" parent="ParallaxLayer4"]
@@ -603,11 +633,9 @@ position = Vector2(975.027, 439.657)
 scale = Vector2(4, 4)
 texture = ExtResource("9_whf5g")
 
-[node name="Star20" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
+[node name="Star20" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
 position = Vector2(350.064, 66.0303)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_vxo3f")
-autoplay = "default"
 frame_progress = 0.689764
 
 [node name="Sprite2D77" type="Sprite2D" parent="ParallaxLayer4"]
@@ -620,11 +648,9 @@ position = Vector2(1074.55, 297.593)
 scale = Vector2(4, 4)
 texture = ExtResource("10_shrab")
 
-[node name="Star21" type="AnimatedSprite2D" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
+[node name="Star21" parent="ParallaxLayer4" instance=ExtResource("3_2ewt3")]
 position = Vector2(1411.31, 1864.82)
-scale = Vector2(4, 4)
 sprite_frames = SubResource("SpriteFrames_vxo3f")
-autoplay = "default"
 frame_progress = 0.689764
 
 [node name="Sprite2D79" type="Sprite2D" parent="ParallaxLayer4"]
@@ -642,61 +668,83 @@ position = Vector2(120.502, 1155.34)
 scale = Vector2(4, 4)
 texture = ExtResource("8_b4bqq")
 
+[node name="Metla" type="Sprite2D" parent="ParallaxLayer4"]
+position = Vector2(1016, 736)
+texture = ExtResource("30_jfb2e")
+
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="."]
+modulate = Color(0.466181, 0.466181, 0.466181, 1)
 motion_scale = Vector2(0.15, 0.15)
 motion_mirroring = Vector2(2048, 2048)
 
+[node name="ApplePlanet" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(856, 472)
+scale = Vector2(2, 2)
+texture = ExtResource("31_0ae61")
+
+[node name="LymbdaPlanet" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(1560, 112)
+texture = ExtResource("32_a23yn")
+
 [node name="Planet0" type="Sprite2D" parent="ParallaxLayer3"]
-modulate = Color(0.244776, 0.244776, 0.244776, 1)
 position = Vector2(408, 344)
 scale = Vector2(4, 4)
 texture = ExtResource("3_hlm5o")
 
 [node name="Planet4" type="Sprite2D" parent="ParallaxLayer3"]
-modulate = Color(0.244776, 0.244776, 0.244776, 1)
 position = Vector2(1768, 960)
 scale = Vector2(4, 4)
 texture = ExtResource("3_hlm5o")
 
 [node name="Planet2" type="Sprite2D" parent="ParallaxLayer3"]
-modulate = Color(0.244776, 0.244776, 0.244776, 1)
 position = Vector2(1160, 976)
 scale = Vector2(4, 4)
 texture = ExtResource("4_d41ns")
 
 [node name="Planet3" type="Sprite2D" parent="ParallaxLayer3"]
-modulate = Color(0.244776, 0.244776, 0.244776, 1)
 position = Vector2(360, 1368)
 scale = Vector2(4, 4)
 texture = ExtResource("5_aiow0")
 
 [node name="Planet7" type="Sprite2D" parent="ParallaxLayer3"]
-modulate = Color(0.244776, 0.244776, 0.244776, 1)
 position = Vector2(1536, 408)
 scale = Vector2(4, 4)
 texture = ExtResource("5_aiow0")
 
 [node name="Planet1" type="Sprite2D" parent="ParallaxLayer3"]
-modulate = Color(0.244776, 0.244776, 0.244776, 1)
 position = Vector2(1856, 1704)
 scale = Vector2(4, 4)
 texture = ExtResource("6_y8kja")
 
 [node name="Planet5" type="Sprite2D" parent="ParallaxLayer3"]
-modulate = Color(0.244776, 0.244776, 0.244776, 1)
 position = Vector2(184, 832)
 scale = Vector2(4, 4)
 texture = ExtResource("6_y8kja")
 
 [node name="Planet6" type="Sprite2D" parent="ParallaxLayer3"]
-modulate = Color(0.244776, 0.244776, 0.244776, 1)
 position = Vector2(184, 1792)
 scale = Vector2(4, 4)
 texture = ExtResource("6_y8kja")
 
+[node name="AssasinsPlanet" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(1168, 1800)
+scale = Vector2(2, 2)
+texture = ExtResource("37_gsnbn")
+
+[node name="DeathStarPlanet" type="Sprite2D" parent="ParallaxLayer3"]
+position = Vector2(128, 72)
+scale = Vector2(4, 4)
+texture = ExtResource("38_7vbgf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="ParallaxLayer3"]
+position = Vector2(1608, 1264)
+scale = Vector2(4, 4)
+sprite_frames = SubResource("SpriteFrames_4hqxx")
+autoplay = "default"
+frame_progress = 0.511957
+
 [node name="ParallaxLayerEarth" type="ParallaxLayer" parent="."]
 unique_name_in_owner = true
-visible = false
 motion_mirroring = Vector2(2048, 0)
 
 [node name="ColoredLand" type="Sprite2D" parent="ParallaxLayerEarth"]

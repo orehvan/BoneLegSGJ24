@@ -1,0 +1,73 @@
+[gd_scene load_steps=9 format=3 uid="uid://ijcmsrt112vs"]
+
+[ext_resource type="PackedScene" uid="uid://gtse5rs7uyup" path="res://house_yaga_space/content/rocket_engine/rocket_engine_base.tscn" id="1_hy3mw"]
+[ext_resource type="Texture2D" uid="uid://kun5rgnbalxa" path="res://house_yaga_space/resource/engine/engine.sprites/engine_3.tres" id="2_l6r6c"]
+
+[sub_resource type="Gradient" id="Gradient_oxit0"]
+offsets = PackedFloat32Array(0, 0.123967, 0.471074, 0.768595, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.273287, 0.827034, 0.956144, 1, 0.838774, 0.630268, 0, 1, 0.722906, 0.254109, 0, 1, 0, 0, 0, 0.0196078)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_w5t2c"]
+gradient = SubResource("Gradient_oxit0")
+
+[sub_resource type="Curve" id="Curve_i7io0"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.626598, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_3jf5i"]
+curve = SubResource("Curve_i7io0")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_kevoa"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(16, 1, 1)
+direction = Vector3(0, 1, 0)
+spread = 24.07
+initial_velocity_max = 75.85
+gravity = Vector3(0, 0, 0)
+damping_max = 0.54
+scale_min = 5.0
+scale_max = 10.0
+scale_curve = SubResource("CurveTexture_3jf5i")
+color_ramp = SubResource("GradientTexture1D_w5t2c")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h4pc0"]
+size = Vector2(80, 120)
+
+[node name="RocketEngine1" instance=ExtResource("1_hy3mw")]
+force = 480.0
+
+[node name="Marker2DEndPoint" parent="." index="0"]
+position = Vector2(0, 62)
+
+[node name="Marker2DStartPoint" parent="." index="1"]
+position = Vector2(0, -58)
+
+[node name="Sprite2D" parent="Renderer" index="0"]
+scale = Vector2(8, 8)
+texture = ExtResource("2_l6r6c")
+
+[node name="CPUParticles2D" parent="Renderer/Effects" index="0"]
+position = Vector2(-40, -56)
+rotation = 1.5708
+amount = 16
+process_material = SubResource("ParticleProcessMaterial_kevoa")
+
+[node name="CPUParticles2D2" type="GPUParticles2D" parent="Renderer/Effects" index="1"]
+position = Vector2(40, -56)
+rotation = -1.5708
+emitting = false
+amount = 16
+process_material = SubResource("ParticleProcessMaterial_kevoa")
+lifetime = 0.3
+
+[node name="CPUParticles2D3" type="GPUParticles2D" parent="Renderer/Effects" index="2"]
+position = Vector2(0, 21)
+emitting = false
+amount = 32
+process_material = SubResource("ParticleProcessMaterial_kevoa")
+lifetime = 0.3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DAttach" index="0"]
+position = Vector2(0, 50)
+shape = SubResource("RectangleShape2D_h4pc0")

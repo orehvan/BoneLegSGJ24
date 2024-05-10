@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://cowxnueixpdw1"
+path="res://.godot/imported/engine.tpsheet-442882d8fcdde03916256433d8989380.res"
+
+[deps]
+
+files=["res://house_yaga_space/resource/engine/engine.sprites/engine_4.tres", "res://house_yaga_space/resource/engine/engine.sprites/engine_3.tres", "res://house_yaga_space/resource/engine/engine.sprites/engine_0.tres", "res://house_yaga_space/resource/engine/engine.sprites/engine_1.tres", "res://house_yaga_space/resource/engine/engine.sprites/engine_2.tres"]
+
+source_file="res://house_yaga_space/resource/engine/engine.tpsheet"
+dest_files=["res://.godot/imported/engine.tpsheet-442882d8fcdde03916256433d8989380.res", "res://house_yaga_space/resource/engine/engine.sprites/engine_4.tres", "res://house_yaga_space/resource/engine/engine.sprites/engine_3.tres", "res://house_yaga_space/resource/engine/engine.sprites/engine_0.tres", "res://house_yaga_space/resource/engine/engine.sprites/engine_1.tres", "res://house_yaga_space/resource/engine/engine.sprites/engine_2.tres"]
+
+[params]
+

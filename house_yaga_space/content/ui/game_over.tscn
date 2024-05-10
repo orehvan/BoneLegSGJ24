@@ -1,0 +1,63 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6vlnupdv3ax8"]
+
+[ext_resource type="Script" path="res://house_yaga_space/content/ui/game_over.gd" id="1_8amv0"]
+[ext_resource type="Theme" uid="uid://qe2wkjg65iy6" path="res://house_yaga_space/resource/ui/theme_pause.tres" id="2_dqi2i"]
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8amv0")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -192.0
+offset_top = -130.0
+offset_right = 192.0
+offset_bottom = 130.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_dqi2i")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 30.0
+offset_top = 17.0
+offset_right = -68.0
+offset_bottom = -31.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_colors/font_outline_color = Color(0.494319, 0.407164, 0.304344, 1)
+theme_override_constants/outline_size = 15
+text = "ТВОЯ ХАЛУПА ПОТЕРПЕЛА КРУШЕНИЕ!"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ButtonRestart" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "НАЧАТЬ ЗАНОВО"
+
+[node name="ButtonExit" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "ВЫЙТИ"
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="pressed" from="Panel/VBoxContainer/ButtonRestart" to="." method="_on_button_restart_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/ButtonExit" to="." method="_on_button_exit_pressed"]

@@ -1,17 +1,94 @@
-[gd_scene load_steps=12 format=3 uid="uid://ph38f6ww2cti"]
+[gd_scene load_steps=30 format=3 uid="uid://ph38f6ww2cti"]
 
 [ext_resource type="Script" path="res://house_yaga_space/content/proto_scene/proto_scene.gd" id="1_5x5oq"]
 [ext_resource type="PackedScene" uid="uid://bjrgx2h2ny5ar" path="res://house_yaga_space/content/start_island/stat_island.tscn" id="1_txtrm"]
 [ext_resource type="PackedScene" uid="uid://c5uuxy5ktjfvy" path="res://house_yaga_space/content/rocket_house/rocket_house.tscn" id="2_17sup"]
 [ext_resource type="PackedScene" uid="uid://cmt6omwmjwndu" path="res://house_yaga_space/content/background/background.tscn" id="2_75t2g"]
-[ext_resource type="PackedScene" uid="uid://gtse5rs7uyup" path="res://house_yaga_space/content/rocket_engine/rocket_engine_1.tscn" id="3_lecw4"]
+[ext_resource type="Texture2D" uid="uid://bqyq03oc422sc" path="res://house_yaga_space/resource/ui/ui.sprites/ui/group_1.tres" id="4_goo0i"]
+[ext_resource type="Texture2D" uid="uid://cv4fslgf27arg" path="res://kenney_assets/icons/icons.sprites/icons/tile_0077.tres" id="5_7hjnc"]
+[ext_resource type="Script" path="res://house_yaga_space/content/proto_scene/rocket_spawner.gd" id="5_nykbc"]
 [ext_resource type="Script" path="res://house_yaga_space/content/proto_scene/node_prop_generator.gd" id="6_ag0vm"]
-[ext_resource type="PackedScene" uid="uid://dqfkdeyl67s58" path="res://house_yaga_space/content/planets/planet_1.tscn" id="7_d456r"]
-[ext_resource type="PackedScene" uid="uid://diioou5han4lv" path="res://house_yaga_space/content/planets/planet_2.tscn" id="8_oe43m"]
-[ext_resource type="PackedScene" uid="uid://o324l2vug5wy" path="res://house_yaga_space/content/planets/planet_3.tscn" id="9_so4hx"]
-[ext_resource type="PackedScene" uid="uid://c3sesn5glq88o" path="res://house_yaga_space/content/planets/planet_4.tscn" id="10_v68nh"]
+[ext_resource type="Texture2D" uid="uid://clvgxr6lnjaq2" path="res://kenney_assets/icons/icons.sprites/icons/tile_0076.tres" id="6_cjgdt"]
+[ext_resource type="PackedScene" uid="uid://xkf74ge1p6ij" path="res://house_yaga_space/content/planets/planet.tscn" id="7_ij2ta"]
+[ext_resource type="Texture2D" uid="uid://cvl3gpw7ti3f0" path="res://kenney_assets/icons/icons.sprites/icons/tile_0609.tres" id="7_ky8k8"]
+[ext_resource type="Texture2D" uid="uid://b225d1ys7el2y" path="res://kenney_assets/icons/icons.sprites/icons/tile_0610.tres" id="8_s6tn4"]
+[ext_resource type="Texture2D" uid="uid://d32la6lgohcd" path="res://kenney_assets/icons/icons.sprites/icons/tile_0481.tres" id="11_jej3o"]
+[ext_resource type="Texture2D" uid="uid://b54tdib3m7sh1" path="res://kenney_assets/icons/icons.sprites/icons/tile_0482.tres" id="12_sb5yu"]
+[ext_resource type="Texture2D" uid="uid://jbs10raidvi2" path="res://kenney_assets/icons/icons.sprites/icons/tile_0515.tres" id="13_rvqf8"]
+[ext_resource type="PackedScene" uid="uid://bxnv7mssk1nts" path="res://house_yaga_space/content/bonus/bonus.tscn" id="16_3qgel"]
+[ext_resource type="Theme" uid="uid://qe2wkjg65iy6" path="res://house_yaga_space/resource/ui/theme_pause.tres" id="17_d71up"]
+[ext_resource type="Texture2D" uid="uid://ccfuxihqehoog" path="res://house_yaga_space/resource/ui/ui.sprites/ui/buble.tres" id="18_rs57r"]
+[ext_resource type="Texture2D" uid="uid://dykwi1k0ltgni" path="res://house_yaga_space/resource/avatar/avatar_1.png" id="19_w5gv5"]
+[ext_resource type="Texture2D" uid="uid://bky5i10eour6j" path="res://house_yaga_space/resource/avatar/avatar_4.png" id="20_ajr5r"]
+[ext_resource type="PackedScene" uid="uid://drhuyocwfwwef" path="res://house_yaga_space/content/bonus/bonus_burger.tscn" id="21_uioem"]
+[ext_resource type="PackedScene" uid="uid://y06vsfctvxvt" path="res://house_yaga_space/content/bonus/bonus_metla.tscn" id="22_uakg3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_owiwf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_7hjnc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_cjgdt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_wmqfx"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0jku6"]
+texture = ExtResource("18_rs57r")
+texture_margin_left = 20.0
+texture_margin_top = 20.0
+texture_margin_right = 20.0
+texture_margin_bottom = 20.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_n0mlb"]
+frames = 2
+frame_0/texture = ExtResource("19_w5gv5")
+frame_0/duration = 0.1
+frame_1/texture = ExtResource("20_ajr5r")
+frame_1/duration = 0.1
+
+[sub_resource type="Animation" id="Animation_sfiwi"]
+resource_name = "play"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.8),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_oyyrc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel/RichTextLabel:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wvm06"]
+_data = {
+"RESET": SubResource("Animation_oyyrc"),
+"play": SubResource("Animation_sfiwi")
+}
 
 [node name="ProtoScene" type="Node2D"]
 script = ExtResource("1_5x5oq")
@@ -20,11 +97,9 @@ metadata/_edit_vertical_guides_ = [568.0]
 [node name="Background" parent="." instance=ExtResource("2_75t2g")]
 min_distance = 1000.0
 
-[node name="StatIsland" parent="." instance=ExtResource("1_txtrm")]
-
 [node name="RocketHouse" parent="." instance=ExtResource("2_17sup")]
 unique_name_in_owner = true
-position = Vector2(568, 344)
+position = Vector2(568, 371)
 linear_damp = 0.5
 rotation_force = 400.0
 distance_rot = 300.0
@@ -35,6 +110,102 @@ process_callback = 0
 limit_bottom = 650
 limit_smoothed = true
 position_smoothing_enabled = true
+
+[node name="Block" type="Sprite2D" parent="."]
+position = Vector2(181, 535)
+rotation = 1.57079
+scale = Vector2(4, 4)
+texture = ExtResource("4_goo0i")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 133.0
+offset_top = 455.0
+offset_right = 230.0
+offset_bottom = 478.0
+text = "ДВИГАТЕЛИ"
+
+[node name="Gude" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="Label2" type="Label" parent="Gude"]
+offset_left = 205.0
+offset_top = 343.0
+offset_right = 302.0
+offset_bottom = 387.0
+theme_override_colors/font_color = Color(0.328474, 0.159388, 0.0778842, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 31
+text = "БЕРИ!"
+
+[node name="Label4" type="Label" parent="Gude"]
+offset_left = 909.0
+offset_top = 423.0
+offset_right = 1006.0
+offset_bottom = 467.0
+theme_override_colors/font_color = Color(0.328474, 0.159388, 0.0778842, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 31
+text = "ЗАПУСКАЙ"
+
+[node name="Label3" type="Label" parent="Gude"]
+offset_left = 837.0
+offset_top = 319.0
+offset_right = 936.0
+offset_bottom = 363.0
+theme_override_colors/font_color = Color(0.328474, 0.159388, 0.0778842, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 31
+text = "СТАВЬ"
+
+[node name="Gude" type="AnimatedSprite2D" parent="Gude"]
+position = Vector2(183, 371)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_owiwf")
+autoplay = "default"
+frame_progress = 0.481953
+
+[node name="Gude2" type="AnimatedSprite2D" parent="Gude"]
+position = Vector2(815, 347)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_owiwf")
+autoplay = "default"
+frame_progress = 0.477571
+
+[node name="Tile0609" type="Sprite2D" parent="Gude"]
+position = Vector2(162, 387)
+scale = Vector2(2, 2)
+texture = ExtResource("7_ky8k8")
+flip_h = true
+
+[node name="Tile0611" type="Sprite2D" parent="Gude"]
+position = Vector2(890, 467)
+scale = Vector2(2, 2)
+texture = ExtResource("7_ky8k8")
+flip_h = true
+
+[node name="Tile0610" type="Sprite2D" parent="Gude"]
+position = Vector2(804, 376)
+scale = Vector2(2, 2)
+texture = ExtResource("8_s6tn4")
+
+[node name="ButtonStart" type="TextureButton" parent="Gude"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 832.0
+offset_top = 504.0
+offset_right = 936.0
+offset_bottom = 576.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("11_jej3o")
+texture_pressed = ExtResource("12_sb5yu")
+texture_hover = ExtResource("13_rvqf8")
+stretch_mode = 5
+
+[node name="StatIsland" parent="." instance=ExtResource("1_txtrm")]
 
 [node name="DeadZone" type="Area2D" parent="."]
 unique_name_in_owner = true
@@ -49,42 +220,8 @@ shape = SubResource("WorldBoundaryShape2D_wmqfx")
 
 [node name="RocketSpawn" type="Node2D" parent="."]
 unique_name_in_owner = true
-position = Vector2(56, 488)
-
-[node name="Rocket_1" parent="RocketSpawn" instance=ExtResource("3_lecw4")]
-force = 800.0
-
-[node name="Rocket_2" parent="RocketSpawn" instance=ExtResource("3_lecw4")]
-position = Vector2(48, 0)
-force = 800.0
-
-[node name="Rocket_3" parent="RocketSpawn" instance=ExtResource("3_lecw4")]
-position = Vector2(98, 2)
-force = 800.0
-
-[node name="Rocket_4" parent="RocketSpawn" instance=ExtResource("3_lecw4")]
-position = Vector2(144, 0)
-force = 800.0
-
-[node name="Rocket_5" parent="RocketSpawn" instance=ExtResource("3_lecw4")]
-position = Vector2(192, 0)
-force = 800.0
-
-[node name="UI" type="CanvasLayer" parent="."]
-
-[node name="Button" type="Button" parent="UI"]
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -120.0
-offset_top = -47.0
-offset_right = -16.0
-offset_bottom = -16.0
-grow_horizontal = 0
-grow_vertical = 0
-text = "START"
+position = Vector2(183, 528)
+script = ExtResource("5_nykbc")
 
 [node name="NodeGenerator" type="Node2D" parent="."]
 position = Vector2(0, -528)
@@ -93,607 +230,814 @@ rescale = 5.0
 count_object = 150
 y_max_pos = 30000.0
 x_max_pos = 20000.0
-packeds = Array[PackedScene]([ExtResource("7_d456r"), ExtResource("8_oe43m"), ExtResource("9_so4hx"), ExtResource("10_v68nh")])
+packeds = Array[PackedScene]([ExtResource("7_ij2ta")])
 
-[node name="Planet1" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(-5884.05, -20610.1)
+[node name="Planet2" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-1313.08, -28620.4)
 scale = Vector2(5, 5)
+idx_type = 3
 
-[node name="Planet2" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(17282.9, -10864.1)
+[node name="Planet3" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(4832.17, -9707.77)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet3" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(16979.2, -15249.1)
+[node name="Planet4" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(12766.5, -7699.34)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet4" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(8038.33, -3440.2)
+[node name="Planet5" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-18211, -3862.2)
 scale = Vector2(5, 5)
+idx_type = 0
 
-[node name="Planet5" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(16961.8, -19926.1)
+[node name="Planet6" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(19968.9, -23681.1)
 scale = Vector2(5, 5)
+idx_type = 3
 
-[node name="Planet6" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-15842, -27381.8)
+[node name="Planet7" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(1953.69, -6821.82)
 scale = Vector2(5, 5)
+idx_type = 1
 
-[node name="Planet7" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-14730, -24075.4)
+[node name="Planet8" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-11079, -187.69)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet8" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-3452.67, -19188.8)
+[node name="Planet9" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(13259, -17695.5)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet9" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(11356.9, -13117.3)
+[node name="Planet10" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(17859.4, -25332.1)
 scale = Vector2(5, 5)
+idx_type = 1
 
-[node name="Planet10" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(16677.7, -10257.4)
+[node name="Planet11" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(1978.5, -26561.4)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet11" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(14055.8, -11620.2)
+[node name="Planet12" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(4145.25, -727.962)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet12" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(19850.3, -22717.4)
+[node name="Planet13" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(1701.13, -14629)
 scale = Vector2(5, 5)
+idx_type = 0
 
-[node name="Planet13" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(-14579.6, -5293.57)
+[node name="Planet14" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-3652.26, -7643.65)
 scale = Vector2(5, 5)
 
-[node name="Planet14" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(10237.2, -27168.2)
+[node name="Planet15" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(6466.62, -3145.66)
 scale = Vector2(5, 5)
+idx_type = 3
 
-[node name="Planet15" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-18350.1, -12584.5)
+[node name="Planet16" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(1984.71, -20035)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet16" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(18656.8, -27220.7)
+[node name="Planet17" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(15579.4, -28445.2)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet17" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(7916.4, -14249.8)
+[node name="Planet18" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-14731.4, -14867.3)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet18" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(14448.3, -16579.9)
+[node name="Planet19" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-9715.53, -26293.6)
 scale = Vector2(5, 5)
+idx_type = 3
 
-[node name="Planet19" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(18957.9, -17947.1)
+[node name="Planet20" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-2380.27, -16393.4)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet20" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-4876.49, -8113.58)
+[node name="Planet21" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(8228.37, -3369.66)
 scale = Vector2(5, 5)
+idx_type = 0
 
-[node name="Planet21" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(12482.4, -28544.8)
+[node name="Planet22" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(2080.45, -27037.9)
 scale = Vector2(5, 5)
 
-[node name="Planet22" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(17381.5, -14958.5)
+[node name="Planet23" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(15299.2, -28206.7)
 scale = Vector2(5, 5)
+idx_type = 3
 
-[node name="Planet23" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(-8277.23, -26464.5)
+[node name="Planet24" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-2657.55, -27942.7)
 scale = Vector2(5, 5)
 
-[node name="Planet24" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-1463.18, -20125.6)
+[node name="Planet25" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-5815.88, -22865.1)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet25" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(-5947.77, -12119.9)
+[node name="Planet26" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-403.715, -15064.6)
 scale = Vector2(5, 5)
+idx_type = 1
 
-[node name="Planet26" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(19182.8, -10380.4)
+[node name="Planet27" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(5725.08, -26772.6)
 scale = Vector2(5, 5)
+idx_type = 3
 
-[node name="Planet27" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(17681.8, -20646.3)
+[node name="Planet28" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(8616.56, -29041.9)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet28" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-16453.9, -232.624)
+[node name="Planet29" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(10660.1, -11548.1)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet29" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(-16953.9, -21038.6)
+[node name="Planet30" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-9914.72, -9590.91)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet30" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-4488.44, -6030.54)
+[node name="Planet31" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(16617.7, -29618.8)
 scale = Vector2(5, 5)
 
-[node name="Planet31" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(18914.9, -17081.8)
+[node name="Planet32" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-17349.3, -17838.7)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet32" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(4884.77, -22709.2)
+[node name="Planet33" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-15119.6, -20115.9)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet33" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(-10019, -2836.66)
+[node name="Planet34" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(18941.8, -28598.4)
 scale = Vector2(5, 5)
 
-[node name="Planet34" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(7729.47, -5193.32)
+[node name="Planet35" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-2791.5, -6438.99)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet35" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(6536.22, -12978.4)
+[node name="Planet36" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-16683.7, -4148.23)
 scale = Vector2(5, 5)
+idx_type = 1
 
-[node name="Planet36" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-1293.46, -1247.1)
+[node name="Planet37" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(5038.78, -1967.39)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet37" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(13535.8, -25518.9)
+[node name="Planet38" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-4953.62, -4240.63)
 scale = Vector2(5, 5)
+idx_type = 1
 
-[node name="Planet38" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(-3896.27, -24858.6)
+[node name="Planet39" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(10751.1, -19892.9)
 scale = Vector2(5, 5)
 
-[node name="Planet39" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(12348.5, -10091.6)
+[node name="Planet40" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-452.051, -17897.8)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet40" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(18304.7, -569.186)
+[node name="Planet41" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(6875.87, -4161.11)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet41" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(18705.8, -24807.6)
+[node name="Planet42" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-6730.14, -1573.83)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet42" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(7414, -21326)
+[node name="Planet43" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-3519.51, -10168.1)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet43" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(9718.91, -20981.9)
+[node name="Planet44" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(15950, -1182.72)
 scale = Vector2(5, 5)
+idx_type = 1
 
-[node name="Planet44" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(-18168.4, -11048.6)
+[node name="Planet45" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-19602.2, -21769.3)
 scale = Vector2(5, 5)
+idx_type = 3
 
-[node name="Planet45" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(11895.2, -13022.5)
+[node name="Planet46" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(5275.14, -4197.19)
 scale = Vector2(5, 5)
 
-[node name="Planet46" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(4788.41, -18313.9)
+[node name="Planet47" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(15857.8, -6787.35)
 scale = Vector2(5, 5)
+idx_type = 0
 
-[node name="Planet47" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(10021.5, -26095.2)
+[node name="Planet48" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(10678, -4674.46)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet48" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(16571.4, -5764.12)
+[node name="Planet49" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(16537.5, -18815.1)
 scale = Vector2(5, 5)
 
-[node name="Planet49" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(6298.65, -4530.73)
+[node name="Planet50" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(15344.4, -28269.7)
 scale = Vector2(5, 5)
+idx_type = 0
 
-[node name="Planet50" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(12042.5, -27059.1)
+[node name="Planet51" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(8261.44, -15503.1)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet51" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(-16287, -24921.6)
+[node name="Planet52" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(1013.54, -16187.9)
 scale = Vector2(5, 5)
 
-[node name="Planet52" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(-3624.03, -28932.8)
+[node name="Planet53" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(977.2, -2566.02)
 scale = Vector2(5, 5)
+idx_type = 1
 
-[node name="Planet53" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(9480.85, -28566.2)
+[node name="Planet54" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-15721.8, -11586.1)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet54" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(-13724.1, -27177.3)
+[node name="Planet55" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-12178.5, -29372.9)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet55" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(5196.01, -9577.4)
+[node name="Planet56" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-12102.7, -26937.2)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet56" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(11823.5, -9704.31)
+[node name="Planet57" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(2376.27, -25406.3)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet57" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-7564.18, -22480.8)
+[node name="Planet58" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-11180.6, -21469.2)
 scale = Vector2(5, 5)
 
-[node name="Planet58" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(14471.7, -11785.2)
+[node name="Planet59" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(13296.9, -29752.1)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet59" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(6732.96, -10644.4)
+[node name="Planet60" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-13451.1, -17610.2)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet60" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-2232.8, -8920.33)
+[node name="Planet61" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-5176.94, -29251.4)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet61" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(-14121.9, -17150.5)
+[node name="Planet62" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(4506.51, -2682.65)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet62" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-11869.4, -27377)
+[node name="Planet63" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-549.574, -3932.95)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet63" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(-12691.5, -3163.91)
+[node name="Planet64" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-6508.96, -17143)
 scale = Vector2(5, 5)
+idx_type = 3
 
-[node name="Planet64" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-19561.6, -11788.9)
+[node name="Planet65" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-553.167, -22007.9)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet65" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(-13049, -29081.5)
+[node name="Planet66" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-8445.66, -6470.56)
 scale = Vector2(5, 5)
+idx_type = 1
 
-[node name="Planet66" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(-2230.47, -20315.9)
+[node name="Planet67" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(1976.96, -10720)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet67" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(914.719, -10902.3)
+[node name="Planet68" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-19733, -3050.95)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet68" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-11021.1, -11389.6)
+[node name="Planet69" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-8999.01, -846.529)
 scale = Vector2(5, 5)
+idx_type = 3
 
-[node name="Planet69" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(-18173, -18697.1)
+[node name="Planet70" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(1812.65, -29098.3)
 scale = Vector2(5, 5)
+idx_type = 0
 
-[node name="Planet70" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(5265.26, -16997.4)
+[node name="Planet71" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-13521.2, -5104.38)
 scale = Vector2(5, 5)
 
-[node name="Planet71" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(3287.65, -23735.3)
+[node name="Planet72" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(7641.23, -19128)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet72" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(2337.18, -3478.41)
+[node name="Planet73" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-619.256, -14370)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet73" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-2061.71, -3039.5)
+[node name="Planet74" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(19574, -625.104)
 scale = Vector2(5, 5)
+idx_type = 0
 
-[node name="Planet74" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(17022.8, -16967.7)
+[node name="Planet75" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(16417.4, -17890.4)
 scale = Vector2(5, 5)
+idx_type = 3
 
-[node name="Planet75" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(5417.72, -12497.9)
+[node name="Planet76" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(10441.1, -7177.35)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet76" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-12943.1, -7541.49)
+[node name="Planet77" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-19995.4, -7015.23)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet77" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-1178.48, -18175.5)
+[node name="Planet78" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(3958.2, -19053.6)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet78" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(-19428.9, -24812.2)
+[node name="Planet79" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(15681.2, -14058.9)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet79" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(19851.7, -3270.01)
+[node name="Planet80" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(15127.2, -8596.28)
 scale = Vector2(5, 5)
+idx_type = 3
 
-[node name="Planet80" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(16391.6, -7054.11)
+[node name="Planet81" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(7396.09, -4940.83)
 scale = Vector2(5, 5)
+idx_type = 0
 
-[node name="Planet81" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(-12861.8, -18704.3)
+[node name="Planet82" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(14780, -26199.5)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet82" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(5705.61, -7753.98)
+[node name="Planet83" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(14787.7, -15790.3)
 scale = Vector2(5, 5)
+idx_type = 1
 
-[node name="Planet83" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(10222.7, -4333.46)
+[node name="Planet84" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-709.386, -1844.41)
 scale = Vector2(5, 5)
+idx_type = 0
 
-[node name="Planet84" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(14564.1, -27682.4)
+[node name="Planet85" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(4398.03, -18686.3)
 scale = Vector2(5, 5)
 
-[node name="Planet85" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(5573.52, -19392.3)
+[node name="Planet86" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(5814.19, -7533.67)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet86" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(13350.7, -13180.9)
+[node name="Planet87" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(3.83389, -14739.2)
 scale = Vector2(5, 5)
+idx_type = 0
 
-[node name="Planet87" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(6487.96, -8543.23)
+[node name="Planet88" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-13896.3, -23620.6)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet88" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(5592.26, -28735.8)
+[node name="Planet89" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(10073, -27719.4)
 scale = Vector2(5, 5)
 
-[node name="Planet89" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(13857.5, -1014.2)
+[node name="Planet90" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-7354.27, -5719.31)
 scale = Vector2(5, 5)
 
-[node name="Planet90" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(1494.49, -25521.3)
+[node name="Planet91" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-10400.4, -24807.4)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet91" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(6578.29, -12499.9)
+[node name="Planet92" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-10471.5, -18739.1)
 scale = Vector2(5, 5)
 
-[node name="Planet92" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-18815.8, -22524.7)
+[node name="Planet93" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-5298.42, -26571)
 scale = Vector2(5, 5)
+idx_type = 0
 
-[node name="Planet93" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(16655, -10301.9)
+[node name="Planet94" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(10648.2, -10313.8)
 scale = Vector2(5, 5)
+idx_type = 0
 
-[node name="Planet94" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-357.593, -6792.08)
+[node name="Planet95" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(5357.17, -6197.89)
 scale = Vector2(5, 5)
 
-[node name="Planet95" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-15422.4, -13493.2)
+[node name="Planet96" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(17146.6, -15348.2)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet96" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(5175.02, -25583.8)
+[node name="Planet97" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-2287.68, -22434.7)
 scale = Vector2(5, 5)
+idx_type = 1
 
-[node name="Planet97" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(15574.9, -7367.97)
+[node name="Planet98" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-19821.1, -19680.6)
 scale = Vector2(5, 5)
 
-[node name="Planet98" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(14705.1, -18769.7)
+[node name="Planet99" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(2719.29, -23618.6)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet99" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-1721.67, -7075.09)
+[node name="Planet100" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-10659.2, -11060.4)
 scale = Vector2(5, 5)
 
-[node name="Planet100" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(3938.27, -18030)
+[node name="Planet101" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-11696.7, -2673.39)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet101" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(16592, -5062.91)
+[node name="Planet102" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(16256.6, -1969.42)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet102" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-14414.6, -9267.42)
+[node name="Planet103" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-10979.7, -12901.4)
 scale = Vector2(5, 5)
+idx_type = 0
 
-[node name="Planet103" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(19777.1, -19024.5)
+[node name="Planet104" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-6961.98, -17356.6)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet104" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-5785.53, -27762.8)
+[node name="Planet105" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-9423.66, -17847.3)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet105" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(12168.7, -3237.3)
+[node name="Planet106" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(17142.3, -18285.8)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet106" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(9769.3, -25904.2)
+[node name="Planet107" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-19215, -28647.5)
 scale = Vector2(5, 5)
 
-[node name="Planet107" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-1680.65, -7521.99)
+[node name="Planet108" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-17311.3, -23185.3)
 scale = Vector2(5, 5)
+idx_type = 3
 
-[node name="Planet108" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-7414.2, -4499.86)
+[node name="Planet109" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-2469.4, -20115.3)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet109" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-15083.8, -22792.3)
+[node name="Planet110" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(13579.7, -27781.5)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet110" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-15941.9, -11257.3)
+[node name="Planet111" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(6608.39, -1310.74)
 scale = Vector2(5, 5)
 
-[node name="Planet111" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(7710.04, -14348.2)
+[node name="Planet112" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-8234.39, -19447.3)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet112" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-848.509, -13135.8)
+[node name="Planet113" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-13581.7, -26391.1)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet113" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(5417.46, -11504.4)
+[node name="Planet114" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-1853.69, -29892.1)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet114" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-17158.4, -15752.1)
+[node name="Planet115" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(1390.36, -2054.14)
 scale = Vector2(5, 5)
+idx_type = 0
 
-[node name="Planet115" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-4787.64, -21922.5)
+[node name="Planet116" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-11086.8, -20337.5)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet116" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(17006.9, -8720.41)
+[node name="Planet117" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(17451.9, -22310.3)
 scale = Vector2(5, 5)
+idx_type = 3
 
-[node name="Planet117" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(16709.7, -19540.9)
+[node name="Planet118" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-17103.1, -16899.4)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet118" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(7870.21, -20111.2)
+[node name="Planet119" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-2268.88, -13204.6)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet119" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(2689.89, -10596.6)
+[node name="Planet120" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-10959.2, -28416)
 scale = Vector2(5, 5)
 
-[node name="Planet120" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(12876.3, -4345.59)
+[node name="Planet121" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-17428.9, -28069.4)
 scale = Vector2(5, 5)
 
-[node name="Planet121" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(15311.5, -436.408)
+[node name="Planet122" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-10389.3, -9467.63)
 scale = Vector2(5, 5)
 
-[node name="Planet122" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-19750.3, -107.222)
+[node name="Planet123" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-19822.3, -14158.8)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet123" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-7351.13, -2046.45)
+[node name="Planet124" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-3246.06, -15094.3)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet124" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(-15599.9, -3600.09)
+[node name="Planet125" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-12476, -19524.6)
 scale = Vector2(5, 5)
+idx_type = 1
 
-[node name="Planet125" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-18216.2, -15887.5)
+[node name="Planet126" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-6915.53, -10563.6)
 scale = Vector2(5, 5)
+idx_type = 3
 
-[node name="Planet126" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-14423.5, -22982.8)
+[node name="Planet127" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(6613.09, -18098)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet127" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(-1156.77, -2555.22)
+[node name="Planet128" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(9575.16, -22236.8)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet128" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-19000.4, -24994.6)
+[node name="Planet129" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-3008.45, -9011.61)
 scale = Vector2(5, 5)
+idx_type = 1
 
-[node name="Planet129" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(15066.3, -21681.7)
+[node name="Planet130" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-15763.1, -16319.6)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet130" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(-10967.9, -14104.5)
+[node name="Planet131" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(4920.81, -23995.1)
 scale = Vector2(5, 5)
+idx_type = 3
 
-[node name="Planet131" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(1448.4, -21217.2)
+[node name="Planet132" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(4812.45, -28576.2)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet132" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(1563.95, -7685.52)
+[node name="Planet133" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-2717.52, -7896.61)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet133" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(9195.25, -12328.8)
+[node name="Planet134" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-19077.9, -16231.9)
 scale = Vector2(5, 5)
+idx_type = 1
 
-[node name="Planet134" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(5542.26, -5042.92)
+[node name="Planet135" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(3005.32, -9145.78)
 scale = Vector2(5, 5)
+idx_type = 0
 
-[node name="Planet135" parent="NodeGenerator" instance=ExtResource("10_v68nh")]
-position = Vector2(11552.8, -21539.4)
+[node name="Planet136" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(18532.9, -25289.5)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet136" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-1200.7, -6989.5)
+[node name="Planet137" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-2266.21, -7008.82)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet137" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(15791.4, -25379.5)
+[node name="Planet138" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(5548.34, -6649.38)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet138" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-16356.1, -24187.3)
+[node name="Planet139" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-11699.9, -27629.5)
 scale = Vector2(5, 5)
+idx_type = 1
 
-[node name="Planet139" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-8050.47, -12637.7)
+[node name="Planet140" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-6616.82, -26065)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet140" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(13475.5, -5088.71)
+[node name="Planet141" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-7765.71, -9419.82)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet141" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-6595.65, -9186.33)
+[node name="Planet142" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(10955, -1895.36)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet142" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(4046.84, -2828.64)
+[node name="Planet143" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(16409.2, -26605.2)
 scale = Vector2(5, 5)
+idx_type = 2
 
-[node name="Planet143" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(953.355, -25076)
+[node name="Planet144" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-10589.5, -8394.25)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet144" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(4069.56, -8232.22)
+[node name="Planet145" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(9394.36, -9795.56)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet145" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(-5336.26, -15977.4)
+[node name="Planet146" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(15725.2, -18308.7)
 scale = Vector2(5, 5)
+idx_type = 5
 
-[node name="Planet146" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(-7935.39, -25260.3)
+[node name="Planet147" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(16293.6, -5049.66)
 scale = Vector2(5, 5)
+idx_type = 1
 
-[node name="Planet147" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(-18526.6, -10903.6)
+[node name="Planet148" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(-1697.55, -11359.7)
 scale = Vector2(5, 5)
 
-[node name="Planet148" parent="NodeGenerator" instance=ExtResource("8_oe43m")]
-position = Vector2(-17234.5, -17473.1)
+[node name="Planet149" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(12098.6, -613.968)
 scale = Vector2(5, 5)
+idx_type = 6
 
-[node name="Planet149" parent="NodeGenerator" instance=ExtResource("9_so4hx")]
-position = Vector2(12204.3, -22419.1)
+[node name="Planet150" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(8168.26, -5290.99)
 scale = Vector2(5, 5)
+idx_type = 0
 
-[node name="Planet150" parent="NodeGenerator" instance=ExtResource("7_d456r")]
-position = Vector2(-7439.78, -9839.33)
+[node name="Planet300" parent="NodeGenerator" instance=ExtResource("7_ij2ta")]
+position = Vector2(4147.92, -8933.23)
 scale = Vector2(5, 5)
+idx_type = 0
 
+[node name="Bonus" parent="." instance=ExtResource("16_3qgel")]
+position = Vector2(182, -2506)
+
+[node name="Preview" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
+visible = false
+
+[node name="Panel" type="Panel" parent="Preview"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -502.0
+offset_top = -242.0
+offset_right = 268.0
+offset_bottom = -53.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("17_d71up")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Preview/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 205.0
+offset_top = 23.0
+offset_right = -64.0
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("17_d71up")
+theme_override_colors/font_outline_color = Color(0.567156, 0.471709, 0.35939, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/normal_font_size = 21
+text = "Нет времени обьяснять! Ставь двигатели и взлетай!
+
+КОТОМЕДУЗЫ НА ПОДХОДЕ!"
+
+[node name="Panel" type="Panel" parent="Preview/Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 20.0
+offset_top = -78.5
+offset_right = 198.0
+offset_bottom = 79.5
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_0jku6")
+
+[node name="TextureRect" type="TextureRect" parent="Preview/Panel/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -76.0
+offset_top = -71.0
+offset_right = 76.0
+offset_bottom = 71.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AnimatedTexture_n0mlb")
+expand_mode = 3
+
+[node name="AnimationPlayerPrivew" type="AnimationPlayer" parent="Preview"]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_wvm06")
+}
+
+[node name="Bonus2" parent="." instance=ExtResource("21_uioem")]
+position = Vector2(997, -862)
+
+[node name="Bonus3" parent="." instance=ExtResource("22_uakg3")]
+position = Vector2(622, -1112)
+
+[connection signal="pressed" from="Gude/ButtonStart" to="." method="_on_button_pressed"]
 [connection signal="body_entered" from="DeadZone" to="." method="_on_dead_zone_body_entered"]
-[connection signal="pressed" from="UI/Button" to="." method="_on_button_pressed"]
+[connection signal="animation_finished" from="Preview/AnimationPlayerPrivew" to="." method="_on_animation_player_privew_animation_finished"]

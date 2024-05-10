@@ -6,6 +6,7 @@ const ANIM_SHOOT := "shoot"
 @onready var _targets: Node2D = %Targets
 @onready var _timer: Timer = %Timer
 @onready var _animation_player: AnimationPlayer = %AnimationPlayer
+@onready var _audio_shot: AudioStreamPlayer2D = %AudioShot
 
 @export var projectile_packed: PackedScene = null
 
@@ -21,6 +22,7 @@ func stop_shoot() -> void :
 
 
 func _on_shoot() -> void :
+	_audio_shot.play()
 	for node in _targets.get_children() :
 		var target: Marker2D = node as Marker2D
 		if target :

@@ -12,7 +12,7 @@ extends ParallaxLayer
 		gen = false
 		if val :
 			_gen()
-		update_configuration_warnings()
+			update_configuration_warnings()
 
 func _gen() -> void :
 	for i in get_child_count() :

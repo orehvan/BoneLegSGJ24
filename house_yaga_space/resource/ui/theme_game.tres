@@ -1,0 +1,6 @@
+[gd_resource type="Theme" format=3 uid="uid://gccahlc8qv5r"]
+
+[resource]
+Label/colors/font_color = Color(1, 1, 1, 1)
+Label/colors/font_outline_color = Color(0.228645, 0.253468, 0.328023, 1)
+Label/constants/outline_size = 10

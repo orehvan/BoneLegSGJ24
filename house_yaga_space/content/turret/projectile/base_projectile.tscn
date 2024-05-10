@@ -1,20 +1,53 @@
-[gd_scene load_steps=4 format=3 uid="uid://dda22348qjven"]
+[gd_scene load_steps=11 format=3 uid="uid://dda22348qjven"]
 
 [ext_resource type="Script" path="res://house_yaga_space/content/turret/projectile/base_projectile.gd" id="1_51vw2"]
-[ext_resource type="Texture2D" uid="uid://c4ejm8wkcie3q" path="res://kenney_assets/space_shooter/space_shooter.sprites/space_shooter/Missiles/spaceMissiles_013.tres" id="1_qkmgj"]
+[ext_resource type="Texture2D" uid="uid://bpj22eqb6qr76" path="res://house_yaga_space/resource/vfx/fireball.png" id="2_7v385"]
+[ext_resource type="SpriteFrames" uid="uid://ck8w32kwo406k" path="res://house_yaga_space/resource/vfx/pixel_explotion/sprite_frame_expotion.tres" id="3_h4h75"]
+[ext_resource type="AudioStream" uid="uid://be113xo2w58t" path="res://house_yaga_space/resource/audio/SFX/explosion2.wav" id="4_1ow32"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_em5he"]
-radius = 18.0
+radius = 59.0339
+
+[sub_resource type="Gradient" id="Gradient_4dq5q"]
+offsets = PackedFloat32Array(0, 0.15978, 0.876033, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.688798, 0.600682, 0.149033, 1, 0.660793, 0.148771, 0, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_jwpd0"]
+gradient = SubResource("Gradient_4dq5q")
+
+[sub_resource type="Curve" id="Curve_4v8gr"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.28133, 0.496075), 0.804553, 0.804553, 0, 0, Vector2(0.749361, 0.636408), 1.28269, 1.28269, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_2xykc"]
+curve = SubResource("Curve_4v8gr")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_jkpps"]
+particle_flag_disable_z = true
+emission_shape = 1
+emission_sphere_radius = 30.25
+direction = Vector3(-1, 0, 0)
+gravity = Vector3(0, 0, 0)
+damping_min = 1.865
+damping_max = 7.115
+scale_min = 8.0
+scale_max = 16.0
+scale_curve = SubResource("CurveTexture_2xykc")
+color_ramp = SubResource("GradientTexture1D_jwpd0")
 
 [node name="BaseProjectile" type="CharacterBody2D"]
 collision_layer = 8
-collision_mask = 4
+collision_mask = 5
 script = ExtResource("1_51vw2")
 speed = 800.0
 
-[node name="SpaceMissiles013" type="Sprite2D" parent="."]
-rotation = 1.5708
-texture = ExtResource("1_qkmgj")
+[node name="Renderer" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite2D" parent="Renderer"]
+position = Vector2(-3, -4)
+rotation = -2.42285
+scale = Vector2(3, 3)
+texture = ExtResource("2_7v385")
 
 [node name="TimerLifeTime" type="Timer" parent="."]
 wait_time = 3.0
@@ -24,4 +57,23 @@ autostart = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_em5he")
 
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+scale = Vector2(4, 4)
+sprite_frames = ExtResource("3_h4h75")
+animation = &"play"
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+position = Vector2(24, 8)
+amount = 64
+process_material = SubResource("ParticleProcessMaterial_jkpps")
+lifetime = 0.35
+trail_sections = 2
+trail_section_subdivisions = 2
+
+[node name="AudioExplotion" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_1ow32")
+bus = &"SFX"
+
 [connection signal="timeout" from="TimerLifeTime" to="." method="_on_timer_life_time_timeout"]
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

@@ -1,0 +1,169 @@
+[gd_scene load_steps=17 format=3 uid="uid://gtse5rs7uyup"]
+
+[ext_resource type="Texture2D" uid="uid://dmpi4gaic3wfw" path="res://kenney_assets/space_shooter/space_shooter.sprites/space_shooter/Missiles/spaceMissiles_022.tres" id="1_0kmd2"]
+[ext_resource type="Script" path="res://house_yaga_space/content/rocket_engine/rocket_engine_base.gd" id="1_jdt3f"]
+[ext_resource type="SpriteFrames" uid="uid://ck8w32kwo406k" path="res://house_yaga_space/resource/vfx/pixel_explotion/sprite_frame_expotion.tres" id="3_o8rxt"]
+[ext_resource type="AudioStream" uid="uid://dp5ptjhscpfhn" path="res://house_yaga_space/resource/audio/SFX/hut_engine.wav" id="4_bovjk"]
+[ext_resource type="AudioStream" uid="uid://ce76hd8n78cfi" path="res://house_yaga_space/resource/audio/SFX/hut_engine_pickup.wav" id="5_36u8w"]
+[ext_resource type="AudioStream" uid="uid://cjye2paut7una" path="res://house_yaga_space/resource/audio/SFX/hut_engine_correction.wav" id="5_igcno"]
+[ext_resource type="AudioStream" uid="uid://b1u6oobv68nm3" path="res://house_yaga_space/resource/audio/SFX/hut_engine_place.wav" id="6_00lgv"]
+
+[sub_resource type="Gradient" id="Gradient_oxit0"]
+offsets = PackedFloat32Array(0, 0.123967, 0.471074, 0.768595, 1)
+colors = PackedColorArray(1, 1, 1, 1, 0.273287, 0.827034, 0.956144, 1, 0.838774, 0.630268, 0, 1, 0.722906, 0.254109, 0, 1, 0, 0, 0, 0.0196078)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_w5t2c"]
+gradient = SubResource("Gradient_oxit0")
+
+[sub_resource type="Curve" id="Curve_i7io0"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.626598, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_3jf5i"]
+curve = SubResource("Curve_i7io0")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ted6c"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(10, 1, 1)
+direction = Vector3(0, 1, 0)
+spread = 24.07
+initial_velocity_max = 75.85
+gravity = Vector3(0, 0, 0)
+damping_max = 0.54
+scale_min = 5.0
+scale_max = 10.0
+scale_curve = SubResource("CurveTexture_3jf5i")
+color_ramp = SubResource("GradientTexture1D_w5t2c")
+
+[sub_resource type="Animation" id="Animation_5get0"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_xd42w"]
+resource_name = "run"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-3, 0), Vector2(3, 0), Vector2(-3, 0), Vector2(3, 0), Vector2(-3, 0), Vector2(3, 0), Vector2(-3, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_l5x8s"]
+resource_name = "stop"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_s6urq"]
+_data = {
+"RESET": SubResource("Animation_5get0"),
+"run": SubResource("Animation_xd42w"),
+"stop": SubResource("Animation_l5x8s")
+}
+
+[node name="Rocket_1" type="Node2D"]
+script = ExtResource("1_jdt3f")
+
+[node name="Marker2DEndPoint" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, 42)
+
+[node name="Marker2DStartPoint" type="Marker2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -46)
+
+[node name="Renderer" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Renderer"]
+position = Vector2(0, -2)
+texture = ExtResource("1_0kmd2")
+
+[node name="Effects" type="Node2D" parent="Renderer"]
+unique_name_in_owner = true
+position = Vector2(0, 41)
+
+[node name="CPUParticles2D" type="GPUParticles2D" parent="Renderer/Effects"]
+position = Vector2(0, -8)
+emitting = false
+amount = 64
+process_material = SubResource("ParticleProcessMaterial_ted6c")
+lifetime = 0.3
+
+[node name="AnimationPlayerEffect" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+root_node = NodePath("../Renderer/Effects")
+libraries = {
+"": SubResource("AnimationLibrary_s6urq")
+}
+autoplay = "stop"
+speed_scale = 2.0
+
+[node name="Area2DAttach" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(0, -48)
+collision_layer = 2147483904
+collision_mask = 2
+
+[node name="AnimatedExplotion" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+sprite_frames = ExtResource("3_o8rxt")
+animation = &"play"
+
+[node name="AudioEngine" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("4_bovjk")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="AudioPickup" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("5_36u8w")
+bus = &"SFX"
+
+[node name="AudioPlace" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("6_00lgv")
+bus = &"SFX"
+
+[node name="AudioPlaceFailed" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("5_igcno")
+bus = &"SFX"
+
+[connection signal="area_entered" from="Area2DAttach" to="." method="_on_area_2d_attach_area_entered"]
+[connection signal="area_exited" from="Area2DAttach" to="." method="_on_area_2d_attach_area_exited"]
+[connection signal="input_event" from="Area2DAttach" to="." method="_on_area_2d_attach_input_event"]
+[connection signal="mouse_entered" from="Area2DAttach" to="." method="_on_area_2d_attach_mouse_entered"]
+[connection signal="mouse_exited" from="Area2DAttach" to="." method="_on_area_2d_attach_mouse_exited"]
+[connection signal="animation_finished" from="AnimatedExplotion" to="." method="_on_animated_explotion_animation_finished"]

@@ -1,0 +1,67 @@
+[gd_scene load_steps=9 format=3 uid="uid://dve3m0douesy0"]
+
+[ext_resource type="Script" path="res://house_yaga_space/content/ui/ui.gd" id="1_mvm2j"]
+[ext_resource type="PackedScene" uid="uid://bsim5861oe73u" path="res://house_yaga_space/content/ui/main_menu.tscn" id="2_agh55"]
+[ext_resource type="PackedScene" uid="uid://ddc5shd0x54a4" path="res://house_yaga_space/content/ui/pause.tscn" id="3_udmty"]
+[ext_resource type="PackedScene" uid="uid://c41qjcmonour1" path="res://house_yaga_space/content/ui/options.tscn" id="4_qimln"]
+[ext_resource type="PackedScene" uid="uid://b6vlnupdv3ax8" path="res://house_yaga_space/content/ui/game_over.tscn" id="4_s7bf4"]
+[ext_resource type="PackedScene" uid="uid://bmsp7wsp8cyq2" path="res://house_yaga_space/content/ui/start_game.tscn" id="5_cmnvk"]
+[ext_resource type="PackedScene" uid="uid://ckgus56xwp73a" path="res://house_yaga_space/content/ui/space_game.tscn" id="6_ih5jc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_52e37"]
+
+[node name="Ui" type="CanvasLayer"]
+process_mode = 3
+layer = 4
+script = ExtResource("1_mvm2j")
+
+[node name="TabContainer" type="TabContainer" parent="."]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/tab_selected = SubResource("StyleBoxEmpty_52e37")
+theme_override_styles/tab_hovered = SubResource("StyleBoxEmpty_52e37")
+theme_override_styles/tab_unselected = SubResource("StyleBoxEmpty_52e37")
+theme_override_styles/tab_disabled = SubResource("StyleBoxEmpty_52e37")
+theme_override_styles/tab_focus = SubResource("StyleBoxEmpty_52e37")
+theme_override_styles/panel = SubResource("StyleBoxEmpty_52e37")
+theme_override_styles/tabbar_background = SubResource("StyleBoxEmpty_52e37")
+tabs_visible = false
+
+[node name="MainMenu" parent="TabContainer" instance=ExtResource("2_agh55")]
+layout_mode = 2
+mouse_filter = 0
+
+[node name="Pause" parent="TabContainer" instance=ExtResource("3_udmty")]
+visible = false
+layout_mode = 2
+
+[node name="Options" parent="TabContainer" instance=ExtResource("4_qimln")]
+visible = false
+layout_mode = 2
+
+[node name="GameOver" parent="TabContainer" instance=ExtResource("4_s7bf4")]
+visible = false
+layout_mode = 2
+
+[node name="StartGame" parent="TabContainer" instance=ExtResource("5_cmnvk")]
+visible = false
+layout_mode = 2
+
+[node name="SpaceGame" parent="TabContainer" instance=ExtResource("6_ih5jc")]
+visible = false
+layout_mode = 2
+
+[connection signal="to_exit" from="TabContainer/MainMenu" to="." method="_on_main_menu_to_exit"]
+[connection signal="to_options" from="TabContainer/MainMenu" to="." method="_on_main_menu_to_options"]
+[connection signal="to_start" from="TabContainer/MainMenu" to="." method="_on_main_menu_to_start"]
+[connection signal="to_back" from="TabContainer/Pause" to="." method="_on_pause_to_back"]
+[connection signal="to_exit" from="TabContainer/Pause" to="." method="_on_pause_to_exit"]
+[connection signal="to_option" from="TabContainer/Pause" to="." method="_on_pause_to_option"]
+[connection signal="to_back" from="TabContainer/Options" to="." method="_on_options_to_back"]
+[connection signal="to_exit" from="TabContainer/GameOver" to="." method="_on_game_over_to_exit"]
+[connection signal="to_restart" from="TabContainer/GameOver" to="." method="_on_game_over_to_restart"]

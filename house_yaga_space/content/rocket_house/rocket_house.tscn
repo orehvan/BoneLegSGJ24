@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://c5uuxy5ktjfvy"]
+[gd_scene load_steps=9 format=3 uid="uid://c5uuxy5ktjfvy"]
 
 [ext_resource type="PhysicsMaterial" uid="uid://b47bqk7afek53" path="res://house_yaga_space/content/physics_material/physics_material_rocket.tres" id="1_pdj0q"]
 [ext_resource type="Script" path="res://house_yaga_space/content/rocket_house/rocket_house.gd" id="2_nbev0"]
 [ext_resource type="PackedScene" uid="uid://dohsm2tkfhj3m" path="res://house_yaga_space/content/rocket_engine/trust_rocket.tscn" id="3_fcf42"]
-[ext_resource type="Texture2D" uid="uid://lbquuo7qxg6l" path="res://house_yaga_space/resource/assets_red/9845e36e6bd61d3c.png" id="4_n2v73"]
+[ext_resource type="Texture2D" uid="uid://e7o37s81yh28" path="res://house_yaga_space/resource/assets_red/house_2.png" id="4_tvco2"]
+[ext_resource type="Texture2D" uid="uid://oly5pcyrdlk8" path="res://kenney_assets/cursor_default/cursor_default.sprites/cursor_default/navigation_e.tres" id="6_t0i11"]
 [ext_resource type="PackedScene" uid="uid://bjap7qq5o5np" path="res://house_yaga_space/content/turret/turret.tscn" id="11_w5s0h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rnwjx"]
@@ -18,6 +19,7 @@ collision_layer = 2
 physics_material_override = ExtResource("1_pdj0q")
 freeze = true
 script = ExtResource("2_nbev0")
+max_health = 300.0
 
 [node name="Trusters" type="Node2D" parent="."]
 
@@ -25,7 +27,7 @@ script = ExtResource("2_nbev0")
 unique_name_in_owner = true
 
 [node name="TrustRocket" parent="Trusters/LeftTruster" instance=ExtResource("3_fcf42")]
-position = Vector2(-184, 152)
+position = Vector2(-200, 152)
 rotation = 1.5708
 scale = Vector2(0.5, 0.5)
 
@@ -43,7 +45,7 @@ rotation = 1.5708
 scale = Vector2(0.5, 0.5)
 
 [node name="TrustRocket4" parent="Trusters/RightTruster" instance=ExtResource("3_fcf42")]
-position = Vector2(184, 152)
+position = Vector2(201, 151)
 rotation = 4.71239
 scale = Vector2(0.5, 0.5)
 
@@ -51,7 +53,7 @@ scale = Vector2(0.5, 0.5)
 
 [node name="Sprite" type="Sprite2D" parent="HouseVisual"]
 scale = Vector2(8, 8)
-texture = ExtResource("4_n2v73")
+texture = ExtResource("4_tvco2")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(0, -96)
@@ -84,3 +86,15 @@ position = Vector2(-168, -64)
 
 [node name="Turret2" parent="Turrets" instance=ExtResource("11_w5s0h")]
 position = Vector2(160, -64)
+
+[node name="AudioListener2D" type="AudioListener2D" parent="."]
+current = true
+
+[node name="Cursor" type="Node2D" parent="."]
+unique_name_in_owner = true
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="Cursor"]
+position = Vector2(776, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("6_t0i11")

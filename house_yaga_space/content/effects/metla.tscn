@@ -1,0 +1,98 @@
+[gd_scene load_steps=10 format=3 uid="uid://cf7d6whi3hv6a"]
+
+[ext_resource type="Script" path="res://house_yaga_space/content/effects/metla.gd" id="1_i1pih"]
+[ext_resource type="Texture2D" uid="uid://clh3j61uejcor" path="res://house_yaga_space/resource/space_tex/space.sprites/space/CosmoTrashs/metla.tres" id="3_mtv6a"]
+
+[sub_resource type="Curve" id="Curve_6eyrx"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.240922), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_pail4"]
+curve = SubResource("Curve_6eyrx")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_4h8dr"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(5, 1, 1)
+gravity = Vector3(0, 98, 0)
+scale_min = 2.8
+scale_max = 8.5
+scale_curve = SubResource("CurveTexture_pail4")
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6i41o"]
+radius = 5.85235
+
+[sub_resource type="Animation" id="Animation_x1508"]
+resource_name = "play"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -6.28319]
+}
+
+[sub_resource type="Animation" id="Animation_q8425"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kyjd2"]
+_data = {
+"RESET": SubResource("Animation_q8425"),
+"play": SubResource("Animation_x1508")
+}
+
+[node name="Metla" type="Node2D"]
+script = ExtResource("1_i1pih")
+time_life = 0.0
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Node2D"]
+position = Vector2(456, 3.71933e-05)
+rotation = -1.8326
+scale = Vector2(16, 16)
+texture = ExtResource("3_mtv6a")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="Node2D/Sprite2D"]
+show_behind_parent = true
+position = Vector2(-4.19187, 4.05317)
+rotation = -0.523599
+amount = 32
+process_material = SubResource("ParticleProcessMaterial_4h8dr")
+lifetime = 0.3
+
+[node name="Area2D" type="Area2D" parent="Node2D/Sprite2D"]
+collision_layer = 0
+collision_mask = 4
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite2D/Area2D"]
+position = Vector2(-4.19188, 4.05317)
+shape = SubResource("CircleShape2D_6i41o")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Node2D"]
+libraries = {
+"": SubResource("AnimationLibrary_kyjd2")
+}
+autoplay = "play"
+
+[connection signal="body_entered" from="Node2D/Sprite2D/Area2D" to="." method="_on_area_2d_body_entered"]

@@ -1,9 +1,37 @@
-[gd_scene load_steps=8 format=3 uid="uid://bfsevsmr78ah5"]
+[gd_scene load_steps=9 format=3 uid="uid://bfsevsmr78ah5"]
 
 [ext_resource type="Script" path="res://house_yaga_space/content/turret/head_turret.gd" id="1_8inqm"]
 [ext_resource type="Texture2D" uid="uid://dcq3klxsrqw24" path="res://kenney_assets/space_shooter/space_shooter.sprites/space_shooter/Effects/spaceEffects_007.tres" id="1_ri3ic"]
 [ext_resource type="Texture2D" uid="uid://b7njsfvyb7nce" path="res://kenney_assets/space_shooter/space_shooter.sprites/space_shooter/Building/spaceBuilding_020.tres" id="2_dfj8v"]
 [ext_resource type="PackedScene" uid="uid://dda22348qjven" path="res://house_yaga_space/content/turret/projectile/base_projectile.tscn" id="2_ssx12"]
+[ext_resource type="AudioStream" uid="uid://4ptrf1tm6eb1" path="res://house_yaga_space/resource/audio/SFX/shot2.wav" id="5_1u0cb"]
+
+[sub_resource type="Animation" id="Animation_smur1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SpaceEffects007:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SpaceEffects007:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_3nvns"]
 resource_name = "shoot"
@@ -47,33 +75,6 @@ tracks/2/keys = {
 "values": [Vector2(1, 0), Vector2(1, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_smur1"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("SpaceEffects007:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("SpaceEffects007:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_m1u37"]
 _data = {
 "RESET": SubResource("Animation_smur1"),
@@ -112,5 +113,10 @@ libraries = {
 [node name="Timer" type="Timer" parent="."]
 unique_name_in_owner = true
 wait_time = 0.21
+
+[node name="AudioShot" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("5_1u0cb")
+bus = &"SFX"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

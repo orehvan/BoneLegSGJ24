@@ -1,11 +1,15 @@
 class_name RocketHouse
 extends RigidBody2D
 
+signal dead()
+signal change_health()
+
 const INPUT_ENGINE_ACTIVE := "engine_active"
 
 @onready var _rockets: Node2D = %Rockets
 @onready var _left_trusters: Node2D = %LeftTruster
 @onready var _right_truster: Node2D = %RightTruster
+@onready var _cursor: Node2D = %Cursor
 
 var _started: bool = false
 var _engine_active: bool = false
@@ -15,9 +19,25 @@ var _line_drawing: Array = []
 @export var rotation_force := 100.0
 @export var distance_rot := 100.0
 @export var max_linear := 800.0
+@export var multi_speed := 1.0
+@export var multi_max_linear := 1.0
+@export var god_mode_count := 0
+@export var max_health := 1000.0
+@export var health := 1000.0 :
+	set(val) :
+		if god_mode_count and val < health :
+			return
+		
+		health = clampf(val, 0.0, max_health)
+		change_health.emit()
+		
+		if health <= 0 :
+			_death()
 
 func _ready() -> void:
+	health = max_health
 	Global.player = self 
+	dead.connect(get_parent()._player_on_dead)
 
 func _attach_rocket_engine(rocket_engine: RocketPartEngine) -> void :
 	if rocket_engine :
@@ -49,8 +69,11 @@ func reset_space_house() -> void :
 
 
 
+func _death() -> void :
+	dead.emit()
 
-
+func apply_damage(damage: float) -> void :
+	health -= damage
 
 func _draw() -> void:
 	if Global.is_debug :
@@ -104,7 +127,7 @@ func _physics_process(_delta: float) -> void:
 		if trust :
 			var global_point_force: Vector2 = trust.get_point_force_global()
 			var offset_global_force: Vector2 = global_position - global_point_force
-			var force_vector: Vector2 = trust.get_force_vector_direction_global() * rotation_force * force
+			var force_vector: Vector2 = trust.get_force_vector_direction_global() * rotation_force * force * multi_speed
 			trust.start()
 			apply_force(force_vector, offset_global_force)
 	
@@ -113,5 +136,8 @@ func _physics_process(_delta: float) -> void:
 		if trust :
 			trust.stop()
 	
-	linear_velocity = linear_velocity.normalized() * clamp(linear_velocity.length(), 0, max_linear)
+	linear_velocity = linear_velocity.normalized() * clamp(linear_velocity.length(), 0, max_linear * multi_max_linear)
+	_cursor.visible = Global.enable_cursor
+	if _cursor.visible and Global.target_exit:
+		_cursor.look_at(Global.target_exit.global_position)
 

@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://8kg67s64lwdk"
+path="res://.godot/imported/ui.tpsheet-db6ac5842e5deb0dc45d32350bc9c050.res"
+
+[deps]
+
+files=["res://house_yaga_space/resource/ui/ui.sprites/ui/buble_2.tres", "res://house_yaga_space/resource/ui/ui.sprites/ui/group_2.tres", "res://house_yaga_space/resource/ui/ui.sprites/ui/rect_2.tres", "res://house_yaga_space/resource/ui/ui.sprites/ui/rect_1.tres", "res://house_yaga_space/resource/ui/ui.sprites/ui/frame_2.tres", "res://house_yaga_space/resource/ui/ui.sprites/ui/buble.tres", "res://house_yaga_space/resource/ui/ui.sprites/ui/group_1.tres", "res://house_yaga_space/resource/ui/ui.sprites/ui/frame_1.tres"]
+
+source_file="res://house_yaga_space/resource/ui/ui.tpsheet"
+dest_files=["res://.godot/imported/ui.tpsheet-db6ac5842e5deb0dc45d32350bc9c050.res", "res://house_yaga_space/resource/ui/ui.sprites/ui/buble_2.tres", "res://house_yaga_space/resource/ui/ui.sprites/ui/group_2.tres", "res://house_yaga_space/resource/ui/ui.sprites/ui/rect_2.tres", "res://house_yaga_space/resource/ui/ui.sprites/ui/rect_1.tres", "res://house_yaga_space/resource/ui/ui.sprites/ui/frame_2.tres", "res://house_yaga_space/resource/ui/ui.sprites/ui/buble.tres", "res://house_yaga_space/resource/ui/ui.sprites/ui/group_1.tres", "res://house_yaga_space/resource/ui/ui.sprites/ui/frame_1.tres"]
+
+[params]
+
