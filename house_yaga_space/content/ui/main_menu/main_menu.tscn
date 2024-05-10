@@ -1,0 +1,193 @@
+[gd_scene load_steps=8 format=3 uid="uid://84yd3faf4ac2"]
+
+[ext_resource type="Script" path="res://house_yaga_space/content/ui/main_menu/main_menu.gd" id="1_8ndvr"]
+[ext_resource type="Texture2D" uid="uid://dccirhags4yni" path="res://house_yaga_space/resource/ui/main_menu_background.jpg" id="1_rjri5"]
+[ext_resource type="FontFile" uid="uid://c2logxtasjd5f" path="res://house_yaga_space/resource/fonts/PIXY/PIXY.ttf" id="2_65hk5"]
+[ext_resource type="Theme" uid="uid://cg27d38rryx2n" path="res://house_yaga_space/content/ui/ui_theme.tres" id="3_cl6ec"]
+[ext_resource type="Texture2D" uid="uid://cj5r4ktdhdco7" path="res://kenney_assets/kenney_pixel-ui-pack/9-Slice/space_inlay.png" id="5_nkfiy"]
+
+[sub_resource type="GDScript" id="GDScript_vyugt"]
+script/source = "extends MarginContainer
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+func _on_play_button_pressed():
+	get_tree().change_scene_to_file(\"res://house_yaga_space/content/proto_scene/proto_scene.tscn\")
+
+func _on_options_button_pressed():
+	get_node(\"main_container\").visible = false
+	get_node(\"options_container\").visible = true
+
+
+func _on_quit_button_pressed():
+	get_tree().quit()
+	
+"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lmoj6"]
+texture = ExtResource("5_nkfiy")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8ndvr")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_rjri5")
+
+[node name="Panel" type="Panel" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.26
+anchor_top = 0.244
+anchor_right = 0.26
+anchor_bottom = 0.753
+offset_left = -249.52
+offset_top = -0.112015
+offset_right = 250.48
+offset_bottom = 0.0559998
+grow_vertical = 2
+
+[node name="menu" type="MarginContainer" parent="TextureRect/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+script = SubResource("GDScript_vyugt")
+
+[node name="main_container" type="VBoxContainer" parent="TextureRect/Panel/menu"]
+clip_contents = true
+layout_mode = 2
+alignment = 1
+
+[node name="play_button" type="Button" parent="TextureRect/Panel/menu/main_container"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("3_cl6ec")
+text = "Играть"
+
+[node name="options_button" type="Button" parent="TextureRect/Panel/menu/main_container"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("3_cl6ec")
+text = "Настройки"
+
+[node name="quit_button" type="Button" parent="TextureRect/Panel/menu/main_container"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("3_cl6ec")
+text = "Выход"
+
+[node name="options_container" type="VBoxContainer" parent="TextureRect/Panel/menu"]
+visible = false
+clip_contents = true
+layout_mode = 2
+alignment = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="TextureRect/Panel/menu/options_container"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="TextureRect/Panel/menu/options_container/PanelContainer2"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/Panel/menu/options_container/PanelContainer2/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TextureRect/Panel/menu/options_container/PanelContainer2/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_cl6ec")
+text = "Музыка
+"
+
+[node name="HSlider" type="HSlider" parent="TextureRect/Panel/menu/options_container/PanelContainer2/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("3_cl6ec")
+
+[node name="PanelContainer3" type="PanelContainer" parent="TextureRect/Panel/menu/options_container"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="TextureRect/Panel/menu/options_container/PanelContainer3"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/Panel/menu/options_container/PanelContainer3/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TextureRect/Panel/menu/options_container/PanelContainer3/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_cl6ec")
+text = "Звуки"
+
+[node name="HSlider" type="HSlider" parent="TextureRect/Panel/menu/options_container/PanelContainer3/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("3_cl6ec")
+
+[node name="return_to_main_button" type="Button" parent="TextureRect/Panel/menu/options_container"]
+layout_mode = 2
+size_flags_vertical = 10
+theme = ExtResource("3_cl6ec")
+text = "Назад"
+
+[node name="Panel2" type="Panel" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = 50.0
+offset_right = 530.0
+offset_bottom = 100.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_lmoj6")
+
+[node name="Label" type="Label" parent="TextureRect/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_65hk5")
+theme_override_font_sizes/font_size = 50
+text = "Izba Space Program"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="TextureRect/Panel/menu/main_container/play_button" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="TextureRect/Panel/menu/main_container/options_button" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="TextureRect/Panel/menu/main_container/quit_button" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="TextureRect/Panel/menu/options_container/return_to_main_button" to="." method="_on_return_to_main_button_pressed"]

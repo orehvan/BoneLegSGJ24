@@ -1,0 +1,43 @@
+[gd_resource type="Theme" load_steps=11 format=3 uid="uid://cg27d38rryx2n"]
+
+[ext_resource type="FontFile" uid="uid://c2logxtasjd5f" path="res://house_yaga_space/resource/fonts/PIXY/PIXY.ttf" id="1_ckcpx"]
+[ext_resource type="Texture2D" uid="uid://cauam5bl21wh4" path="res://kenney_assets/kenney_pixel-ui-pack/9-Slice/Ancient/grey.png" id="2_8fapv"]
+[ext_resource type="Texture2D" uid="uid://c3adeamp5eiam" path="res://kenney_assets/kenney_pixel-ui-pack/9-Slice/Ancient/brown.png" id="3_y2jie"]
+[ext_resource type="Texture2D" uid="uid://7qf6oxkhych2" path="res://kenney_assets/kenney_pixel-ui-pack/Spritesheet/UIpackSheet_transparent.png" id="4_gf30q"]
+[ext_resource type="Texture2D" uid="uid://dsheq5nv37tj6" path="res://kenney_assets/kenney_pixel-ui-pack/9-Slice/Ancient/brown_pressed.png" id="4_hohgg"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8oblr"]
+texture = ExtResource("2_8fapv")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hquoa"]
+content_margin_left = 20.0
+content_margin_top = 10.0
+content_margin_right = 20.0
+content_margin_bottom = 10.0
+texture = ExtResource("3_y2jie")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3y2tj"]
+content_margin_left = 20.0
+content_margin_top = 10.0
+content_margin_right = 20.0
+content_margin_bottom = 10.0
+texture = ExtResource("4_hohgg")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dk5o0"]
+atlas = ExtResource("4_gf30q")
+region = Rect2(414, 90, 16, 18)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b5wmo"]
+atlas = ExtResource("4_gf30q")
+region = Rect2(90, 90, 16, 16)
+
+[resource]
+default_font = ExtResource("1_ckcpx")
+default_font_size = 30
+Button/styles/disabled = SubResource("StyleBoxTexture_8oblr")
+Button/styles/hover = SubResource("StyleBoxTexture_hquoa")
+Button/styles/normal = SubResource("StyleBoxTexture_hquoa")
+Button/styles/pressed = SubResource("StyleBoxTexture_3y2tj")
+HSlider/icons/grabber = SubResource("AtlasTexture_dk5o0")
+HSlider/icons/grabber_disabled = SubResource("AtlasTexture_b5wmo")
+HSlider/icons/grabber_highlight = SubResource("AtlasTexture_dk5o0")
