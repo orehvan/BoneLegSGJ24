@@ -33,8 +33,8 @@ const TEXTURES: Array[Texture]= [
 
 const SIZES: Array[float] = [
 	100.0, #0
-	300.0, #1
-	300.0, #2
+	150.0, #1
+	200.0, #2
 	150.0, #3
 	150.0, #4
 	150.0, #5

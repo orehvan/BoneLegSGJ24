@@ -1,0 +1,153 @@
+[gd_scene load_steps=8 format=3 uid="uid://bc63bix0si28f"]
+
+[ext_resource type="Script" path="res://house_yaga_space/content/turret/head_turret_laser.gd" id="1_g3hxx"]
+[ext_resource type="Texture2D" uid="uid://d3sly44l7dci2" path="res://house_yaga_space/resource/guns/guns.sprites/gun_2.tres" id="3_k4mvf"]
+[ext_resource type="AudioStream" uid="uid://4ptrf1tm6eb1" path="res://house_yaga_space/resource/audio/SFX/shot2.wav" id="5_w5hfh"]
+
+[sub_resource type="Animation" id="Animation_smur1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Targets/Line2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_3nvns"]
+resource_name = "shoot"
+length = 2.1
+loop_mode = 1
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.5, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"values": [{
+"args": [],
+"method": &"_on_shoot"
+}, {
+"args": [],
+"method": &"_on_stop_shoot"
+}, {
+"args": [],
+"method": &"_on_shoot"
+}, {
+"args": [],
+"method": &"_on_stop_shoot"
+}, {
+"args": [],
+"method": &"_on_shoot"
+}, {
+"args": [],
+"method": &"_on_stop_shoot"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Targets/Line2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 2, 2.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_mgbkk"]
+resource_name = "stop_shoot"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Targets/Line2D:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"values": [{
+"args": [],
+"method": &"_on_stop_shoot"
+}, {
+"args": [],
+"method": &"_on_shoot"
+}, {
+"args": [],
+"method": &"_on_stop_shoot"
+}, {
+"args": [],
+"method": &"_on_shoot"
+}, {
+"args": [],
+"method": &"_on_stop_shoot"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m1u37"]
+_data = {
+"RESET": SubResource("Animation_smur1"),
+"shoot": SubResource("Animation_3nvns"),
+"stop_shoot": SubResource("Animation_mgbkk")
+}
+
+[node name="Head" type="Node2D"]
+script = ExtResource("1_g3hxx")
+
+[node name="Targets" type="Node2D" parent="."]
+unique_name_in_owner = true
+
+[node name="Line2D" type="Line2D" parent="Targets"]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0)
+points = PackedVector2Array(2048, 0, 73, 0)
+default_color = Color(1, 0, 0, 1)
+
+[node name="Target" type="Marker2D" parent="Targets"]
+position = Vector2(70, 0)
+
+[node name="RayCast2D" type="RayCast2D" parent="Targets"]
+unique_name_in_owner = true
+position = Vector2(72, 0)
+target_position = Vector2(2048, 0)
+collision_mask = 133
+
+[node name="SpaceBuilding020" type="Sprite2D" parent="."]
+position = Vector2(20, 0)
+rotation = -4.71239
+scale = Vector2(6, 6)
+texture = ExtResource("3_k4mvf")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_m1u37")
+}
+
+[node name="AudioShot" type="AudioStreamPlayer2D" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("5_w5hfh")
+bus = &"SFX"

@@ -1,18 +1,18 @@
 [gd_scene load_steps=11 format=3 uid="uid://xkf74ge1p6ij"]
 
 [ext_resource type="Script" path="res://house_yaga_space/content/planets/planet.gd" id="1_4yqdu"]
-[ext_resource type="Texture2D" uid="uid://c6mqxto07f0d4" path="res://house_yaga_space/resource/space/planet_5.tres" id="2_wryfy"]
+[ext_resource type="Texture2D" uid="uid://bdsisjjsgwmns" path="res://house_yaga_space/resource/background/Planet_2.png" id="2_jr7on"]
 [ext_resource type="SpriteFrames" uid="uid://ck8w32kwo406k" path="res://house_yaga_space/resource/vfx/pixel_explotion/sprite_frame_expotion.tres" id="3_jrn56"]
 [ext_resource type="AudioStream" uid="uid://c5jk67y78abwb" path="res://house_yaga_space/resource/audio/FX/Blast2.wav" id="4_qc3jm"]
 [ext_resource type="AudioStream" uid="uid://shm0xchj0xm8" path="res://house_yaga_space/resource/audio/FX/Hit3.wav" id="5_i7hh8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kd67j"]
 resource_local_to_scene = true
-radius = 150.0
+radius = 300.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xgl23"]
 resource_local_to_scene = true
-size = Vector2(92, 92)
+size = Vector2(52, 52)
 
 [sub_resource type="Animation" id="Animation_slam3"]
 length = 0.001
@@ -53,18 +53,18 @@ _data = {
 
 [node name="Planet" type="StaticBody2D"]
 script = ExtResource("1_4yqdu")
-idx_type = 4
+idx_type = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(4, 4)
-texture = ExtResource("2_wryfy")
+texture = ExtResource("2_jr7on")
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 0
 collision_mask = 2
 gravity_space_override = 1
 gravity_point = true
-gravity_point_unit_distance = 300.0
+gravity_point_unit_distance = 600.0
 gravity_point_center = Vector2(0, 0)
 gravity_direction = Vector2(0, 0)
 gravity = 420.0
@@ -78,7 +78,7 @@ sprite_frames = ExtResource("3_jrn56")
 animation = &"play"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -18)
+position = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_xgl23")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

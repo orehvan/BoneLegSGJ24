@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://b4q5qbhqrg0eo"]
+
+[ext_resource type="Texture2D" uid="uid://bryl8nn2mdmii" path="res://house_yaga_space/resource/space_tex/SteroidsAtlas.png" id="1_eg0um"]
+
+[resource]
+atlas = ExtResource("1_eg0um")
+region = Rect2(3, 4, 26, 23)

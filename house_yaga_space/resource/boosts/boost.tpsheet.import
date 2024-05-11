@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://b3syuug3t8rrv"
+path="res://.godot/imported/boost.tpsheet-bd2756174d8cbc71a8452b1293696488.res"
+
+[deps]
+
+files=["res://house_yaga_space/resource/boosts/boost.sprites/fire_feather_boost.tres", "res://house_yaga_space/resource/boosts/boost.sprites/heal_boost.tres", "res://house_yaga_space/resource/boosts/boost.sprites/power_boost.tres", "res://house_yaga_space/resource/boosts/boost.sprites/speed_boost.tres"]
+
+source_file="res://house_yaga_space/resource/boosts/boost.tpsheet"
+dest_files=["res://.godot/imported/boost.tpsheet-bd2756174d8cbc71a8452b1293696488.res", "res://house_yaga_space/resource/boosts/boost.sprites/fire_feather_boost.tres", "res://house_yaga_space/resource/boosts/boost.sprites/heal_boost.tres", "res://house_yaga_space/resource/boosts/boost.sprites/power_boost.tres", "res://house_yaga_space/resource/boosts/boost.sprites/speed_boost.tres"]
+
+[params]
+

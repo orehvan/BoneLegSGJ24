@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://62qxwfqo5s64"]
+
+[ext_resource type="Texture2D" uid="uid://dyc2jmp3bf4ag" path="res://house_yaga_space/resource/space_tex/asteroid_4.tres" id="1_wtlj0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bqfo1"]
+radius = 7.50417
+
+[node name="Asteroid_4" type="StaticBody2D"]
+position = Vector2(0, 352)
+scale = Vector2(4, 4)
+collision_mask = 0
+
+[node name="Asteroid1" type="Sprite2D" parent="."]
+texture = ExtResource("1_wtlj0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_bqfo1")

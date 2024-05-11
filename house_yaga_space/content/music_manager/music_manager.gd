@@ -21,14 +21,9 @@ func play_game() -> void :
 	if _current_play == _audio_music_1 :
 		play_from(_audio_music_2)
 	elif _current_play == _audio_music_2 :
-		play_from(_audio_music_battle)
-	elif _current_play == _audio_music_battle :
 		play_from(_audio_music_1)
 	else :
-		play_from(
-			_audio_music_1 
-			if randf() > 0.5 else _audio_music_2
-			if randf() > 0.5 else _audio_music_battle)
+		play_from(_audio_music_1 if randf() > 0.5 else _audio_music_2)
 
 func play_battle() -> void :
 	play_from(_audio_music_battle)
@@ -68,4 +63,4 @@ func _on_audio_stream_player_music_2_finished() -> void:
 
 
 func _on_audio_stream_player_music_battle_finished() -> void:
-	play_game()
+	pass

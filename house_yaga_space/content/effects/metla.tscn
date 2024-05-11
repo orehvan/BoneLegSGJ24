@@ -22,6 +22,21 @@ scale_curve = SubResource("CurveTexture_pail4")
 [sub_resource type="CircleShape2D" id="CircleShape2D_6i41o"]
 radius = 5.85235
 
+[sub_resource type="Animation" id="Animation_q8425"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
 [sub_resource type="Animation" id="Animation_x1508"]
 resource_name = "play"
 length = 2.0
@@ -39,21 +54,6 @@ tracks/0/keys = {
 "values": [0.0, -6.28319]
 }
 
-[sub_resource type="Animation" id="Animation_q8425"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:rotation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kyjd2"]
 _data = {
 "RESET": SubResource("Animation_q8425"),
@@ -65,6 +65,7 @@ script = ExtResource("1_i1pih")
 time_life = 0.0
 
 [node name="Node2D" type="Node2D" parent="."]
+top_level = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Node2D"]
 position = Vector2(456, 3.71933e-05)
@@ -94,5 +95,10 @@ libraries = {
 "": SubResource("AnimationLibrary_kyjd2")
 }
 autoplay = "play"
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
+remote_path = NodePath("../Node2D")
+update_rotation = false
+update_scale = false
 
 [connection signal="body_entered" from="Node2D/Sprite2D/Area2D" to="." method="_on_area_2d_body_entered"]

@@ -1,0 +1,88 @@
+[gd_scene load_steps=11 format=3 uid="uid://bm1bvnlqsoijp"]
+
+[ext_resource type="Script" path="res://house_yaga_space/content/portal/portal.gd" id="1_55s1i"]
+
+[sub_resource type="Gradient" id="Gradient_3dn1k"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0.172152, 0.306329, 0.455696, 0.508861, 0.549367, 0.58481, 0.643038)
+colors = PackedColorArray(0, 0, 0, 1, 0.0541312, 0.0577725, 0.184083, 1, 0.100632, 0.000100738, 0.299365, 1, 0.834062, 0.707898, 0.448574, 0.758007, 0.898037, 0.787052, 0.562795, 0.758007, 0.999321, 0.980955, 0.944306, 0.627451, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_wgvq5"]
+gradient = SubResource("Gradient_3dn1k")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[sub_resource type="Gradient" id="Gradient_x16hu"]
+colors = PackedColorArray(0, 0.533915, 0.862432, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_2qy4e"]
+gradient = SubResource("Gradient_x16hu")
+
+[sub_resource type="Curve" id="Curve_hx8d1"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.227621, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.604514), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_2oyv7"]
+curve = SubResource("Curve_hx8d1")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_2ve22"]
+particle_flag_disable_z = true
+emission_shape = 6
+emission_ring_axis = Vector3(0, 0, 1)
+emission_ring_height = 1.0
+emission_ring_radius = 300.0
+emission_ring_inner_radius = 255.0
+spread = 180.0
+orbit_velocity_min = 0.22
+orbit_velocity_max = 0.98
+radial_velocity_min = -265.04
+radial_velocity_max = -265.04
+gravity = Vector3(0, 0, 0)
+scale_min = 6.9
+scale_max = 10.0
+scale_curve = SubResource("CurveTexture_2oyv7")
+color_ramp = SubResource("GradientTexture1D_2qy4e")
+hue_variation_min = -0.1
+hue_variation_max = 0.1
+turbulence_noise_strength = 7.3
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tomdk"]
+radius = 48.2701
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_idr4p"]
+radius = 237.211
+
+[node name="Portal" type="Node2D"]
+script = ExtResource("1_55s1i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(8, 8)
+texture = SubResource("GradientTexture2D_wgvq5")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+amount = 256
+process_material = SubResource("ParticleProcessMaterial_2ve22")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_tomdk")
+
+[node name="Area2D2" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+gravity_space_override = 1
+gravity_point = true
+gravity_point_unit_distance = 300.0
+gravity_point_center = Vector2(0, 0)
+gravity_direction = Vector2(0, 0)
+gravity = 2940.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+shape = SubResource("CircleShape2D_idr4p")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

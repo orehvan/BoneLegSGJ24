@@ -6,6 +6,8 @@ extends Node2D
 @onready var _guide: Node2D = %Gude
 @onready var _preview: CanvasLayer = %Preview
 @onready var _animation_player_preview: AnimationPlayer = %AnimationPlayerPrivew
+@onready var _portal: Node2D = $Portal
+@onready var _boss_room: Node2D = $BossRoom
 
 @export var zoom_from: float = 0.5
 @export var zoom_to: float = 0.22
@@ -16,8 +18,10 @@ var _is_start := false
 var _camera_locked := true
 var _camera_zoom_target: float = 0.5
 
+var _last_portal_position := Vector2.ZERO
 
 func _ready() -> void:
+	_last_portal_position = _portal.position
 	start()
 
 func start() -> void :
@@ -27,9 +31,23 @@ func start() -> void :
 	Global.player_flying = false
 	_camera_locked = true
 	_guide.visible = false
+	Global.enable_cursor = false
+	Global.target_exit = null
+	_portal.position = Vector2.DOWN * 100000
 	
+	Global.progress_completed.connect(_on_progress_completed)
+	_portal.player_entered.connect(_on_portal_player_entered)
 
+func _on_progress_completed() -> void :
+	Global.target_exit = _portal
+	Global.enable_cursor = true
+	_portal.position = _last_portal_position
 
+func _on_portal_player_entered() -> void :
+	var point: Node2D = _boss_room.get_marker_spawn()
+	_boss_room.start()
+	Global.player.global_position = point.global_position
+	MusicManager.play_battle()
 
 func show_guide() -> void :
 	_guide.visible = true
@@ -69,6 +87,9 @@ func _on_button_pressed() -> void:
 	Global.player_flying = true
 	_guide.visible = false
 	get_tree().current_scene.get_ui().game_space_menu()
+	
+	#TODO
+	get_tree().create_timer(3.0).timeout.connect(_on_portal_player_entered)
 
 
 func _on_dead_zone_body_entered(_body: Node2D) -> void:

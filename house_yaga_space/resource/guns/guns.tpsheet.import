@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://rm8ajyg5dsm3"
+path="res://.godot/imported/guns.tpsheet-5fd2b9212165aaf50a955fae698030c6.res"
+
+[deps]
+
+files=["res://house_yaga_space/resource/guns/guns.sprites/gun_1.tres", "res://house_yaga_space/resource/guns/guns.sprites/gun_2.tres", "res://house_yaga_space/resource/guns/guns.sprites/gun_plate.tres", "res://house_yaga_space/resource/guns/guns.sprites/gun_0.tres", "res://house_yaga_space/resource/guns/guns.sprites/gun_3.tres"]
+
+source_file="res://house_yaga_space/resource/guns/guns.tpsheet"
+dest_files=["res://.godot/imported/guns.tpsheet-5fd2b9212165aaf50a955fae698030c6.res", "res://house_yaga_space/resource/guns/guns.sprites/gun_1.tres", "res://house_yaga_space/resource/guns/guns.sprites/gun_2.tres", "res://house_yaga_space/resource/guns/guns.sprites/gun_plate.tres", "res://house_yaga_space/resource/guns/guns.sprites/gun_0.tres", "res://house_yaga_space/resource/guns/guns.sprites/gun_3.tres"]
+
+[params]
+

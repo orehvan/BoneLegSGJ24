@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ba4uddacfsoud"]
+
+[ext_resource type="SpriteFrames" uid="uid://ck8w32kwo406k" path="res://house_yaga_space/resource/vfx/pixel_explotion/sprite_frame_expotion.tres" id="1_u5gwx"]
+
+[node name="Boom" type="AnimatedSprite2D"]
+sprite_frames = ExtResource("1_u5gwx")
+animation = &"play"
+frame = 8
+frame_progress = 1.0

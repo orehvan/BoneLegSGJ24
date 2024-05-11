@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://bjap7qq5o5np"]
 
 [ext_resource type="Script" path="res://house_yaga_space/content/turret/turret.gd" id="1_gm6tt"]
-[ext_resource type="Texture2D" uid="uid://cfdr6be4qk4qc" path="res://kenney_assets/space_shooter/space_shooter.sprites/space_shooter/Building/spaceBuilding_018.tres" id="1_ijuo1"]
 [ext_resource type="PackedScene" uid="uid://bfsevsmr78ah5" path="res://house_yaga_space/content/turret/head_turret.tscn" id="2_br1q4"]
+[ext_resource type="Texture2D" uid="uid://krqf650hk0v1" path="res://house_yaga_space/resource/guns/guns.sprites/gun_plate.tres" id="3_pko2q"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dox87"]
 radius = 707.204
@@ -12,8 +12,8 @@ script = ExtResource("1_gm6tt")
 starting_turret = ExtResource("2_br1q4")
 
 [node name="SpaceBuilding018" type="Sprite2D" parent="."]
-scale = Vector2(0.611111, 0.611111)
-texture = ExtResource("1_ijuo1")
+scale = Vector2(6, 6)
+texture = ExtResource("3_pko2q")
 
 [node name="Area2D" type="Area2D" parent="."]
 unique_name_in_owner = true
