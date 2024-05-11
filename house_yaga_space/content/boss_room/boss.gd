@@ -2,14 +2,22 @@ class_name Boss
 extends CharacterBody2D
 
 @onready var _tentacles: Node2D = $Renderer/Tentacles
-@export var speed := 2000
+@onready var _progress: ProgressBar = $ProgressBar
+@onready var _lasers: Node2D = $Lasers
+@onready var _timer: Timer = $TimerLaser
+@onready var _animation_player: AnimationPlayer = $AnimationPlayer
+@onready var _timer_damage: Timer = $TimerDamage
+
+@export var speed := 250.0
 @export var contact_damage := 10.0
-@export var laser_damage := 10.0
+@export var laser_damage := 50.0
 @export var health := 2000.0 :
 	set(val) :
 		health = val
 		if health <= 0 :
 			_death()
+
+@export var laser_active := false
 
 var _started := false
 
@@ -18,6 +26,8 @@ func _ready() -> void:
 
 func start() -> void :
 	_start_animation()
+	_timer.start()
+	_started = true
 
 func _start_animation() -> void :
 	for node in _tentacles.get_children() :
@@ -38,9 +48,24 @@ func _physics_process(delta: float) -> void:
 		var vel := direction * speed * delta
 		var collide := move_and_collide(vel)
 		if collide :
-			var collider := collide.get_collider()
-			if collider is RocketHouse :
-				collider.apply_damage(contact_damage)
+			if _timer_damage.is_stopped() :
+				var collider := collide.get_collider()
+				if collider is RocketHouse :
+					collider.apply_damage(contact_damage)
+					_timer_damage.start()
+		
+	if laser_active :
+		for laser in get_children() :
+			if laser is RayCast2D :
+				if laser.is_colliding() :
+					var collider = laser.get_collider()
+					if collider is RocketHouse :
+						collider.apply_damage(laser_damage * delta)
+	_progress.value = health
 
 func _death() -> void :
 	queue_free()
+
+
+func _on_timer_laser_timeout() -> void:
+	_animation_player.play("laser")

@@ -34,6 +34,8 @@ var _line_drawing: Array = []
 		if health <= 0 :
 			_death()
 
+var warp_to := Vector2.INF
+
 func _ready() -> void:
 	health = max_health
 	Global.player = self 
@@ -88,6 +90,7 @@ func _physics_process(_delta: float) -> void:
 	if not _started :
 		return
 	
+	
 	var pressed: bool = Input.is_action_pressed(INPUT_ENGINE_ACTIVE)
 	_engine_active = pressed
 	
@@ -140,4 +143,8 @@ func _physics_process(_delta: float) -> void:
 	_cursor.visible = Global.enable_cursor
 	if _cursor.visible and Global.target_exit:
 		_cursor.look_at(Global.target_exit.global_position)
+	
+	if warp_to != Vector2.INF :
+		global_position = warp_to
+		warp_to = Vector2.INF
 

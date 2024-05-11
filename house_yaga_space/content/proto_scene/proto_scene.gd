@@ -46,7 +46,7 @@ func _on_progress_completed() -> void :
 func _on_portal_player_entered() -> void :
 	var point: Node2D = _boss_room.get_marker_spawn()
 	_boss_room.start()
-	Global.player.global_position = point.global_position
+	Global.player.warp_to = point.global_position
 	MusicManager.play_battle()
 
 func show_guide() -> void :
