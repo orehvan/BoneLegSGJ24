@@ -1,0 +1,199 @@
+[gd_scene load_steps=15 format=3 uid="uid://by4lg0ktq42ig"]
+
+[ext_resource type="Script" path="res://house_yaga_space/content/ui/story.gd" id="1_mc2i7"]
+[ext_resource type="Texture2D" uid="uid://h5ni3xjs2k81" path="res://house_yaga_space/resource/ui/comic/pic1.jpg" id="2_51ajm"]
+[ext_resource type="Texture2D" uid="uid://6ib7giwxnm2t" path="res://house_yaga_space/resource/ui/comic/pic2.jpg" id="3_y068m"]
+[ext_resource type="Texture2D" uid="uid://pgldaxyteyj8" path="res://house_yaga_space/resource/ui/comic/pic3.jpg" id="4_b7u6q"]
+[ext_resource type="Texture2D" uid="uid://5r61kocms3p" path="res://house_yaga_space/resource/ui/comic/pic4.jpg" id="5_gy7qn"]
+[ext_resource type="Texture2D" uid="uid://2x3sdk6mfdvf" path="res://house_yaga_space/resource/ui/comic/pic5.jpg" id="6_nba27"]
+[ext_resource type="Texture2D" uid="uid://wrrruxm0k306" path="res://house_yaga_space/resource/ui/comic/pic6.jpg" id="7_xijre"]
+[ext_resource type="Texture2D" uid="uid://cwf3moc5ubelh" path="res://house_yaga_space/resource/ui/comic/pic7.jpg" id="8_50lew"]
+[ext_resource type="Texture2D" uid="uid://caqw6jtxtad3l" path="res://house_yaga_space/resource/ui/comic/pic8.jpg" id="9_bglnn"]
+[ext_resource type="Texture2D" uid="uid://b7qeq4nbrrt01" path="res://house_yaga_space/resource/ui/comic/pic9.jpg" id="10_3jmmc"]
+[ext_resource type="Texture2D" uid="uid://7547sewkkjtu" path="res://house_yaga_space/resource/ui/comic/pic10.jpg" id="11_kmrx2"]
+[ext_resource type="Texture2D" uid="uid://dhuibe7ymj2te" path="res://house_yaga_space/resource/ui/comic/pic11.jpg" id="12_vt3p7"]
+[ext_resource type="Texture2D" uid="uid://d3b35dx1id0ac" path="res://house_yaga_space/resource/ui/comic/pic12.jpg" id="13_6pd1v"]
+[ext_resource type="Theme" uid="uid://qe2wkjg65iy6" path="res://house_yaga_space/resource/ui/theme_pause.tres" id="13_qv0lg"]
+
+[node name="Story" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mc2i7")
+
+[node name="TabContainer" type="TabContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+tabs_visible = false
+
+[node name="Page1" type="TextureRect" parent="TabContainer"]
+layout_mode = 2
+texture = ExtResource("2_51ajm")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Page2" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("3_y068m")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Page3" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("4_b7u6q")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Page4" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("5_gy7qn")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Page5" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_nba27")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Page6" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("7_xijre")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Page7" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("8_50lew")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Page8" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("9_bglnn")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Page9" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("10_3jmmc")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Page10" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("11_kmrx2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Page11" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("12_vt3p7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Page12" type="TextureRect" parent="TabContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("13_6pd1v")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ButtonNext" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -205.0
+offset_bottom = -105.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("13_qv0lg")
+theme_override_font_sizes/font_size = 0
+
+[node name="Label" type="Label" parent="ButtonNext"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 28
+text = "Вперед"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonPrev" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -100.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("13_qv0lg")
+theme_override_font_sizes/font_size = 0
+
+[node name="Label" type="Label" parent="ButtonPrev"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 28
+text = "Назад"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonReturn" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -100.0
+offset_right = 200.0
+grow_vertical = 0
+theme = ExtResource("13_qv0lg")
+theme_override_font_sizes/font_size = 0
+
+[node name="Label" type="Label" parent="ButtonReturn"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 28
+text = "В меню"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="pressed" from="ButtonNext" to="." method="_on_button_next_pressed"]
+[connection signal="pressed" from="ButtonPrev" to="." method="_on_button_prev_pressed"]
+[connection signal="pressed" from="ButtonReturn" to="." method="_on_button_return_pressed"]

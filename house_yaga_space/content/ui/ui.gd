@@ -13,7 +13,7 @@ enum TypeMenu {
 	GameOver,
 	GameStart,
 	GameSpace,
-	WaitMenu
+	Story,
 }
 
 var _history_stack := []
@@ -58,10 +58,11 @@ func game_start_menu() -> void :
 func game_space_menu() -> void :
 	_write_history()
 	current_menu = TypeMenu.GameSpace
+	
 
-func wait_menu() -> void :
+func story_menu() -> void:
 	_write_history()
-	current_menu = TypeMenu.WaitMenu
+	current_menu = TypeMenu.Story
 
 
 func _on_main_menu_to_exit() -> void:
@@ -77,6 +78,9 @@ func _on_main_menu_to_start() -> void:
 	start_game.emit()
 	Global.reset()
 	game_start_menu()
+	
+func _on_main_menu_to_story() -> void:
+	story_menu()
 
 
 func _on_pause_to_back() -> void:
@@ -124,3 +128,6 @@ func _on_start_game_to_pause() -> void:
 
 func _on_space_game_to_pause() -> void:
 	pass # Replace with function body.
+	
+func _on_story_to_main_menu():
+	back()
