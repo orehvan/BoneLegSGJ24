@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bsim5861oe73u"]
+[gd_scene load_steps=4 format=3 uid="uid://bsim5861oe73u"]
 
 [ext_resource type="Script" path="res://house_yaga_space/content/ui/main_menu.gd" id="1_23a5j"]
 [ext_resource type="Theme" uid="uid://bci8t28orq14i" path="res://house_yaga_space/resource/ui/theme_ui_main_menu.tres" id="2_8j44i"]
+[ext_resource type="AudioStream" uid="uid://4ptrf1tm6eb1" path="res://house_yaga_space/resource/audio/SFX/shot2.wav" id="3_oxudu"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -52,29 +53,6 @@ text = "Полетели!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
-layout_mode = 2
-
-[node name="ButtonStory" type="Button" parent="VBoxContainer/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 4.0
-
-[node name="Label2" type="Label" parent="VBoxContainer/HBoxContainer/ButtonStory"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "История"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Control" type="Control" parent="VBoxContainer/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-
 [node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
 
@@ -120,7 +98,7 @@ vertical_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Button" type="Button" parent="."]
+[node name="ButtonStory" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
@@ -129,7 +107,7 @@ offset_left = -299.0
 offset_bottom = 100.0
 grow_horizontal = 0
 
-[node name="Label" type="Label" parent="Button"]
+[node name="Label" type="Label" parent="ButtonStory"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -144,8 +122,12 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "История"
 
+[node name="AudioStreamPlayerClick" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("3_oxudu")
+
 [connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
 [connection signal="pressed" from="VBoxContainer/ButtonStart" to="." method="_on_button_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/HBoxContainer/ButtonStory" to="." method="_on_button_story_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer3/ButtonOptions" to="." method="_on_button_options_pressed"]
 [connection signal="pressed" from="VBoxContainer/HBoxContainer2/ButtonExit" to="." method="_on_button_exit_pressed"]
+[connection signal="pressed" from="ButtonStory" to="." method="_on_button_story_pressed"]

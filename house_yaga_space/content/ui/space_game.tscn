@@ -10,9 +10,9 @@
 [ext_resource type="Script" path="res://house_yaga_space/content/ui/cursor.gd" id="8_spwds"]
 [ext_resource type="Texture2D" uid="uid://cv4fslgf27arg" path="res://kenney_assets/icons/icons.sprites/icons/tile_0077.tres" id="8_tbuxw"]
 [ext_resource type="Texture2D" uid="uid://d2lq58fnl2sxh" path="res://kenney_assets/icons/icons.sprites/icons/tile_0235.tres" id="9_84ln7"]
-[ext_resource type="Texture2D" uid="uid://d26q0pjsl0e4r" path="res://kenney_assets/cursor_default/cursor_default.sprites/cursor_default/target_round_b.tres" id="9_dtvwy"]
 [ext_resource type="Texture2D" uid="uid://bei3lg1dvn8gd" path="res://kenney_assets/icons/icons.sprites/icons/tile_0236.tres" id="10_rqgcs"]
 [ext_resource type="Texture2D" uid="uid://w4m6rq8y7cqm" path="res://kenney_assets/icons/icons.sprites/icons/tile_0237.tres" id="11_p6e1j"]
+[ext_resource type="Texture2D" uid="uid://cklkjrkraqjfe" path="res://kenney_assets/cursor_default/cursor_default.sprites/cursor_default/target_a.tres" id="13_pkib1"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_813gk"]
 texture = ExtResource("3_x7r5j")
@@ -234,4 +234,4 @@ expand_mode = 3
 script = ExtResource("8_spwds")
 
 [node name="Sprite2D" type="Sprite2D" parent="Cursor"]
-texture = ExtResource("9_dtvwy")
+texture = ExtResource("13_pkib1")

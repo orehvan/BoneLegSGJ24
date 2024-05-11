@@ -80,3 +80,10 @@ size_flags_horizontal = 0
 texture = ExtResource("4_e002g")
 expand_mode = 3
 stretch_mode = 5
+
+[node name="Label4" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "Если мощности не хватает
+изба упадет!
+Изба поворачивает в сто-
+рону курсора!"

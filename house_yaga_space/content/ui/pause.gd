@@ -6,18 +6,22 @@ signal to_exit()
 
 
 @onready var _god_mode: CheckBox = %CheckBoxGod
+@onready var _audio_click := $AudioStreamPlayer
 
 
 func _on_button_resume_pressed() -> void:
 	to_back.emit()
+	_audio_click.play()
 
 
 func _on_button_options_pressed() -> void:
 	to_option.emit()
+	_audio_click.play()
 
 
 func _on_button_exit_pressed() -> void:
 	to_exit.emit()
+	_audio_click.play()
 
 
 func _on_visibility_changed() -> void:
@@ -40,6 +44,7 @@ func _gui_input(event: InputEvent) -> void:
 
 
 func _on_button_pressed() -> void:
+	_audio_click.play()
 	var scene := get_tree().current_scene
 	if scene :
 		var gameplaye_scene := scene.get_current_game() as GameplayScene

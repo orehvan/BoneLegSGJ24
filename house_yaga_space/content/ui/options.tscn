@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c41qjcmonour1"]
+[gd_scene load_steps=4 format=3 uid="uid://c41qjcmonour1"]
 
 [ext_resource type="Script" path="res://house_yaga_space/content/ui/options.gd" id="1_7gn41"]
 [ext_resource type="Theme" uid="uid://qe2wkjg65iy6" path="res://house_yaga_space/resource/ui/theme_pause.tres" id="2_jbiux"]
+[ext_resource type="AudioStream" uid="uid://4ptrf1tm6eb1" path="res://house_yaga_space/resource/audio/SFX/shot2.wav" id="3_tcyds"]
 
 [node name="Options" type="Control"]
 layout_mode = 3
@@ -93,6 +94,9 @@ size_flags_vertical = 3
 [node name="ButtonBack" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 2
 text = "Вернуться"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_tcyds")
 
 [connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
 [connection signal="value_changed" from="Panel/VBoxContainer/GridContainer/HSliderMain" to="." method="_on_h_slider_main_value_changed"]

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b6vlnupdv3ax8"]
+[gd_scene load_steps=4 format=3 uid="uid://b6vlnupdv3ax8"]
 
 [ext_resource type="Script" path="res://house_yaga_space/content/ui/game_over.gd" id="1_8amv0"]
 [ext_resource type="Theme" uid="uid://qe2wkjg65iy6" path="res://house_yaga_space/resource/ui/theme_pause.tres" id="2_dqi2i"]
+[ext_resource type="AudioStream" uid="uid://4ptrf1tm6eb1" path="res://house_yaga_space/resource/audio/SFX/shot2.wav" id="3_ud7wo"]
 
 [node name="GameOver" type="Control"]
 layout_mode = 3
@@ -57,6 +58,9 @@ text = "НАЧАТЬ ЗАНОВО"
 [node name="ButtonExit" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 2
 text = "ВЫЙТИ"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_ud7wo")
 
 [connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
 [connection signal="pressed" from="Panel/VBoxContainer/ButtonRestart" to="." method="_on_button_restart_pressed"]

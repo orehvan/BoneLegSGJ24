@@ -73,6 +73,7 @@ func _physics_process(delta: float) -> void:
 func _death() -> void :
 	_audio_death.play()
 	await  _audio_death.finished
+	get_tree().current_scene.get_ui().victory_menu()
 	queue_free()
 
 

@@ -17,11 +17,18 @@ const ANIM_PLAY := "play"
 @onready var _audio_pickup: AudioStreamPlayer = %AudioPickup
 @onready var _audio_place: AudioStreamPlayer = %AudioPlace
 @onready var _audio_failed: AudioStreamPlayer = %AudioPlaceFailed
+@onready var _failed: Sprite2D = %Failed
 
 @export_range(0.0, 1000000.0) var force: float = 100.0
 @export var rotation_factor_input: float = 0.2
 
-var _started := false
+var _started := false :
+	set(val) :
+		_started = val
+		if _started :
+			if _failed :
+				_failed.visible = false
+
 var _on_player := false
 
 var _is_drag := false
@@ -70,6 +77,8 @@ func disable_attach() -> void :
 	_area_2d_attach.input_pickable = false
 	modulate = Color.WHITE
 	_attach_disabled = true
+	_failed.visible = false
+	
 
 func enable_attach() -> void :
 	_area_2d_attach.monitoring = true
@@ -95,6 +104,9 @@ func _on_area_2d_attach_input_event(_viewport: Node, event: InputEvent, _shape_i
 					emit_signal("drag")
 					_audio_pickup.play()
 					get_viewport().set_input_as_handled()
+					if not _started and not is_on_player() :
+						if _failed :
+							_failed.visible = true
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -130,10 +142,18 @@ func _process(_delta: float) -> void:
 
 func _on_area_2d_attach_area_entered(_area: Area2D) -> void:
 	_on_player = true
+	if _started or _attach_disabled:
+		return
+	_failed.visible = false
+	
 
 
 func _on_area_2d_attach_area_exited(_area: Area2D) -> void:
 	_on_player = false
+	if _started or _attach_disabled :
+		_failed.visible = false
+		return
+	_failed.visible = true
 
 
 func _on_animated_explotion_animation_finished() -> void:

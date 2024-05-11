@@ -13,6 +13,7 @@ enum TypeMenu {
 	GameOver,
 	GameStart,
 	GameSpace,
+	Victory,
 	Story,
 }
 
@@ -64,6 +65,10 @@ func story_menu() -> void:
 	_write_history()
 	current_menu = TypeMenu.Story
 
+func victory_menu() -> void :
+	_write_history()
+	current_menu = TypeMenu.Victory
+	MusicManager.pause()
 
 func _on_main_menu_to_exit() -> void:
 	get_tree().quit()
@@ -131,3 +136,8 @@ func _on_space_game_to_pause() -> void:
 	
 func _on_story_to_main_menu():
 	back()
+
+
+func _on_victory_to_back() -> void:
+	MusicManager.resume()
+	main_menu()

@@ -12,6 +12,8 @@ const MAX_DB := 0.0
 @onready var _music: HSlider = %HSliderMusic
 @onready var _sfx: HSlider = %HSliderSFX
 
+@onready var _audio_click := $AudioStreamPlayer
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	_update_bus()
@@ -40,6 +42,7 @@ func set_value_from_bus(bus_name: String, value: float) -> void :
 
 func _on_button_back_pressed() -> void:
 	to_back.emit()
+	_audio_click.play()
 
 
 func _on_h_slider_main_value_changed(value: float) -> void:

@@ -27,6 +27,7 @@ shader_parameter/line_scale = 1.2
 shader_parameter/frequency = 0.5
 shader_parameter/light_offset = 0.5
 shader_parameter/alpha = 1.0
+shader_parameter/modulate = Color(1, 1, 1, 1)
 
 [node name="RocketHouse" type="RigidBody2D"]
 position = Vector2(568, 504)

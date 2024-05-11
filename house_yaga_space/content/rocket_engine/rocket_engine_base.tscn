@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://gtse5rs7uyup"]
+[gd_scene load_steps=20 format=3 uid="uid://gtse5rs7uyup"]
 
 [ext_resource type="Texture2D" uid="uid://dmpi4gaic3wfw" path="res://kenney_assets/space_shooter/space_shooter.sprites/space_shooter/Missiles/spaceMissiles_022.tres" id="1_0kmd2"]
 [ext_resource type="Script" path="res://house_yaga_space/content/rocket_engine/rocket_engine_base.gd" id="1_jdt3f"]
@@ -7,6 +7,8 @@
 [ext_resource type="AudioStream" uid="uid://ce76hd8n78cfi" path="res://house_yaga_space/resource/audio/SFX/hut_engine_pickup.wav" id="5_36u8w"]
 [ext_resource type="AudioStream" uid="uid://cjye2paut7una" path="res://house_yaga_space/resource/audio/SFX/hut_engine_correction.wav" id="5_igcno"]
 [ext_resource type="AudioStream" uid="uid://b1u6oobv68nm3" path="res://house_yaga_space/resource/audio/SFX/hut_engine_place.wav" id="6_00lgv"]
+[ext_resource type="Shader" path="res://house_yaga_space/shaders/shader_outline.gdshader" id="8_cbfng"]
+[ext_resource type="Texture2D" uid="uid://dwm488ymho4qm" path="res://kenney_assets/cursor_default/cursor_default.sprites/cursor_default/cross_small.tres" id="8_y5iay"]
 
 [sub_resource type="Gradient" id="Gradient_oxit0"]
 offsets = PackedFloat32Array(0, 0.123967, 0.471074, 0.768595, 1)
@@ -91,6 +93,16 @@ _data = {
 "stop": SubResource("Animation_l5x8s")
 }
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wtga6"]
+shader = ExtResource("8_cbfng")
+shader_parameter/rainbow = true
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/line_scale = 1.2
+shader_parameter/frequency = 0.5
+shader_parameter/light_offset = 0.5
+shader_parameter/alpha = 1.0
+shader_parameter/modulate = Color(0.859375, 0.0402832, 0.0402832, 1)
+
 [node name="Rocket_1" type="Node2D"]
 script = ExtResource("1_jdt3f")
 
@@ -160,6 +172,15 @@ bus = &"SFX"
 unique_name_in_owner = true
 stream = ExtResource("5_igcno")
 bus = &"SFX"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Failed" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+material = SubResource("ShaderMaterial_wtga6")
+position = Vector2(32, -56)
+texture = ExtResource("8_y5iay")
 
 [connection signal="area_entered" from="Area2DAttach" to="." method="_on_area_2d_attach_area_entered"]
 [connection signal="area_exited" from="Area2DAttach" to="." method="_on_area_2d_attach_area_exited"]

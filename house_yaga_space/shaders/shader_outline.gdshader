@@ -17,6 +17,7 @@ uniform float line_scale : hint_range(0, 20) = 1.2;    // thickness of the line
 uniform float frequency : hint_range(0.0, 2.0) = 0.5;  // frequency of the rainbow
 uniform float light_offset : hint_range(0.00001, 1.0) = 0.5;   // this offsets all color channels;
 uniform float alpha : hint_range(0.0, 1.0) = 1.0;
+uniform vec4 modulate: source_color = vec4(1.0);
 
 void fragment() {
 	vec2 size = TEXTURE_PIXEL_SIZE * line_scale;
@@ -37,10 +38,12 @@ void fragment() {
 							   alpha);
 	
 	vec4 color = texture(TEXTURE, UV);
+	color *= modulate;
 	if (rainbow == true){//if rainbow is activated
 		COLOR = mix(color, animated_line_color, outline - color.a);
 	}
 	if (rainbow == false){//if rainbow not is activated and you pick a color
 		COLOR = mix(color, line_color , outline - color.a);
 	}
+	
 }
