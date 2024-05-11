@@ -31,7 +31,7 @@ func get_value_from_bus(bus_name: String) -> float :
 	var value: float = AudioServer.get_bus_volume_db(idx)
 	if value == 0 :
 		return 1.0
-	var n: float = 1.0 + (value / MIN_DB)
+	var n: float = 1.0 - (value / MIN_DB)
 	return n
 
 func set_value_from_bus(bus_name: String, value: float) -> void :

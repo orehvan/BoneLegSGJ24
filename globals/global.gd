@@ -96,17 +96,15 @@ func reset() -> void :
 	player_flying = false
 	count_spawned = 0
 	current_stage = 0
-	random_chanse_next = 0.05
-	random_big_variant = 0.01
 	progress = 0.0
 	total_killed = 0
 	enable_cursor = false
-	target_exit = null
 
 func _on_dead_enemy() -> void :
-	total_killed += 1
-	if progress < 1.0 :
-		_update_progress()
+	if player_flying :
+		total_killed += 1
+		if progress < 1.0 :
+			_update_progress()
 
 func _update_progress() -> void :
 	progress = clampf(float(total_killed) / float(max_killed), 0.0, 1.0)

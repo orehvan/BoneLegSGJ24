@@ -26,6 +26,7 @@ func _ready() -> void:
 	Global.progress_completed.connect(_on_progress_completed)
 
 func start() -> void :
+	Global.reset()
 	MusicManager.play_our_game()
 	_rocket_spawn.rocket_spawn = engine_count
 	_rocket_spawn.start()
@@ -35,6 +36,10 @@ func start() -> void :
 	Global.enable_cursor = false
 	Global.target_exit = null
 	_portal.position = Vector2.DOWN * 100000
+	
+	var enemyes := get_tree().get_nodes_in_group("ENEMY")
+	for node in enemyes :
+		node.queue_free()
 	
 
 func _on_progress_completed() -> void :

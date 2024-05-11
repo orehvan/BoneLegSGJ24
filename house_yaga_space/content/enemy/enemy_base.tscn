@@ -202,7 +202,7 @@ hue_variation_max = 0.11
 [sub_resource type="CircleShape2D" id="CircleShape2D_5f50y"]
 radius = 109.005
 
-[node name="EnemyBase" type="CharacterBody2D"]
+[node name="EnemyBase" type="CharacterBody2D" groups=["ENEMY"]]
 collision_layer = 4
 motion_mode = 1
 platform_on_leave = 2
