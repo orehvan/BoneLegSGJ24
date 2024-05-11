@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1m5m6yw2xq0c"
-path="res://.godot/imported/Рисунок 04.jpg-1d9cea9749cfdbb78ae42175d5bfcc3d.ctex"
+uid="uid://pgldaxyteyj8"
+path="res://.godot/imported/pic3.jpg-a93a359f4996140252b04349ee8c3945.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://house_yaga_space/resource/ui/comic/Рисунок 04.jpg"
-dest_files=["res://.godot/imported/Рисунок 04.jpg-1d9cea9749cfdbb78ae42175d5bfcc3d.ctex"]
+source_file="res://house_yaga_space/resource/ui/comic/pic3.jpg"
+dest_files=["res://.godot/imported/pic3.jpg-a93a359f4996140252b04349ee8c3945.ctex"]
 
 [params]
 
