@@ -1,6 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://bm1bvnlqsoijp"]
+[gd_scene load_steps=13 format=3 uid="uid://bm1bvnlqsoijp"]
 
 [ext_resource type="Script" path="res://house_yaga_space/content/portal/portal.gd" id="1_55s1i"]
+[ext_resource type="AudioStream" uid="uid://dku5fjb6qu4ph" path="res://house_yaga_space/resource/audio/SFX/portal_idle.wav" id="2_oukxb"]
+[ext_resource type="AudioStream" uid="uid://coneitcs1tljq" path="res://house_yaga_space/resource/audio/SFX/portal_teleport.wav" id="3_sa27j"]
 
 [sub_resource type="Gradient" id="Gradient_3dn1k"]
 interpolation_mode = 1
@@ -84,5 +86,12 @@ gravity = 2940.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 shape = SubResource("CircleShape2D_idr4p")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_oukxb")
+autoplay = true
+
+[node name="AudioStreamPlayer2DTeleport" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_sa27j")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

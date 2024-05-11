@@ -8,6 +8,11 @@ extends CharacterBody2D
 @onready var _animation_player: AnimationPlayer = $AnimationPlayer
 @onready var _timer_damage: Timer = $TimerDamage
 
+@onready var _audio_hit: AudioStreamPlayer2D = $AudioStreamPlayer2DHit
+@onready var _audio_idle: AudioStreamPlayer2D = $AudioStreamPlayer2DIdle
+@onready var _audio_death: AudioStreamPlayer2D = $AudioStreamPlayer2DDeath
+
+
 @export var speed := 250.0
 @export var contact_damage := 10.0
 @export var laser_damage := 50.0
@@ -28,6 +33,7 @@ func start() -> void :
 	_start_animation()
 	_timer.start()
 	_started = true
+	_audio_idle.play()
 
 func _start_animation() -> void :
 	for node in _tentacles.get_children() :
@@ -41,6 +47,7 @@ func _start_animation() -> void :
 
 func apply_damage(damage: float) -> void :
 	health -= damage
+	_audio_hit.play()
 
 func _physics_process(delta: float) -> void:
 	if Global.player and _started :
@@ -64,6 +71,8 @@ func _physics_process(delta: float) -> void:
 	_progress.value = health
 
 func _death() -> void :
+	_audio_death.play()
+	await  _audio_death.finished
 	queue_free()
 
 

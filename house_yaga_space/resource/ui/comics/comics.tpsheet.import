@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://dqfcchl5gkatq"
+path="res://.godot/imported/comics.tpsheet-80ec39254ca4b6ced2429658796c30a7.res"
+
+[deps]
+
+files=["res://house_yaga_space/resource/ui/comics/comics.sprites/pic6.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic10.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic9.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic11.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic1.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic2.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic3.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic7.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic5.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic8.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic12.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic4.tres"]
+
+source_file="res://house_yaga_space/resource/ui/comics/comics.tpsheet"
+dest_files=["res://.godot/imported/comics.tpsheet-80ec39254ca4b6ced2429658796c30a7.res", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic6.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic10.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic9.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic11.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic1.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic2.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic3.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic7.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic5.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic8.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic12.tres", "res://house_yaga_space/resource/ui/comics/comics.sprites/pic4.tres"]
+
+[params]
+

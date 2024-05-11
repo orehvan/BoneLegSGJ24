@@ -1826,7 +1826,7 @@ idx_type = 1
 is_random = false
 
 [node name="Boss" parent="." instance=ExtResource("8_21fme")]
-position = Vector2(560, 310)
+position = Vector2(371, 316)
 
 [node name="Marker2DSpawn" type="Marker2D" parent="."]
-position = Vector2(795, 346)
+position = Vector2(1036, 338)

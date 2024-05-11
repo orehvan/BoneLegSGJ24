@@ -1,0 +1,297 @@
+{
+	"textures": [
+		{
+			"image": "comics-0.png",
+			"size": {
+				"w": 2048,
+				"h": 2048
+			},
+			"sprites": [
+				{
+					"filename": "pic6.jpg",
+					"region": {
+						"x": 2,
+						"y": 2,
+						"w": 1444,
+						"h": 1127
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "comics-1.png",
+			"size": {
+				"w": 2048,
+				"h": 2048
+			},
+			"sprites": [
+				{
+					"filename": "pic10.jpg",
+					"region": {
+						"x": 2,
+						"y": 2,
+						"w": 1284,
+						"h": 1033
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "comics-2.png",
+			"size": {
+				"w": 2048,
+				"h": 2048
+			},
+			"sprites": [
+				{
+					"filename": "pic9.jpg",
+					"region": {
+						"x": 2,
+						"y": 2,
+						"w": 1278,
+						"h": 1256
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "comics-3.png",
+			"size": {
+				"w": 2048,
+				"h": 2048
+			},
+			"sprites": [
+				{
+					"filename": "pic11.jpg",
+					"region": {
+						"x": 2,
+						"y": 2,
+						"w": 1278,
+						"h": 1247
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "comics-4.png",
+			"size": {
+				"w": 2048,
+				"h": 2048
+			},
+			"sprites": [
+				{
+					"filename": "pic1.jpg",
+					"region": {
+						"x": 2,
+						"y": 2,
+						"w": 1278,
+						"h": 1225
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "comics-5.png",
+			"size": {
+				"w": 2048,
+				"h": 2048
+			},
+			"sprites": [
+				{
+					"filename": "pic2.jpg",
+					"region": {
+						"x": 2,
+						"y": 2,
+						"w": 1180,
+						"h": 1127
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "comics-6.png",
+			"size": {
+				"w": 2048,
+				"h": 2048
+			},
+			"sprites": [
+				{
+					"filename": "pic3.jpg",
+					"region": {
+						"x": 2,
+						"y": 2,
+						"w": 1159,
+						"h": 1127
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "comics-7.png",
+			"size": {
+				"w": 2048,
+				"h": 2048
+			},
+			"sprites": [
+				{
+					"filename": "pic7.jpg",
+					"region": {
+						"x": 2,
+						"y": 2,
+						"w": 1135,
+						"h": 1127
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "comics-8.png",
+			"size": {
+				"w": 2048,
+				"h": 2048
+			},
+			"sprites": [
+				{
+					"filename": "pic5.jpg",
+					"region": {
+						"x": 2,
+						"y": 2,
+						"w": 1134,
+						"h": 1127
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "comics-9.png",
+			"size": {
+				"w": 2048,
+				"h": 2048
+			},
+			"sprites": [
+				{
+					"filename": "pic8.jpg",
+					"region": {
+						"x": 2,
+						"y": 2,
+						"w": 1084,
+						"h": 1127
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "comics-10.png",
+			"size": {
+				"w": 2048,
+				"h": 2048
+			},
+			"sprites": [
+				{
+					"filename": "pic12.jpg",
+					"region": {
+						"x": 2,
+						"y": 2,
+						"w": 1058,
+						"h": 1127
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		},
+		{
+			"image": "comics-11.png",
+			"size": {
+				"w": 2048,
+				"h": 2048
+			},
+			"sprites": [
+				{
+					"filename": "pic4.jpg",
+					"region": {
+						"x": 2,
+						"y": 2,
+						"w": 1092,
+						"h": 1123
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:3f734db9e39b8398be990d681c812f32:253296fae30796eca2e587a8690a5af3:ba0901cdb7d8e76ab46d60f2169a86ba$"
+	}
+}

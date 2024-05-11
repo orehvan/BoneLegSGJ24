@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://c5uuxy5ktjfvy"]
+[gd_scene load_steps=16 format=3 uid="uid://c5uuxy5ktjfvy"]
 
 [ext_resource type="PhysicsMaterial" uid="uid://b47bqk7afek53" path="res://house_yaga_space/content/physics_material/physics_material_rocket.tres" id="1_pdj0q"]
 [ext_resource type="Script" path="res://house_yaga_space/content/rocket_house/rocket_house.gd" id="2_nbev0"]
@@ -8,7 +8,10 @@
 [ext_resource type="PackedScene" uid="uid://cma4jo24fgetg" path="res://house_yaga_space/content/turret/head_turret_projectile.tscn" id="6_vhoiu"]
 [ext_resource type="PackedScene" uid="uid://bc63bix0si28f" path="res://house_yaga_space/content/turret/head_turret_laser.tscn" id="7_vivw8"]
 [ext_resource type="Shader" path="res://house_yaga_space/shaders/shader_outline.gdshader" id="8_m02el"]
+[ext_resource type="AudioStream" uid="uid://5pf6umqp3qlq" path="res://house_yaga_space/resource/audio/SFX/hut_crack4.wav" id="10_43cjr"]
+[ext_resource type="AudioStream" uid="uid://dhi4wcscatexg" path="res://house_yaga_space/resource/audio/SFX/hut_death.wav" id="11_j5ya3"]
 [ext_resource type="PackedScene" uid="uid://bjap7qq5o5np" path="res://house_yaga_space/content/turret/turret.tscn" id="11_w5s0h"]
+[ext_resource type="AudioStream" uid="uid://b4licfax1gvc5" path="res://house_yaga_space/resource/audio/SFX/hut_heal.wav" id="12_oa3is"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rnwjx"]
 size = Vector2(384, 272)
@@ -113,3 +116,15 @@ material = SubResource("ShaderMaterial_85361")
 position = Vector2(776, 0)
 scale = Vector2(2, 2)
 texture = ExtResource("6_t0i11")
+
+[node name="AudioStreamPlayer2DHit" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_43cjr")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer2DDeath" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_j5ya3")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer2DHeal" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_oa3is")
+bus = &"SFX"

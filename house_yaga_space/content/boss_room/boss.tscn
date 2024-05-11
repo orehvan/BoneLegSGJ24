@@ -1,9 +1,12 @@
-[gd_scene load_steps=14 format=3 uid="uid://qqucpms1pxr4"]
+[gd_scene load_steps=17 format=3 uid="uid://qqucpms1pxr4"]
 
 [ext_resource type="Texture2D" uid="uid://cnubnuqoi5psm" path="res://house_yaga_space/resource/assets_red/2.png" id="1_opu5s"]
 [ext_resource type="Script" path="res://house_yaga_space/content/boss_room/boss.gd" id="1_whf8i"]
 [ext_resource type="Texture2D" uid="uid://dns6tikwpkq8a" path="res://house_yaga_space/resource/assets_red/1.png" id="2_pmh6o"]
 [ext_resource type="Texture2D" uid="uid://c2tjgjgpiqt83" path="res://house_yaga_space/resource/assets_red/7dd84972603af5d5.png" id="3_x5r43"]
+[ext_resource type="AudioStream" uid="uid://1mt2rpiv8cmh" path="res://house_yaga_space/resource/audio/SFX/cat_meow_csharp.wav" id="5_4r03g"]
+[ext_resource type="AudioStream" uid="uid://dqh7cbaptvl3x" path="res://house_yaga_space/resource/audio/SFX/boss_transform.wav" id="6_y72hg"]
+[ext_resource type="AudioStream" uid="uid://b8g3d3fkm2m3q" path="res://house_yaga_space/resource/audio/SFX/boss_death.wav" id="7_2603b"]
 
 [sub_resource type="Animation" id="Animation_lv53l"]
 resource_name = "play"
@@ -248,5 +251,17 @@ max_value = 2000.0
 
 [node name="TimerDamage" type="Timer" parent="."]
 one_shot = true
+
+[node name="AudioStreamPlayer2DHit" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_4r03g")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer2DIdle" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_y72hg")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer2DDeath" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_2603b")
+bus = &"SFX"
 
 [connection signal="timeout" from="TimerLaser" to="." method="_on_timer_laser_timeout"]

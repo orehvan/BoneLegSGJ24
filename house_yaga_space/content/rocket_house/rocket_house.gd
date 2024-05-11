@@ -11,6 +11,10 @@ const INPUT_ENGINE_ACTIVE := "engine_active"
 @onready var _right_truster: Node2D = %RightTruster
 @onready var _cursor: Node2D = %Cursor
 
+@onready var _audio_hit: AudioStreamPlayer2D = $AudioStreamPlayer2DHit
+@onready var _audio_death: AudioStreamPlayer2D = $AudioStreamPlayer2DDeath
+@onready var _audio_heal: AudioStreamPlayer2D = $AudioStreamPlayer2DHeal
+
 var _started: bool = false
 var _engine_active: bool = false
 
@@ -29,6 +33,9 @@ var _line_drawing: Array = []
 	set(val) :
 		if god_mode_count and val < health :
 			return
+		if val > health :
+			if _audio_heal :
+				_audio_heal.play()
 		
 		health = clampf(val, 0.0, max_health)
 		change_health.emit()
@@ -75,9 +82,11 @@ func reset_space_house() -> void :
 
 func _death() -> void :
 	dead.emit()
+	_audio_death.play()
 
 func apply_damage(damage: float) -> void :
 	health -= damage
+	_audio_hit.play()
 
 func _draw() -> void:
 	if Global.is_debug :

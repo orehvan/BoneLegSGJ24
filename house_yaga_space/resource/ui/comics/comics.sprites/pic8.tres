@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://bgail0wwjaa1q"]
+
+[ext_resource type="Texture2D" uid="uid://cmdu2l3dfmxtq" path="res://house_yaga_space/resource/ui/comics/comics-9.png" id="1_fqgjd"]
+
+[resource]
+atlas = ExtResource("1_fqgjd")
+region = Rect2(2, 2, 1084, 1127)
