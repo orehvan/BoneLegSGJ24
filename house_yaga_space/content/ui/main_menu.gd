@@ -3,6 +3,7 @@ extends Control
 signal to_options()
 signal to_start()
 signal to_exit()
+signal to_story()
 
 
 func _on_button_exit_pressed() -> void:
@@ -15,6 +16,10 @@ func _on_button_options_pressed() -> void:
 
 func _on_button_start_pressed() -> void:
 	to_start.emit()
+
+
+func _on_button_story_pressed():
+	to_story.emit()
 
 
 func _on_visibility_changed() -> void:
