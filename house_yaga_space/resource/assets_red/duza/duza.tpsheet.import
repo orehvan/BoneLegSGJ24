@@ -1,0 +1,16 @@
+[remap]
+
+importer="codeandweb.texturepacker_import_spritesheet"
+type="Resource"
+uid="uid://cssbdrb540t0l"
+path="res://.godot/imported/duza.tpsheet-5230eefcb9deaa2a3b798a82496458f6.res"
+
+[deps]
+
+files=["res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/blue_idle_anim_2.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/green_idle_anim_2.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/pink_idle_anim_2.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/yellow_idle_anim_2.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/blue_idle_anim_1.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/green_idle_anim_1.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/pink_idle_anim_1.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/yellow_idle_anim_1.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/blue_idle_anim_3.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/green_idle_anim_3.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/pink_idle_anim_3.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/yellow_idle_anim_3.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/blue_idle_anim_0.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/green_idle_anim_0.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/pink_idle_anim_0.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/yellow_idle_anim_0.tres"]
+
+source_file="res://house_yaga_space/resource/assets_red/duza/duza.tpsheet"
+dest_files=["res://.godot/imported/duza.tpsheet-5230eefcb9deaa2a3b798a82496458f6.res", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/blue_idle_anim_2.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/green_idle_anim_2.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/pink_idle_anim_2.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/yellow_idle_anim_2.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/blue_idle_anim_1.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/green_idle_anim_1.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/pink_idle_anim_1.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/yellow_idle_anim_1.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/blue_idle_anim_3.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/green_idle_anim_3.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/pink_idle_anim_3.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/yellow_idle_anim_3.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/blue_idle_anim_0.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/green_idle_anim_0.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/pink_idle_anim_0.tres", "res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/yellow_idle_anim_0.tres"]
+
+[params]
+

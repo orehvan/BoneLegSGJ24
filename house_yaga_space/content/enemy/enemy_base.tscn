@@ -1,7 +1,6 @@
-[gd_scene load_steps=15 format=3 uid="uid://dg2dlbad7cfum"]
+[gd_scene load_steps=14 format=3 uid="uid://dg2dlbad7cfum"]
 
 [ext_resource type="Script" path="res://house_yaga_space/content/enemy/enemy_base.gd" id="1_a5d8m"]
-[ext_resource type="Texture2D" uid="uid://ctfpw1wrhsc18" path="res://house_yaga_space/resource/assets_red/84812dd1ce43340a.png" id="2_qroim"]
 [ext_resource type="AudioStream" uid="uid://cuqam6j1aronb" path="res://house_yaga_space/resource/audio/FX/LaserShot7.wav" id="3_vsy4n"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nsx4i"]
@@ -214,10 +213,9 @@ teleport_distance_limit = 6000.0
 
 [node name="Renderer" type="Node2D" parent="."]
 
-[node name="Sprite" type="Sprite2D" parent="Renderer"]
+[node name="Sprite" type="AnimatedSprite2D" parent="Renderer"]
 position = Vector2(-5, 13)
 scale = Vector2(4, 4)
-texture = ExtResource("2_qroim")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(8, -24)

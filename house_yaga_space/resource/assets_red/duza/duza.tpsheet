@@ -1,0 +1,258 @@
+{
+	"textures": [
+		{
+			"image": "duza.png",
+			"size": {
+				"w": 512,
+				"h": 512
+			},
+			"sprites": [
+				{
+					"filename": "duza/blue_idle_anim_2",
+					"region": {
+						"x": 2,
+						"y": 2,
+						"w": 48,
+						"h": 63
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 1
+					}
+				},
+				{
+					"filename": "duza/green_idle_anim_2",
+					"region": {
+						"x": 2,
+						"y": 68,
+						"w": 48,
+						"h": 63
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 1
+					}
+				},
+				{
+					"filename": "duza/pink_idle_anim_2",
+					"region": {
+						"x": 2,
+						"y": 134,
+						"w": 48,
+						"h": 63
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 1
+					}
+				},
+				{
+					"filename": "duza/yellow_idle_anim_2",
+					"region": {
+						"x": 2,
+						"y": 200,
+						"w": 48,
+						"h": 63
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 1
+					}
+				},
+				{
+					"filename": "duza/blue_idle_anim_1",
+					"region": {
+						"x": 2,
+						"y": 266,
+						"w": 46,
+						"h": 62
+					},
+					"margin": {
+						"x": 9,
+						"y": 1,
+						"w": 18,
+						"h": 2
+					}
+				},
+				{
+					"filename": "duza/green_idle_anim_1",
+					"region": {
+						"x": 2,
+						"y": 331,
+						"w": 46,
+						"h": 62
+					},
+					"margin": {
+						"x": 9,
+						"y": 1,
+						"w": 18,
+						"h": 2
+					}
+				},
+				{
+					"filename": "duza/pink_idle_anim_1",
+					"region": {
+						"x": 2,
+						"y": 396,
+						"w": 46,
+						"h": 62
+					},
+					"margin": {
+						"x": 9,
+						"y": 1,
+						"w": 18,
+						"h": 2
+					}
+				},
+				{
+					"filename": "duza/yellow_idle_anim_1",
+					"region": {
+						"x": 51,
+						"y": 266,
+						"w": 46,
+						"h": 62
+					},
+					"margin": {
+						"x": 9,
+						"y": 1,
+						"w": 18,
+						"h": 2
+					}
+				},
+				{
+					"filename": "duza/blue_idle_anim_3",
+					"region": {
+						"x": 51,
+						"y": 331,
+						"w": 48,
+						"h": 61
+					},
+					"margin": {
+						"x": 8,
+						"y": 1,
+						"w": 16,
+						"h": 3
+					}
+				},
+				{
+					"filename": "duza/green_idle_anim_3",
+					"region": {
+						"x": 51,
+						"y": 395,
+						"w": 48,
+						"h": 61
+					},
+					"margin": {
+						"x": 8,
+						"y": 1,
+						"w": 16,
+						"h": 3
+					}
+				},
+				{
+					"filename": "duza/pink_idle_anim_3",
+					"region": {
+						"x": 53,
+						"y": 2,
+						"w": 48,
+						"h": 61
+					},
+					"margin": {
+						"x": 8,
+						"y": 1,
+						"w": 16,
+						"h": 3
+					}
+				},
+				{
+					"filename": "duza/yellow_idle_anim_3",
+					"region": {
+						"x": 53,
+						"y": 66,
+						"w": 48,
+						"h": 61
+					},
+					"margin": {
+						"x": 8,
+						"y": 1,
+						"w": 16,
+						"h": 3
+					}
+				},
+				{
+					"filename": "duza/blue_idle_anim_0",
+					"region": {
+						"x": 53,
+						"y": 130,
+						"w": 46,
+						"h": 61
+					},
+					"margin": {
+						"x": 9,
+						"y": 2,
+						"w": 18,
+						"h": 3
+					}
+				},
+				{
+					"filename": "duza/green_idle_anim_0",
+					"region": {
+						"x": 53,
+						"y": 194,
+						"w": 46,
+						"h": 61
+					},
+					"margin": {
+						"x": 9,
+						"y": 2,
+						"w": 18,
+						"h": 3
+					}
+				},
+				{
+					"filename": "duza/pink_idle_anim_0",
+					"region": {
+						"x": 100,
+						"y": 258,
+						"w": 46,
+						"h": 61
+					},
+					"margin": {
+						"x": 9,
+						"y": 2,
+						"w": 18,
+						"h": 3
+					}
+				},
+				{
+					"filename": "duza/yellow_idle_anim_0",
+					"region": {
+						"x": 102,
+						"y": 130,
+						"w": 46,
+						"h": 61
+					},
+					"margin": {
+						"x": 9,
+						"y": 2,
+						"w": 18,
+						"h": 3
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:be41fdb30596f6a7a53ceede509cb7c5:a7e88a0998ad3a0749438753f0bd1fa9:47e3000730db00c80501b349fb62b74d$"
+	}
+}

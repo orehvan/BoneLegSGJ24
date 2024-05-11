@@ -8,6 +8,7 @@ const ANIM_DEAD := "dead"
 @onready var _audio_dead: AudioStreamPlayer2D = $AudioDead
 @onready var _animation_player: AnimationPlayer = $AnimationPlayer
 @onready var _timer_reload: Timer = $TimerReload
+@onready var _sprite: AnimatedSprite2D = $Renderer/Sprite
 
 const CAT_DEAD_MEW: Array[AudioStream] = [
 	preload("res://house_yaga_space/resource/audio/SFX/cat_meow_a.wav"),
@@ -43,6 +44,7 @@ var _player_detected: Node2D = null
 
 func _ready() -> void:
 	speed = speed + randf_range(-random_speed, random_speed)
+	_sprite.frame = randi_range(0, 4)
 
 func _enter_tree() -> void:
 	Global.enemy_count += 1

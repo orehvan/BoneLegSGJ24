@@ -1,14 +1,38 @@
-[gd_scene load_steps=3 format=3 uid="uid://d0oe5uhou8vaa"]
+[gd_scene load_steps=7 format=3 uid="uid://d0oe5uhou8vaa"]
 
 [ext_resource type="PackedScene" uid="uid://dg2dlbad7cfum" path="res://house_yaga_space/content/enemy/enemy_base.tscn" id="1_8841b"]
-[ext_resource type="Texture2D" uid="uid://5din2bqul1jd" path="res://house_yaga_space/resource/assets_red/cat_medus/yelow.png" id="2_mx7kr"]
+[ext_resource type="Texture2D" uid="uid://bhteay5x1t6kp" path="res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/yellow_idle_anim_0.tres" id="2_2v10h"]
+[ext_resource type="Texture2D" uid="uid://kd6aeehbd4gi" path="res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/yellow_idle_anim_1.tres" id="3_6tu0m"]
+[ext_resource type="Texture2D" uid="uid://dy0ps4srrr22" path="res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/yellow_idle_anim_2.tres" id="4_i471x"]
+[ext_resource type="Texture2D" uid="uid://c30o13s8x5tay" path="res://house_yaga_space/resource/assets_red/duza/duza.sprites/duza/yellow_idle_anim_3.tres" id="5_qbps5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f3ggg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_2v10h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6tu0m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_i471x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qbps5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
 
 [node name="EnemyBase" instance=ExtResource("1_8841b")]
 damage = 30.0
 health = 80.0
 
 [node name="Sprite" parent="Renderer" index="0"]
-texture = ExtResource("2_mx7kr")
+sprite_frames = SubResource("SpriteFrames_f3ggg")
+autoplay = "default"
 
 [node name="CollisionShape2D" parent="." index="1"]
 position = Vector2(-7, -31)
