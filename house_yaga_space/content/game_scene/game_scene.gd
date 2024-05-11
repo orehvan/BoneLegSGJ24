@@ -28,4 +28,5 @@ func _on_ui_restart() -> void:
 
 func _on_ui_start_game() -> void:
 	if current_game :
+		current_game.start()
 		current_game.show_guide()

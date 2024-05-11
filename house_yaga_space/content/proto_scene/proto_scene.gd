@@ -22,7 +22,8 @@ var _last_portal_position := Vector2.ZERO
 
 func _ready() -> void:
 	_last_portal_position = _portal.position
-	start()
+	#_portal.player_entered.connect(_on_portal_player_entered)
+	Global.progress_completed.connect(_on_progress_completed)
 
 func start() -> void :
 	MusicManager.play_our_game()
@@ -35,8 +36,6 @@ func start() -> void :
 	Global.target_exit = null
 	_portal.position = Vector2.DOWN * 100000
 	
-	Global.progress_completed.connect(_on_progress_completed)
-	_portal.player_entered.connect(_on_portal_player_entered)
 
 func _on_progress_completed() -> void :
 	Global.target_exit = _portal
@@ -44,10 +43,13 @@ func _on_progress_completed() -> void :
 	_portal.position = _last_portal_position
 
 func _on_portal_player_entered() -> void :
-	var point: Node2D = _boss_room.get_marker_spawn()
-	_boss_room.start()
-	Global.player.warp_to = point.global_position
-	MusicManager.play_battle()
+	if Global.player :
+		var point: Node2D = _boss_room.get_marker_spawn()
+		_boss_room.start()
+		var player := Global.player as RocketHouse
+		player.warp_to = point.global_position
+		player.health = player.max_health
+		MusicManager.play_battle()
 
 func show_guide() -> void :
 	_guide.visible = true
@@ -63,16 +65,20 @@ func _on_button_pressed() -> void:
 	
 	var rocket_on_attach_list: Array[RocketPartEngine] = []
 	
+	var destroyed: Array[RocketPartEngine] = []
 	for i in _rocket_spawn.get_child_count() :
 		var node := _rocket_spawn.get_child(i) as RocketPartEngine
 		if node :
 			if node.is_on_player() :
 				rocket_on_attach_list.append(node)
 			else :
-				node.destroy()
+				destroyed.append(node)
 	
 	if rocket_on_attach_list.is_empty() :
 		return
+	
+	for node in destroyed :
+		node.destroy()
 	
 	_player_rocket_house.attack_rocket_engine_from_list(rocket_on_attach_list)
 	_player_rocket_house.start_space_house()
@@ -111,4 +117,8 @@ func _physics_process(_delta: float) -> void:
 
 
 func _on_animation_player_privew_animation_finished(_anim_name: StringName) -> void:
+	_preview.visible = false
+
+
+func _on_texture_button_pressed() -> void:
 	_preview.visible = false

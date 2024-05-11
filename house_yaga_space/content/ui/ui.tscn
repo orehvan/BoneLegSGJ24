@@ -65,3 +65,5 @@ layout_mode = 2
 [connection signal="to_back" from="TabContainer/Options" to="." method="_on_options_to_back"]
 [connection signal="to_exit" from="TabContainer/GameOver" to="." method="_on_game_over_to_exit"]
 [connection signal="to_restart" from="TabContainer/GameOver" to="." method="_on_game_over_to_restart"]
+[connection signal="to_pause" from="TabContainer/StartGame" to="." method="_on_start_game_to_pause"]
+[connection signal="to_pause" from="TabContainer/SpaceGame" to="." method="_on_space_game_to_pause"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c5uuxy5ktjfvy"]
+[gd_scene load_steps=13 format=3 uid="uid://c5uuxy5ktjfvy"]
 
 [ext_resource type="PhysicsMaterial" uid="uid://b47bqk7afek53" path="res://house_yaga_space/content/physics_material/physics_material_rocket.tres" id="1_pdj0q"]
 [ext_resource type="Script" path="res://house_yaga_space/content/rocket_house/rocket_house.gd" id="2_nbev0"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://oly5pcyrdlk8" path="res://kenney_assets/cursor_default/cursor_default.sprites/cursor_default/navigation_e.tres" id="6_t0i11"]
 [ext_resource type="PackedScene" uid="uid://cma4jo24fgetg" path="res://house_yaga_space/content/turret/head_turret_projectile.tscn" id="6_vhoiu"]
 [ext_resource type="PackedScene" uid="uid://bc63bix0si28f" path="res://house_yaga_space/content/turret/head_turret_laser.tscn" id="7_vivw8"]
+[ext_resource type="Shader" path="res://house_yaga_space/shaders/shader_outline.gdshader" id="8_m02el"]
 [ext_resource type="PackedScene" uid="uid://bjap7qq5o5np" path="res://house_yaga_space/content/turret/turret.tscn" id="11_w5s0h"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rnwjx"]
@@ -14,6 +15,15 @@ size = Vector2(384, 272)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_066gm"]
 size = Vector2(112, 88)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_85361"]
+shader = ExtResource("8_m02el")
+shader_parameter/rainbow = true
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/line_scale = 1.2
+shader_parameter/frequency = 0.5
+shader_parameter/light_offset = 0.5
+shader_parameter/alpha = 1.0
 
 [node name="RocketHouse" type="RigidBody2D"]
 position = Vector2(568, 504)
@@ -99,6 +109,7 @@ unique_name_in_owner = true
 visible = false
 
 [node name="Sprite2D" type="Sprite2D" parent="Cursor"]
+material = SubResource("ShaderMaterial_85361")
 position = Vector2(776, 0)
 scale = Vector2(2, 2)
 texture = ExtResource("6_t0i11")

@@ -55,7 +55,7 @@ func _physics_process(delta: float) -> void:
 					_timer_damage.start()
 		
 	if laser_active :
-		for laser in get_children() :
+		for laser in _lasers.get_children() :
 			if laser is RayCast2D :
 				if laser.is_colliding() :
 					var collider = laser.get_collider()

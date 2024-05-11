@@ -5,7 +5,6 @@ const ANIM_STOP_SHOOT := &"stop_shoot"
 const ANIM_PLAY := &"play"
 const BOOM_PKG := preload("res://house_yaga_space/content/turret/boom.tscn")
 
-@onready var _targets: Node2D = %Targets
 @onready var _animation_player: AnimationPlayer = %AnimationPlayer
 @onready var _line_2d: Line2D = %Line2D
 @onready var _raycast: RayCast2D = %RayCast2D

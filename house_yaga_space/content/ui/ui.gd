@@ -116,3 +116,11 @@ func _input(event: InputEvent) -> void:
 
 func _on_options_to_back() -> void:
 	back()
+
+
+func _on_start_game_to_pause() -> void:
+	pass # Replace with function body.
+
+
+func _on_space_game_to_pause() -> void:
+	pass # Replace with function body.

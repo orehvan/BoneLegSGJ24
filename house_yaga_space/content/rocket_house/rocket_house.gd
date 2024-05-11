@@ -21,7 +21,9 @@ var _line_drawing: Array = []
 @export var max_linear := 800.0
 @export var multi_speed := 1.0
 @export var multi_max_linear := 1.0
-@export var god_mode_count := 0
+@export var god_mode_count := 0 :
+	set(val) :
+		god_mode_count = maxi(0, val)
 @export var max_health := 1000.0
 @export var health := 1000.0 :
 	set(val) :
