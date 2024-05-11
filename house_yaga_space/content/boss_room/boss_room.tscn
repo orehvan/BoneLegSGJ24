@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://durdu0eea8gbu"]
+[gd_scene load_steps=9 format=3 uid="uid://durdu0eea8gbu"]
 
 [ext_resource type="Script" path="res://house_yaga_space/content/boss_room/asteroids.gd" id="1_8024i"]
 [ext_resource type="PackedScene" uid="uid://bf1psq045l0y1" path="res://house_yaga_space/content/boss_room/asteroid_1.tscn" id="1_kht7m"]
@@ -7,12 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cs0fc47yjcfj0" path="res://house_yaga_space/content/boss_room/asteroid_3.tscn" id="3_8oy8a"]
 [ext_resource type="PackedScene" uid="uid://62qxwfqo5s64" path="res://house_yaga_space/content/boss_room/asteroid_4.tscn" id="4_6mij8"]
 [ext_resource type="PackedScene" uid="uid://xkf74ge1p6ij" path="res://house_yaga_space/content/planets/planet.tscn" id="6_h8nx7"]
-[ext_resource type="Texture2D" uid="uid://cnubnuqoi5psm" path="res://house_yaga_space/resource/assets_red/2.png" id="10_5jqyc"]
-[ext_resource type="Texture2D" uid="uid://dns6tikwpkq8a" path="res://house_yaga_space/resource/assets_red/1.png" id="11_6llqu"]
-[ext_resource type="Texture2D" uid="uid://c2tjgjgpiqt83" path="res://house_yaga_space/resource/assets_red/7dd84972603af5d5.png" id="12_uidhq"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_ph6qj"]
-radius = 115.663
+[ext_resource type="PackedScene" uid="uid://qqucpms1pxr4" path="res://house_yaga_space/content/boss_room/boss.tscn" id="8_21fme"]
 
 [node name="BossRoom" type="Node2D"]
 script = ExtResource("1_u6by7")
@@ -1830,64 +1825,8 @@ scale = Vector2(2, 2)
 idx_type = 1
 is_random = false
 
-[node name="Node2D" type="CharacterBody2D" parent="."]
-position = Vector2(392, 320)
-
-[node name="Renderer" type="Node2D" parent="Node2D"]
-
-[node name="8" type="Sprite2D" parent="Node2D/Renderer"]
-position = Vector2(-59, 133)
-scale = Vector2(0.804688, 0.796875)
-texture = ExtResource("10_5jqyc")
-
-[node name="9" type="Sprite2D" parent="Node2D/Renderer"]
-position = Vector2(-56, 135)
-scale = Vector2(0.804688, 0.796875)
-texture = ExtResource("10_5jqyc")
-
-[node name="10" type="Sprite2D" parent="Node2D/Renderer"]
-position = Vector2(39, 139)
-scale = Vector2(0.804688, 0.796875)
-texture = ExtResource("10_5jqyc")
-flip_h = true
-
-[node name="1" type="Sprite2D" parent="Node2D/Renderer"]
-position = Vector2(35, 161)
-texture = ExtResource("11_6llqu")
-
-[node name="4" type="Sprite2D" parent="Node2D/Renderer"]
-position = Vector2(-34, 159)
-texture = ExtResource("11_6llqu")
-
-[node name="5" type="Sprite2D" parent="Node2D/Renderer"]
-position = Vector2(2, 159)
-texture = ExtResource("11_6llqu")
-flip_h = true
-
-[node name="6" type="Sprite2D" parent="Node2D/Renderer"]
-position = Vector2(-157, 112)
-rotation = 1.0472
-texture = ExtResource("11_6llqu")
-
-[node name="7" type="Sprite2D" parent="Node2D/Renderer"]
-position = Vector2(155, 113)
-rotation = -0.785397
-texture = ExtResource("11_6llqu")
-
-[node name="2" type="Sprite2D" parent="Node2D/Renderer"]
-position = Vector2(-109, 162)
-texture = ExtResource("10_5jqyc")
-
-[node name="3" type="Sprite2D" parent="Node2D/Renderer"]
-position = Vector2(103, 164)
-texture = ExtResource("10_5jqyc")
-flip_h = true
-
-[node name="Sprite2D" type="Sprite2D" parent="Node2D/Renderer"]
-texture = ExtResource("12_uidhq")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D"]
-shape = SubResource("CircleShape2D_ph6qj")
+[node name="Boss" parent="." instance=ExtResource("8_21fme")]
+position = Vector2(560, 310)
 
 [node name="Marker2DSpawn" type="Marker2D" parent="."]
 position = Vector2(795, 346)

@@ -89,7 +89,7 @@ func _on_button_pressed() -> void:
 	get_tree().current_scene.get_ui().game_space_menu()
 	
 	#TODO
-	get_tree().create_timer(3.0).timeout.connect(_on_portal_player_entered)
+	#get_tree().create_timer(3.0).timeout.connect(_on_portal_player_entered)
 
 
 func _on_dead_zone_body_entered(_body: Node2D) -> void:

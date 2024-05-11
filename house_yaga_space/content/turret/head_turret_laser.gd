@@ -41,9 +41,7 @@ func _physics_process(delta: float) -> void:
 		if _raycast.is_colliding() :
 			var collide := _raycast.get_collider()
 			if collide :
-				if collide is Planet :
-					collide.apply_damage(damage * delta)
-				elif collide is EnemyBase :
+				if collide.has_method(&"apply_damage") :
 					collide.apply_damage(damage * delta)
 			
 			var g_pos := _raycast.get_collision_point()

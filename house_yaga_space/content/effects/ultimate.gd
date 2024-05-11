@@ -21,7 +21,5 @@ func _finished() -> void :
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	if body is EnemyBase :
-		body.apply_damage(damage)
-	elif body is Planet :
+	if body.has_method(&"apply_damage") :
 		body.apply_damage(damage)

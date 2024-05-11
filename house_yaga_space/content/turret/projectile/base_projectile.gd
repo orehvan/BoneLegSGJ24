@@ -21,9 +21,7 @@ func _physics_process(delta: float) -> void:
 	var collision := move_and_collide(motion)
 	if collision :
 		var object := collision.get_collider()
-		if object is EnemyBase :
-			object.apply_damage(damage)
-		elif object is Planet :
+		if object.has_method(&"apply_damage") :
 			object.apply_damage(damage)
 		
 		_animation_sprite.visible = true
