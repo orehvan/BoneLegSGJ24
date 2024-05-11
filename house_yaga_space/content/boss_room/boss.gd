@@ -25,6 +25,7 @@ extends CharacterBody2D
 @export var laser_active := false
 
 var _started := false
+var boss_dead := false
 
 func _ready() -> void:
 	pass
@@ -50,6 +51,8 @@ func apply_damage(damage: float) -> void :
 	_audio_hit.play()
 
 func _physics_process(delta: float) -> void:
+	if boss_dead :
+		return
 	if Global.player and _started :
 		var direction := global_position.direction_to(Global.player.global_position)
 		var vel := direction * speed * delta
@@ -71,10 +74,17 @@ func _physics_process(delta: float) -> void:
 	_progress.value = health
 
 func _death() -> void :
+	if boss_dead :
+		return
+	boss_dead = true
+	
+	var tween := get_tree().create_tween()
+	tween.tween_property(self, "scale", Vector2.ZERO, 0.2)
 	_audio_death.play()
-	await  _audio_death.finished
+	_animation_player.stop()
+	_timer_damage.stop()
+	await  get_tree().create_timer(2.0).timeout
 	get_tree().current_scene.get_ui().victory_menu()
-	queue_free()
 
 
 func _on_timer_laser_timeout() -> void:

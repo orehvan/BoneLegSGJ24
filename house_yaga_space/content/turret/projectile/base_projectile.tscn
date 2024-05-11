@@ -40,6 +40,7 @@ collision_layer = 8
 collision_mask = 5
 script = ExtResource("1_51vw2")
 speed = 800.0
+damage = 20.0
 
 [node name="Renderer" type="Node2D" parent="."]
 

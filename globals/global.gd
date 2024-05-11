@@ -41,7 +41,7 @@ var enable_cursor: bool = false
 var target_exit: Node2D = null
 
 var bonus_chanse_elites := 1.0
-var bonus_chanse_little := 0.01
+var bonus_chanse_little := 0.05
 
 
 var pause_count: int = 0 :
