@@ -1,10 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://qqucpms1pxr4"]
+[gd_scene load_steps=18 format=3 uid="uid://qqucpms1pxr4"]
 
 [ext_resource type="Texture2D" uid="uid://cnubnuqoi5psm" path="res://house_yaga_space/resource/assets_red/2.png" id="1_opu5s"]
 [ext_resource type="Script" path="res://house_yaga_space/content/boss_room/boss.gd" id="1_whf8i"]
 [ext_resource type="Texture2D" uid="uid://dns6tikwpkq8a" path="res://house_yaga_space/resource/assets_red/1.png" id="2_pmh6o"]
 [ext_resource type="Texture2D" uid="uid://c2tjgjgpiqt83" path="res://house_yaga_space/resource/assets_red/7dd84972603af5d5.png" id="3_x5r43"]
 [ext_resource type="AudioStream" uid="uid://1mt2rpiv8cmh" path="res://house_yaga_space/resource/audio/SFX/cat_meow_csharp.wav" id="5_4r03g"]
+[ext_resource type="Script" path="res://house_yaga_space/content/boss_room/lasers.gd" id="5_vsvic"]
 [ext_resource type="AudioStream" uid="uid://dqh7cbaptvl3x" path="res://house_yaga_space/resource/audio/SFX/boss_transform.wav" id="6_y72hg"]
 [ext_resource type="AudioStream" uid="uid://b8g3d3fkm2m3q" path="res://house_yaga_space/resource/audio/SFX/boss_death.wav" id="7_2603b"]
 
@@ -213,6 +214,7 @@ shape = SubResource("CircleShape2D_ph6qj")
 
 [node name="Lasers" type="Node2D" parent="."]
 visible = false
+script = ExtResource("5_vsvic")
 
 [node name="RayCast2D" type="RayCast2D" parent="Lasers"]
 position = Vector2(-48, -32)
@@ -231,6 +233,8 @@ collision_mask = 2
 [node name="Line2D2" type="Line2D" parent="Lasers/RayCast2D2"]
 points = PackedVector2Array(0, 0, 3000, 0)
 default_color = Color(1, 0, 0, 1)
+
+[node name="PlayerMarker" type="Marker2D" parent="Lasers"]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

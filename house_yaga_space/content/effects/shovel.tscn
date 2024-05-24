@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://cf7d6whi3hv6a"]
 
-[ext_resource type="Script" path="res://house_yaga_space/content/effects/metla.gd" id="1_i1pih"]
-[ext_resource type="Texture2D" uid="uid://clh3j61uejcor" path="res://house_yaga_space/resource/space_tex/space.sprites/space/CosmoTrashs/metla.tres" id="3_mtv6a"]
+[ext_resource type="Script" path="res://house_yaga_space/content/effects/shovel.gd" id="1_ycrok"]
+[ext_resource type="Texture2D" uid="uid://e4icajm4o3ln" path="res://house_yaga_space/resource/boosts/boost.sprites/power_boost.tres" id="2_nmbbm"]
 
 [sub_resource type="Curve" id="Curve_6eyrx"]
 _data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.240922), 0.0, 0.0, 0, 0]
@@ -61,7 +61,7 @@ _data = {
 }
 
 [node name="Metla" type="Node2D"]
-script = ExtResource("1_i1pih")
+script = ExtResource("1_ycrok")
 time_life = 0.0
 
 [node name="Node2D" type="Node2D" parent="."]
@@ -71,7 +71,7 @@ top_level = true
 position = Vector2(456, 3.71933e-05)
 rotation = -1.8326
 scale = Vector2(16, 16)
-texture = ExtResource("3_mtv6a")
+texture = ExtResource("2_nmbbm")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="Node2D/Sprite2D"]
 show_behind_parent = true

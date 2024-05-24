@@ -35,7 +35,7 @@ collision_layer = 2
 physics_material_override = ExtResource("1_pdj0q")
 freeze = true
 script = ExtResource("2_nbev0")
-max_health = 300.0
+max_health = 400.0
 
 [node name="Trusters" type="Node2D" parent="."]
 

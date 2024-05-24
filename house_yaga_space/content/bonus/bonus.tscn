@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://house_yaga_space/content/bonus/bonus.gd" id="1_l3ujs"]
 [ext_resource type="PackedScene" uid="uid://brxwbdhyu5bu4" path="res://house_yaga_space/content/effects/ultimate.tscn" id="2_cx3e4"]
-[ext_resource type="Texture2D" uid="uid://nmi2j73dsufb" path="res://house_yaga_space/resource/space_tex/space.sprites/space/CosmoTrashs/pirojok.tres" id="2_ok7r1"]
 [ext_resource type="Shader" path="res://house_yaga_space/shaders/shader_outline.gdshader" id="2_voyf5"]
+[ext_resource type="Texture2D" uid="uid://dh3njcvrfjjdn" path="res://house_yaga_space/resource/boosts/boost.sprites/fire_feather_boost.tres" id="4_yna85"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_5pi6j"]
 shader = ExtResource("2_voyf5")
@@ -13,6 +13,7 @@ shader_parameter/line_scale = 1.2
 shader_parameter/frequency = 0.5
 shader_parameter/light_offset = 0.5
 shader_parameter/alpha = 1.0
+shader_parameter/modulate = Color(1, 1, 1, 1)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gl0a4"]
 radius = 53.4603
@@ -27,7 +28,7 @@ packed_bonus = ExtResource("2_cx3e4")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_5pi6j")
 scale = Vector2(8, 8)
-texture = ExtResource("2_ok7r1")
+texture = ExtResource("4_yna85")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_gl0a4")

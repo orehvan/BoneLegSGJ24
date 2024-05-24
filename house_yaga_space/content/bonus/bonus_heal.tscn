@@ -1,18 +1,19 @@
-[gd_scene load_steps=7 format=3 uid="uid://y06vsfctvxvt"]
+[gd_scene load_steps=7 format=3 uid="uid://drhuyocwfwwef"]
 
-[ext_resource type="Script" path="res://house_yaga_space/content/bonus/bonus.gd" id="1_k5pny"]
-[ext_resource type="PackedScene" uid="uid://cf7d6whi3hv6a" path="res://house_yaga_space/content/effects/metla.tscn" id="2_1b22q"]
-[ext_resource type="Shader" path="res://house_yaga_space/shaders/shader_outline.gdshader" id="3_obgw5"]
-[ext_resource type="Texture2D" uid="uid://clh3j61uejcor" path="res://house_yaga_space/resource/space_tex/space.sprites/space/CosmoTrashs/metla.tres" id="4_b3wch"]
+[ext_resource type="Script" path="res://house_yaga_space/content/bonus/bonus.gd" id="1_fpd53"]
+[ext_resource type="PackedScene" uid="uid://d0jrqjfr3x0u8" path="res://house_yaga_space/content/effects/heal.tscn" id="2_3pu5i"]
+[ext_resource type="Shader" path="res://house_yaga_space/shaders/shader_outline.gdshader" id="3_73874"]
+[ext_resource type="Texture2D" uid="uid://crjejuxaah2db" path="res://house_yaga_space/resource/boosts/boost.sprites/heal_boost.tres" id="4_nloa0"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_5pi6j"]
-shader = ExtResource("3_obgw5")
+shader = ExtResource("3_73874")
 shader_parameter/rainbow = true
 shader_parameter/line_color = Color(1, 1, 1, 1)
 shader_parameter/line_scale = 1.2
 shader_parameter/frequency = 0.5
 shader_parameter/light_offset = 0.5
 shader_parameter/alpha = 1.0
+shader_parameter/modulate = Color(1, 1, 1, 1)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_gl0a4"]
 radius = 53.4603
@@ -21,13 +22,13 @@ radius = 53.4603
 collision_layer = 0
 collision_mask = 2
 monitorable = false
-script = ExtResource("1_k5pny")
-packed_bonus = ExtResource("2_1b22q")
+script = ExtResource("1_fpd53")
+packed_bonus = ExtResource("2_3pu5i")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_5pi6j")
 scale = Vector2(8, 8)
-texture = ExtResource("4_b3wch")
+texture = ExtResource("4_nloa0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_gl0a4")

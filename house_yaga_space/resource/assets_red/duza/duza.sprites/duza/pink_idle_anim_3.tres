@@ -1,8 +1,8 @@
 [gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://c4qiqmop6vq"]
 
-[ext_resource type="Texture2D" uid="uid://bdjd2f4pwjh2f" path="res://house_yaga_space/resource/assets_red/duza/duza.png" id="1_a307r"]
+[ext_resource type="Texture2D" uid="uid://bdjd2f4pwjh2f" path="res://house_yaga_space/resource/assets_red/duza/duza.png" id="1_m37tv"]
 
 [resource]
-atlas = ExtResource("1_a307r")
+atlas = ExtResource("1_m37tv")
 region = Rect2(53, 2, 48, 61)
 margin = Rect2(8, 1, 16, 3)

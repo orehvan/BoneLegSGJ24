@@ -4,6 +4,7 @@ extends CharacterBody2D
 @onready var _tentacles: Node2D = $Renderer/Tentacles
 @onready var _progress: ProgressBar = $ProgressBar
 @onready var _lasers: Node2D = $Lasers
+@onready var _player_marker = $Lasers/PlayerMarker
 @onready var _timer: Timer = $TimerLaser
 @onready var _animation_player: AnimationPlayer = $AnimationPlayer
 @onready var _timer_damage: Timer = $TimerDamage
@@ -49,6 +50,10 @@ func _start_animation() -> void :
 func apply_damage(damage: float) -> void :
 	health -= damage
 	_audio_hit.play()
+	
+func execute_laser_attack() -> void:
+	_player_marker.position = Global.player.position
+	pass
 
 func _physics_process(delta: float) -> void:
 	if boss_dead :

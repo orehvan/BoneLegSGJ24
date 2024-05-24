@@ -1,12 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://drhuyocwfwwef"]
+[gd_scene load_steps=7 format=3 uid="uid://y06vsfctvxvt"]
 
-[ext_resource type="Script" path="res://house_yaga_space/content/bonus/bonus.gd" id="1_dnka0"]
-[ext_resource type="PackedScene" uid="uid://d0jrqjfr3x0u8" path="res://house_yaga_space/content/effects/burger.tscn" id="2_rt5vv"]
-[ext_resource type="Shader" path="res://house_yaga_space/shaders/shader_outline.gdshader" id="3_6ue1a"]
-[ext_resource type="Texture2D" uid="uid://c478dqnglfskg" path="res://house_yaga_space/resource/space_tex/space.sprites/space/CosmoTrashs/burgir.tres" id="4_41poq"]
+[ext_resource type="Script" path="res://house_yaga_space/content/bonus/bonus.gd" id="1_dxjkr"]
+[ext_resource type="PackedScene" uid="uid://cf7d6whi3hv6a" path="res://house_yaga_space/content/effects/shovel.tscn" id="2_e5e4b"]
+[ext_resource type="Shader" path="res://house_yaga_space/shaders/shader_outline.gdshader" id="3_akclw"]
+[ext_resource type="Texture2D" uid="uid://e4icajm4o3ln" path="res://house_yaga_space/resource/boosts/boost.sprites/power_boost.tres" id="4_ifr7s"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_5pi6j"]
-shader = ExtResource("3_6ue1a")
+shader = ExtResource("3_akclw")
 shader_parameter/rainbow = true
 shader_parameter/line_color = Color(1, 1, 1, 1)
 shader_parameter/line_scale = 1.2
@@ -22,13 +22,13 @@ radius = 53.4603
 collision_layer = 0
 collision_mask = 2
 monitorable = false
-script = ExtResource("1_dnka0")
-packed_bonus = ExtResource("2_rt5vv")
+script = ExtResource("1_dxjkr")
+packed_bonus = ExtResource("2_e5e4b")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_5pi6j")
 scale = Vector2(8, 8)
-texture = ExtResource("4_41poq")
+texture = ExtResource("4_ifr7s")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_gl0a4")

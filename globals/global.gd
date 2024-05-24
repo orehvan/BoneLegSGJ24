@@ -11,8 +11,8 @@ const LIST_ENEMY := [
 
 const BONUSES := [
 	preload("res://house_yaga_space/content/bonus/bonus.tscn"),
-	preload("res://house_yaga_space/content/bonus/bonus_burger.tscn"),
-	preload("res://house_yaga_space/content/bonus/bonus_metla.tscn"),
+	preload("res://house_yaga_space/content/bonus/bonus_heal.tscn"),
+	preload("res://house_yaga_space/content/bonus/bonus_shovel.tscn"),
 	
 ]
 

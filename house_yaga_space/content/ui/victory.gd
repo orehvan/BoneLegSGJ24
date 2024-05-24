@@ -10,6 +10,7 @@ func _on_button_pressed() -> void:
 
 func _on_visibility_changed() -> void:
 	if visible :
+		Global.pause_count += 1
 		if _audio_victory :
 			_audio_victory.play()
 	else :
